@@ -1,0 +1,16 @@
+// Цикл
+$items : dasher #f2836b, analytics #60b6e3, company #fb9f00, sites #8cb206, support #facf00, history #f26510;
+@each $i in $items{
+	.#{nth($i,1)}{
+		border-left-color:#{nth($i,2)};
+		i{@include sized-sprite($icons, i_#{nth($i,1)});}
+	}
+	.#{nth($i,1)}:hover, .active .#{nth($i,1)}{
+		color:#{nth($i,2)};
+		box-shadow:0 0 25px rgba(0,0,0,.55) inset, 1px 0 0 #{nth($i,2)} inset;
+		i{@include sized-sprite($icons, i_#{nth($i,1)}_h);}
+	}
+}
+
+// Замена позици фона в спрайте
+background-position: sprite-position($icons, 'user-menu_h');
