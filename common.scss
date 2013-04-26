@@ -12,5 +12,11 @@ $items : dasher #f2836b, analytics #60b6e3, company #fb9f00, sites #8cb206, supp
 	}
 }
 
+$ico : flag, lock, mess;
+@each $i in $ico{
+.i_#{$i}{@include sized-sprite($icons, i_#{$i}_s);}
+}
 // Замена позици фона в спрайте
 background-position: sprite-position($icons, 'user-menu_h');
+
+@include transition(all .2s ease-in-out);
