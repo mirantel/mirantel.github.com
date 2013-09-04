@@ -1,0 +1,55 @@
+body{background:#c99fc9;}
+	.doll-holder{
+		overflow:hidden;
+		position:relative;
+		margin:30px auto;
+		width:448px;
+		}
+		.doll{
+			width:268px;
+			height:765px;
+			float:left;
+			margin-right: 10px;
+			background:#fff;
+			}
+		.dress{
+			position:absolute;
+			height:22%;
+			left:328px;
+			cursor:pointer;
+			margin-top:10px;
+			-webkit-transition: all 0.5s ease-in;
+			-moz-transition: all 0.5s ease-in;
+			-ms-transition: all 0.5s ease-in;
+			-o-transition: all 0.5s ease-in;
+			transition: all 0.5s ease-in;
+			}
+
+		.dress-01{top:0;}
+		.dress-02{top:192px;}
+		.dress-03{top:384px;}
+		.hat-01{top:576px;}
+		.dress.active{
+			height:100%;
+			top:0;
+			left:0;
+			right:auto;
+			margin:0;
+			-webkit-transition: all 0.5s ease-in;
+			-moz-transition: all 0.5s ease-in;
+			-ms-transition: all 0.5s ease-in;
+			-o-transition: all 0.5s ease-in;
+			transition: all 0.5s ease-in;
+			}
+		.dress-list{
+			float:left;
+			width:170px;
+			list-style:none;
+			padding:0;
+			margin:0;
+			}
+			.dress-list li{
+				height:190px;
+				border:1px solid #666;
+				background:#fff;
+				}
