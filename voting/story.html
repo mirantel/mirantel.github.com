@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Выборы 2014. Эксперимент.</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+</head>
+<body>
+
+
+<article class="vote">
+	<h1>Выборы 2014. Эксперимент.</h1>
+	<h2>Вступление</h2>
+	<p>Когда я училась в ВУЗе, был у нас замечательный преподаватель, Ельчанинов Д.Б., он рассказывал о разных методах принятия решения.</p>
+	<p>Его лекция о выборе альтернативы на TED:</p>
+	<iframe width="640" height="480" src="//www.youtube.com/embed/9rJ9TpHsO6k" frameborder="0" allowfullscreen></iframe>
+	<p>На примере с 33 богатырями все просто и весело.</p>
+
+	<h2>Задача</h2>
+	<p>Сравнить результаты расчитаннные разными методами.</p>
+	<p>В этой методичке описаны некоторые варианты расчета: <a href="http://ouek.onu.edu.ua/uploads/courses/smpr/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BA%D0%B0_%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%B3%D0%BE%D0%BB%D0%BE%D1%81%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F.pdf">Теория принятия решений. Раздел : Теория голосования. О.Д. Кичмаренко, А.П. Огуленко 2012</a></p>
+	<h2>Голосование</h2>
+	<p>Я создала простое голосование в Гугл докс. Инструмент конечно не идеальный, из-за сложности анкеты капча не понадобилась:)</p>
+	<figure>
+		<img src="img/vote.png" height="" alt="">
+		<figcaption>Форма голосования</figcaption>
+	</figure>
+	<p>Последние 2 пункта я добавила через пару часов после начало голосования, почти каждый второй ошибался и голосовал наоборот. Ответы тех, кто голосовал без проверочных вопросов пришлось не засчитывать (97 ответов).</p>
+	<p>Всего проголосовало <strong>602</strong> человека</p>
+	<p>Правильно заполнили анкету <strong>403</strong> человека</p>
+
+	<h2>Результаты</h2>
+	<p>Exel со всеми данными, на разных листах есть исодные данные, отфильтроывнные, расчеты и результаты <a href="https://docs.google.com/file/d/0B2imnw2jtAHPUTJJMWsyU09MWjA/edit">Скачать</a></p>
+	<h3>Правило относительного большенства</h3>
+	<p>Побеждает тот, кого большенство поставило на первое место.</p>
+	<table class="rating">
+		<tr>
+			<th class="rating__num"></th>
+			<th class="rating__name">Кандидат</th>
+			<th>Голоса</th>
+		</tr>
+		<tr class="rating__winner">
+			<th class="rating__num">1</th>
+			<td class="rating__name">Садовый</td>
+			<td>142</td>
+		</tr>
+		<tr>
+			<th class="rating__num">2</th>
+			<td class="rating__name">Порошенко</td>
+			<td>87</td>
+		</tr>
+		<tr>
+			<th class="rating__num">3</th>
+			<td class="rating__name">Кличко</td>
+			<td>56</td>
+		</tr>
+		<tr>
+			<th class="rating__num">4</th>
+			<td class="rating__name">Гриценко</td>
+			<td>29</td>
+		</tr>
+		<tr>
+			<th class="rating__num">5</th>
+			<td class="rating__name">Ярош</td>
+			<td>26</td>
+		</tr>
+		<tr>
+			<th class="rating__num">6</th>
+			<td class="rating__name">Ляшко</td>
+			<td>22</td>
+		</tr>
+		<tr>
+			<th class="rating__num">7</th>
+			<td class="rating__name">Парубий</td>
+			<td>14</td>
+		</tr>
+		<tr>
+			<th class="rating__num">8</th>
+			<td class="rating__name">Тимошенко</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<th class="rating__num">9</th>
+			<td class="rating__name">Добкин</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<th class="rating__num">10</th>
+			<td class="rating__name">Тигипко</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<th class="rating__num">11</th>
+			<td class="rating__name">Тягнибок</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<th class="rating__num">12</th>
+			<td class="rating__name">Яценюк</td>
+			<td>1</td>
+		</tr>
+	</table>
+
+	<h3>Правило относительного большенства с выбыванием. Используеется в Украине</h3>
+	<p>Побеждает тот, кого большенство поставило на первое место, если у кандидата меньше 50% голосов проводится второй тур.</p>
+	<table class="rating">
+		<tr>
+			<th class="rating__num"></th>
+			<th class="rating__name">Кандидат</th>
+			<th>Голоса</th>
+			<th>Процент</th>
+		</tr>
+		<tr class="rating__winner">
+			<th class="rating__num">1</th>
+			<td class="rating__name">Садовый</td>
+			<td>142</td>
+			<td>35.24%</td>
+		</tr>
+		<tr class="rating__winner">
+			<th class="rating__num">2</th>
+			<td class="rating__name">Порошенко</td>
+			<td>87</td>
+			<td>21.59%</td>
+		</tr>
+		<tr>
+			<th class="rating__num">3</th>
+			<td class="rating__name">Кличко</td>
+			<td>56</td>
+			<td>13.9%</td>
+		</tr>
+		<tr>
+			<th class="rating__num">4</th>
+			<td class="rating__name">Гриценко</td>
+			<td>29</td>
+			<td>7.20%</td>
+		</tr>
+		<tr>
+			<th class="rating__num">5</th>
+			<td class="rating__name">Ярош</td>
+			<td>26</td>
+			<td>6.45%</td>
+		</tr>
+		<tr>
+			<th class="rating__num">6</th>
+			<td class="rating__name">Ляшко</td>
+			<td>22</td>
+			<td>5.46%</td>
+		</tr>
+		<tr>
+			<th class="rating__num">7</th>
+			<td class="rating__name">Парубий</td>
+			<td>14</td>
+			<td>3.47%</td>
+		</tr>
+		<tr>
+			<th class="rating__num">8</th>
+			<td class="rating__name">Тимошенко</td>
+			<td>12</td>
+			<td>2.98%</td>
+		</tr>
+		<tr>
+			<th class="rating__num">9</th>
+			<td class="rating__name">Добкин</td>
+			<td>7</td>
+			<td>1.74%</td>
+		</tr>
+		<tr>
+			<th class="rating__num">10</th>
+			<td class="rating__name">Тигипко</td>
+			<td>7</td>
+			<td>1.74%</td>
+		</tr>
+		<tr>
+			<th class="rating__num">11</th>
+			<td class="rating__name">Тягнибок</td>
+			<td>1</td>
+			<td>0.25%</td>
+		</tr>
+		<tr>
+			<th class="rating__num">12</th>
+			<td class="rating__name">Яценюк</td>
+			<td>1</td>
+			<td>0.25%</td>
+		</tr>
+	</table>
+	<p>Во второй тур выходят 2 первых кандидата:</p>
+	<table class="rating">
+		<tr>
+			<th class="rating__num"></th>
+			<th class="rating__name">Кандидат</th>
+			<th>Голоса</th>
+			<th>Процент</th>
+		</tr>
+		<tr class="winner">
+			<th class="rating__num">1</th>
+			<td class="rating__name">Садовый</td>
+			<td>222</td>
+			<td>55.09%</td>
+		</tr>
+		<tr>
+			<th class="rating__num">2</th>
+			<td class="rating__name">Порошенко</td>
+			<td>181</td>
+			<td>44.01%</td>
+		</tr>
+	</table>
+
+	<h3>Голосование с подсчетом очков</h3>
+	<p>За первой место кандадат получает 11 очков, за последнее - 0. Побеждает тот, кто наберет в сумме больше очков. </p>
+	<table class="rating">
+		<tr>
+			<th class="rating__num"></th>
+			<th class="rating__name">Кандидат</th>
+			<th>Очки</th>
+		</tr>
+		<tr class="rating__winner">
+			<th class="rating__num">1</th>
+			<td class="rating__name">Садовый</td>
+			<td>3455</td>
+		</tr>
+		<tr>
+			<th class="rating__num">2</th>
+			<td class="rating__name">Порошенко</td>
+			<td>3342</td>
+		</tr>
+		<tr>
+			<th class="rating__num">3</th>
+			<td class="rating__name">Кличко</td>
+			<td>3105</td>
+		</tr>
+		<tr>
+			<th class="rating__num">4</th>
+			<td class="rating__name">Гриценко</td>
+			<td>2878</td>
+		</tr>
+		<tr>
+			<th class="rating__num">5</th>
+			<td class="rating__name">Парубий</td>
+			<td>2682</td>
+		</tr>
+		<tr>
+			<th class="rating__num">6</th>
+			<td class="rating__name">Ляшко</td>
+			<td>2392</td>
+		</tr>
+		<tr>
+			<th class="rating__num">7</th>
+			<td class="rating__name">Ярош</td>
+			<td>2322</td>
+		</tr>
+		<tr>
+			<th class="rating__num">8</th>
+			<td class="rating__name">Яценюк</td>
+			<td>1966</td>
+		</tr>
+		<tr>
+			<th class="rating__num">9</th>
+			<td class="rating__name">Тягнибок</td>
+			<td>1314</td>
+		</tr>
+		<tr>
+			<th class="rating__num">10</th>
+			<td class="rating__name">Тигипко</td>
+			<td>1314</td>
+		</tr>
+		<tr>
+			<th class="rating__num">11</th>
+			<td class="rating__name">Тимошенко</td>
+			<td>1176</td>
+		</tr>
+		<tr>
+			<th class="rating__num">12</th>
+			<td class="rating__name">Добкин</td>
+			<td>310</td>
+		</tr>
+	</table>
+
+	<p>Заметили как изменились место Тимошенко и Яценюка?) При этом Топ-4 не изменился.</p>
+
+	<h2>Заключение</h2>
+	<p>Голосование проходило 27 февраля и было открыто менее суток. <a href="https://www.facebook.com/photo.php?fbid=679539228755207&set=a.660744413968022.1073741826.100000974078493&type=1&stream_ref=10">https://www.facebook.com/photo...</a></p>
+	<p>Я знаю, что существует еще много систем расчета лучшего кандидата и формат полученных данных подходит для расчетов. Буду рада если кто-то лучше разбирающийся в вопросе захочет посчитать еще несколькими способами:) Так же мне было бы интересно реализовать голосовалку с такой системой, но хорошим интерфейсом, регистрацией и автоматическим подсчетом результатов, но я сама осилю только front-end.</p>
+
+	<h3>Мои контакты:</h3>
+	<ul>
+		<li><a href="https://www.facebook.com/magi.mirantel">facebook.com/magi.mirantel</a></li>
+		<li>Skype: magi.mirantel</li>
+		<li><a href="mailto:magi.mirantel@gmail.com">magi.mirantel@gmail.com</a></li>
+		<li><a href="https://twitter.com/Mirantel">twitter.com/Mirantel</a></li>
+		<li><a href="https://github.com/mirantel">github.com/mirantel</a></li>
+	</ul>
+	<h2>P.S.</h2>
+	<p>Из-за событий в стране долго откладовала написание отчета. </p>
+
+	<p class="note">Пилипенко Светлана<br> 21.03.2014</p>
+
+</article>
+
+</body>
+</html>
