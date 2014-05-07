@@ -7,15 +7,18 @@ body {
 a {
   color: #4597d7;
 }
-a:hover {
+a:hover,
+a:active,
+a:focus {
   text-decoration: none;
 }
 input {
   -webkit-appearance: none;
+  border-radius: 0;
 }
 .pseudo-link {
   color: #4597d7;
-  border-bottom: 1px dashed #4597d7;
+  border-bottom: 1px dotted #4597d7;
   cursor: pointer;
 }
 .pseudo-link:hover {
@@ -94,15 +97,15 @@ input {
 }
 .menu__link:hover .icon-product,
 .menu__link:focus .icon-product {
-  background: url("../img/icon-product-h.png");
+  background-image: url("../img/icon-product-h.png");
 }
 .menu__link:hover .icon-performance,
 .menu__link:focus .icon-performance {
-  background: url("../img/icon-performance-h.png");
+  background-image: url("../img/icon-performance-h.png");
 }
 .menu__link:hover .icon-settings,
 .menu__link:focus .icon-settings {
-  background: url("../img/icon-settings-h.png");
+  background-image: url("../img/icon-settings-h.png");
 }
 .menu__link-hold {
   height: 108px;
@@ -130,15 +133,15 @@ input {
 }
 .icon-product,
 .menu .active .icon-product {
-  background: url("../img/icon-product.png");
+  background-image: url("../img/icon-product.png");
 }
 .icon-performance,
 .menu .active .icon-performance {
-  background: url("../img/icon-performance.png");
+  background-image: url("../img/icon-performance.png");
 }
 .icon-settings,
 .menu .active .icon-settings {
-  background: url("../img/icon-settings.png");
+  background-image: url("../img/icon-settings.png");
 }
 .main {
   padding: 76px 40px 0 146px;
@@ -275,7 +278,7 @@ input {
   background: none;
 }
 .date-form .form-control:focus + .icon-calendar {
-  background: url("../img/icon-calendar-h.png");
+  background-image: url("../img/icon-calendar-h.png");
 }
 .date-form .form-group {
   margin: 0 10px;
@@ -419,13 +422,6 @@ input {
   position: relative;
   text-align: right;
 }
-.products__qty-text {
-  cursor: pointer;
-  color: #4597d7;
-  border-bottom: 1px dashed #4597d7;
-}
-.products__qty-text:hover,
-.products__qty-text:active,
 .products__qty-text.active {
   border-color: transparent;
 }
@@ -550,7 +546,7 @@ input {
   width: 28px;
   height: 28px;
   display: inline-block;
-  background: url("../img/clock.png");
+  background-image: url("../img/clock.png");
   vertical-align: middle;
   margin: 0px 6px 0px 4px;
   background-size: 28px 28px;
@@ -616,36 +612,36 @@ input {
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .icon-clock {
-    background: url("../img/clock2x.png");
+    background-image: url("../img/clock@2x.png");
   }
   .icon-product,
   .menu .active .icon-product {
-    background: url("../img/icon-product@2x.png");
+    background-image: url("../img/icon-product@2x.png");
   }
   .icon-performance,
   .menu .active .icon-performance {
-    background: url("../img/icon-performance@2x.png");
+    background-image: url("../img/icon-performance@2x.png");
   }
   .icon-settings,
   .menu .active .icon-settings {
-    background: url("../img/icon-settings@2x.png");
+    background-image: url("../img/icon-settings@2x.png");
   }
   .menu__link:hover .icon-product,
   .menu__link:focus .icon-product {
-    background: url("../img/icon-product-h@2x.png");
+    background-image: url("../img/icon-product-h@2x.png");
   }
   .menu__link:hover .icon-performance,
   .menu__link:focus .icon-performance {
-    background: url("../img/icon-performance-h@2x.png");
+    background-image: url("../img/icon-performance-h@2x.png");
   }
   .menu__link:hover .icon-settings,
   .menu__link:focus .icon-settings {
-    background: url("../img/icon-settings-h@2x.png");
+    background-image: url("../img/icon-settings-h@2x.png");
   }
   .icon-calendar {
-    background: url("../img/icon-calendar@2x.png");
+    background-image: url("../img/icon-calendar@2x.png");
   }
   .date-form .form-control:focus + .icon-calendar {
-    background: url("../img/icon-calendar-h@2x.png");
+    background-image: url("../img/icon-calendar-h@2x.png");
   }
 }
