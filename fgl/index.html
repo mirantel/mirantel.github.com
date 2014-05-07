@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/common.js"></script>
+	<meta charset="UTF-8">
+	<title>FGL</title>
+</head>
+<body>
+	<header class="header">
+		<strong class="logo">FGL:</strong>
+		<a class="header-selector" href="">Select Store</a>
+		<div class="select-arrow"></div>
+	</header>
+	<aside class="sidebar">
+		<nav class="menu">
+			<a class="menu__link active" href="">
+				<span class="menu__link-hold">
+					<i class="icon-product"></i>
+					<span class="menu__link-text">Product Cache Management</span>
+				</span>
+			</a>
+			<a class="menu__link" href="">
+				<span class="menu__link-hold">
+					<i class="icon-performance"></i>
+					<span class="menu__link-text">Performance</span>
+				</span>
+			</a>
+			<a class="menu__link" href="">
+				<span class="menu__link-hold">
+					<i class="icon-settings"></i>
+					<span class="menu__link-text">Settings</span>
+				</span>
+			</a>
+		</nav>
+	</aside>
+	<div class="main">
+		<h1 class="title">Product Cache Management</h1>
+		<div class="cols">
+			<div class="col col_2">
+				<h2 class="sub-title">Find by attributes:</h2>
+				<form action="">
+					<div class="row row_search">
+						<input type="text" placeholder="Search" class="form-control">
+						<button class="btn">SEARCH</button>
+					</div>
+					<div class="row">
+						<span class="label label_radio">
+							<input type="radio" name="search-type" id="search-type-1">
+							<label for="search-type-1">SKU</label>
+						</span>
+						<span class="label label_radio">
+							<input type="radio" name="search-type" id="search-type-2">
+							<label for="search-type-2">Product ID</label>
+						</span>
+					</div>
+				</form>
+			</div>
+			<div class="col col_2">
+				<div class="date-form">
+					<h2 class="sub-title">View updates by date range:</h2>
+					<form action="">
+						<div class="row date-form__controls">
+							<label for="" class="label label_from">From</label>
+							<div class="form-group">
+								<input type="text" class="form-control" id="datepicker-from">
+ 								<i class="ui-datepicker-trigger icon-calendar"></i>
+							</div>
+							<label for="" class="label label_to">to</label>
+							<div class="form-group">
+								<input type="text" class="form-control" id="datepicker-to">
+ 								<i class="ui-datepicker-trigger icon-calendar"></i>
+							</div>
+							<input type="submit" class="btn" value="APPLY">
+						</div>
+						<div class="row date-form__links">
+							<span class="pseudo-link date-form__link">Last update</span>
+							<span class="pseudo-link date-form__link">Last 24h</span>
+							<span class="pseudo-link date-form__link">Last 3 Days</span>
+							<span class="pseudo-link date-form__link_reset">Reset</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="products-wrap">
+			<h2 class="sub-title">Product List</h2>
+			<table class="products">
+				<tr>
+					<th>SKU</th>
+					<th>STORE ID</th>
+					<th>LAST UPDATE</th>
+					<th class="products__right-text">QTY IN STOCK</th>
+				</tr>
+				<tr>
+					<td>15361358913</td>
+					<td>36794269</td>
+					<td>Feb 02, 2014</td>
+					<td><div class="products__qty">
+						<span class="products__qty-text active">30</span>
+						<div class="popup popup_qty">
+							<h2 class="popup__title">Change Qty in Stock</h2>
+							<div class="row">
+								<label for="" class="label">New Value:</label>
+								<input type="text" class="form-control" value="30">
+							</div>
+							<input type="reset" value="CANCEL" class="btn btn_cancel">
+							<input type="submit" value="UPDATE" class="btn">
+						</div>
+					</div></td>
+				</tr>
+				<tr>
+					<td>15361358913</td>
+					<td>36794269</td>
+					<td>Feb 02, 2014</td>
+					<td><div class="products__qty">
+						<span class="products__qty-text">30</span>
+					</div></td>
+				</tr>
+				<tr>
+					<td>15361358913</td>
+					<td>36794269</td>
+					<td>Feb 02, 2014</td>
+					<td><div class="products__qty">
+						<span class="products__qty-text">30</span>
+					</div></td>
+				</tr>
+				<tr>
+					<td>15361358913</td>
+					<td>36794269</td>
+					<td>Feb 02, 2014</td>
+					<td><div class="products__qty">
+						<span class="products__qty-text">30</span>
+					</div></td>
+				</tr>
+				<tr>
+					<td>15361358913</td>
+					<td>36794269</td>
+					<td>Feb 02, 2014</td>
+					<td><div class="products__qty">
+						<span class="products__qty-text">30</span>
+					</div></td>
+				</tr>
+				<tr>
+					<td>15361358913</td>
+					<td>36794269</td>
+					<td>Feb 02, 2014</td>
+					<td><div class="products__qty">
+						<span class="products__qty-text">30</span>
+					</div></td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="pagination-wrap">
+			<ul class="pagination">
+				<li class="disabled"><a href="#">&laquo;</a></li>
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&raquo;</a></li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
