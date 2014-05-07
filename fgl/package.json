@@ -1,0 +1,14 @@
+{
+  "name": "FrontendBoilerplateByMirantel",
+  "version": "0.1.0",
+  "description": "Version by 06.05.14",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-autoprefixer": "~0.7.3",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-csso": "^0.6.1",
+    "grunt-stylus-sprite": "~1.1.1",
+    "grunt-contrib-stylus": "~0.15.0"
+  }
+}

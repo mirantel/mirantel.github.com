@@ -8,8 +8,7 @@ a {
   color: #4597d7;
 }
 a:hover,
-a:active,
-a:focus {
+a:active {
   text-decoration: none;
 }
 input {
@@ -29,7 +28,7 @@ input {
   height: 40px;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 11;
 }
 .logo {
   background: url("../img/logo@2x.png") no-repeat 10px center;
@@ -46,24 +45,42 @@ input {
   -ms-user-select: none;
   user-select: none;
 }
-.header-selector {
-  color: #fff;
-  margin-left: 6px;
-  font-size: 12px;
-  text-decoration: none;
-  border-bottom: 1px dashed #fff;
-}
-.header-selector:hover {
-  border-bottom: none;
-}
-.select-arrow {
-  margin-top: 10px;
+.select-store {
   display: inline-block;
+}
+.select-store__text {
+  font-size: 12px;
+  color: #fff;
+  border-bottom-color: #fff;
+  position: relative;
+  display: inline-block;
+  margin-left: 25px;
+}
+.select-store__text:after {
+  content: "";
+  position: absolute;
   border: 5px solid transparent;
   border-top: 5px solid #fff;
-  display: inline;
-  margin: 18px 6px;
-  position: absolute;
+  top: 6px;
+  right: -14px;
+}
+.select-store__list {
+  list-style: none;
+  padding-left: 18px;
+  font-size: 15px;
+  margin: 0;
+  height: 340px;
+  overflow: auto;
+  min-width: 255px;
+}
+.select-store__list li {
+  margin: 15px 0;
+}
+.select-store__list a {
+  text-decoration: none;
+}
+.select-store__list a:hover {
+  color: #575757;
 }
 .sidebar {
   position: fixed;
@@ -275,7 +292,7 @@ input {
   width: 113px;
   font-size: 12px;
   padding-left: 35px;
-  background: none;
+  background: transparent;
 }
 .date-form .form-control:focus + .icon-calendar {
   background-image: url("../img/icon-calendar-h.png");
@@ -344,7 +361,9 @@ input {
 .ui-datepicker-month,
 .ui-datepicker-year {
   height: 34px;
-  font-size: 13px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 .ui-datepicker-month {
   width: 158px;
@@ -372,7 +391,7 @@ input {
 }
 .ui-datepicker td {
   width: 32px;
-  padding: 10px 0;
+  padding: 6px 0;
 }
 .ui-datepicker td a {
   display: block;
@@ -429,6 +448,7 @@ input {
   color: #575757;
 }
 .popup {
+  display: none;
   position: absolute;
   z-index: 1;
   border: 1px solid #cfcfcf;
@@ -481,6 +501,20 @@ input {
 .popup_qty .btn_cancel {
   margin-right: 1px;
   width: 90px;
+}
+.popup_store {
+  z-index: 11;
+  display: block;
+  padding: 10px;
+  left: 0;
+  top: 40px;
+  height: 340px;
+}
+.popup_store:before {
+  left: 120px;
+  margin-left: -5px;
+  top: -5px;
+  border-width: 1px 0 0 1px;
 }
 .pagination-wrap {
   text-align: center;
@@ -572,7 +606,7 @@ input {
 .cache-table .cache-table__td_summary {
   padding: 0 0 0 10px;
   vertical-align: bottom;
-  width: 157px;
+  width: 130px;
 }
 .cache-summary {
   padding: 10px;
