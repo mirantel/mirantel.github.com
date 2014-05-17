@@ -1,0 +1,32 @@
+html, body, .wrap { height: 100%; }
+
+.wrap { min-height: 100%; }
+
+.main { padding: 0 0 65px; }
+
+.footer { position: relative; height: 45px; margin-top: -45px; }
+.footer .navbar { margin: 0; }
+
+.headings-top-0 { margin-top: 0; }
+
+.form-control { box-shadow: none; }
+
+.navbar-brand { padding: 0 15px; line-height: 45px; }
+.navbar-brand i { color: #ffcc33; font-size: 31px; vertical-align: middle; position: relative; top: -3px; }
+
+.navbar { border: 0; }
+.navbar .navbar-nav > li > a { -webkit-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; }
+
+.navbar-inverse { box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4); }
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus { box-shadow: 0 -5px 0 #3ac8ff inset; }
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus { box-shadow: none; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { box-shadow: 0 5px 0 #3ac8ff inset; }
+
+.promo-page { margin-top: 90px; }
+.promo-page .col-md-6 { padding-left: 25px; padding-right: 25px; }
+
+.panel-authorization { background: #178cc6; color: #fff; margin-bottom: 0; }
+.panel-authorization .h3 { color: #fff; }
+.panel-authorization .form-control { border-color: transparent; }
+.panel-authorization:after { content: ""; position: absolute; top: 0; bottom: 0; right: -1px; width: 2px; background: #ffcc33; }
