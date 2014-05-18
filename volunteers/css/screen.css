@@ -1,4 +1,4 @@
-html, body, .wrap { height: 100%; }
+html, body { height: 100%; }
 
 .wrap { min-height: 100%; }
 
@@ -11,6 +11,19 @@ html, body, .wrap { height: 100%; }
 
 .form-control { box-shadow: none; }
 
+.form-group { margin-bottom: 17px; }
+
+.radio, .checkbox { position: relative; padding-left: 25px; margin-bottom: 15px; }
+.radio input, .checkbox input { display: none; }
+.radio input:checked + label:before, .checkbox input:checked + label:before { box-shadow: 0 0 0 3px #fff inset; background: #ffcc33; }
+.radio input + label:before, .checkbox input + label:before { content: ""; position: absolute; top: 4px; left: 0; height: 15px; width: 15px; background: #fff; }
+
+.radio input + label:before { border-radius: 50%; }
+
+.btn { -webkit-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; height: 43px; text-transform: uppercase; }
+
+.form-group-last { margin-bottom: 0; }
+
 .navbar-brand { padding: 0 15px; line-height: 45px; }
 .navbar-brand i { color: #ffcc33; font-size: 31px; vertical-align: middle; position: relative; top: -3px; }
 
@@ -21,12 +34,21 @@ html, body, .wrap { height: 100%; }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus { box-shadow: 0 -5px 0 #3ac8ff inset; }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus { box-shadow: none; }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { box-shadow: 0 5px 0 #3ac8ff inset; }
-
 .promo-page { margin-top: 90px; }
 .promo-page .col-md-6 { padding-left: 25px; padding-right: 25px; }
 
 .panel-authorization { background: #178cc6; color: #fff; margin-bottom: 0; }
 .panel-authorization .h3 { color: #fff; }
 .panel-authorization .form-control { border-color: transparent; }
+.panel-authorization a { color: #fff; }
+.panel-authorization .pull-right { float: right; }
+.panel-authorization .text-devider { margin: 0 15px; }
 .panel-authorization:after { content: ""; position: absolute; top: 0; bottom: 0; right: -1px; width: 2px; background: #ffcc33; }
+
+.btn-inverse { border: 2px solid #fff; color: #fff; background: #178cc6; }
+.btn-inverse:hover { color: #fff; background: #1a9cdd; }
+
+.btn-auth { width: 40%; }
+
+.btn-reg { border: 2px solid #ffcc33; color: #fff; background: #ffcc33; width: 100%; }
+.btn-reg:hover { border-color: #fff; color: #fff; }
