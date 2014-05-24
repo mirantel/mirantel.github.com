@@ -1384,6 +1384,17 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .label-danger { background-color: #e74c3c; }
 .label-danger[href]:hover, .label-danger[href]:focus { background-color: #d62c1a; }
 
+.badge { display: inline-block; min-width: 10px; padding: 3px 7px; font-size: 13px; font-weight: bold; color: white; line-height: 1; vertical-align: baseline; white-space: nowrap; text-align: center; background-color: #e74c3c; border-radius: 10px; }
+.badge:empty { display: none; }
+.btn .badge { position: relative; top: -1px; }
+.btn-xs .badge { top: 0; padding: 1px 5px; }
+
+a.badge:hover, a.badge:focus { color: white; text-decoration: none; cursor: pointer; }
+
+a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { color: white; background-color: white; }
+
+.nav-pills > li > a > .badge { margin-left: 3px; }
+
 .panel { margin-bottom: 25px; background-color: white; border: 1px solid transparent; border-radius: 0; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
 
 .panel-body { padding: 20px; }
