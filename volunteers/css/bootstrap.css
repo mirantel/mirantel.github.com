@@ -1469,3 +1469,24 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge { color: wh
 .panel-danger > .panel-heading { color: #a94442; background-color: #f2dede; border-color: #ebccd1; }
 .panel-danger > .panel-heading + .panel-collapse .panel-body { border-top-color: #ebccd1; }
 .panel-danger > .panel-footer + .panel-collapse .panel-body { border-bottom-color: #ebccd1; }
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+.center-block { display: block; margin-left: auto; margin-right: auto; }
+
+.pull-right { float: right !important; }
+
+.pull-left { float: left !important; }
+
+.hide { display: none !important; }
+
+.show { display: block !important; }
+
+.invisible { visibility: hidden; }
+
+.text-hide { font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
+
+.hidden { display: none !important; visibility: hidden !important; }
+
+.affix { position: fixed; }

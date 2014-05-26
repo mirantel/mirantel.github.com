@@ -5,16 +5,17 @@
 	<title>Template</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,500italic,500,700,700italic,900,900italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" media="screen" href="css/bootstrap.css" >
-	<link rel="stylesheet" media="screen" href="css/fonts-icons.css" >
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" media="screen" href="../public/css/bootstrap.css" >
+	<link rel="stylesheet" media="screen" href="../public/css/fonts-icons.css" >
+	<link rel="stylesheet" media="screen" href="../public/css/screen.css" >
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/bootstrap.min.js"></script>
+	<script src="../public/js/bootstrap-tagsinput.min.js"></script>
 </head>
 <body>
 	<div class="wrap">
 <header class="header">
-	<div class="navbar navbar-inverse">
+	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#">IT-країна <i class="fi-cog"></i> <span>Біржа волонтерів</span></a>
@@ -74,7 +75,6 @@
 								<small>копірайтор</small>
 							</h1>
 						</div>
-						
 
 						<div class="profile-header-contacts">
 							<a href="#" class="contacts-item"><i class="icon-square icon-main-color fi-facebook"></i></a>
@@ -93,7 +93,6 @@
 
 					<div class="tab-content profile-tabs-content">
 						<div class="tab-pane" id="personal">
-							<a href="" class="icon-edit"><i class="icon-square icon-gray fi-pencil"></i></a>
 							<dl class="profile-info">
 								<dt class="profile-title profile-title-left">Дата народження:</dt>
 								<dd class="profile-text">10.10.1980</dd>
@@ -123,7 +122,6 @@
 							</dl>
 						</div>
 						<div class="tab-pane active" id="professional">
-							<a href="" class="icon-edit"><i class="icon-square icon-gray fi-pencil"></i></a>
 							<dl class="profile-info">
 								<dt class="profile-title profile-title-left">Cпеціальність:</dt>
 								<dd class="profile-text">копірайтор</dd>
@@ -132,7 +130,13 @@
 							</dl>
 							<dl class="profile-info">
 								<dt class="profile-title">Професійні навики: </dt>
-								<dd>копірайтинг одностранічнікі pr-тексти Комерційна пропозиція ведення груп в соц.мережах</dd>
+								<dd class="profile-tags">
+									<span>копірайтинг</span>
+									<span>одностранічнікі</span>
+									<span>pr-тексти</span>
+									<span>Комерційна пропозиція</span>
+									<span>ведення груп в соц.мережах</span>
+								</dd>
 							</dl>
 
 							<div class="profile-text">
@@ -142,7 +146,6 @@
 							</div>
 						</div>
 						<div class="tab-pane" id="projects">
-							<a href="" class="icon-edit"><i class="icon-square icon-gray fi-pencil"></i></a>
 							<h3 class="profile-title"><a href="">MediaPlazm</a></h3>
 							<dl>
 								<dt class="profile-title profile-title-left">Роль:</dt>
