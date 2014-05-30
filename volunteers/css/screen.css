@@ -21,12 +21,21 @@ html, body { height: 100%; }
 
 .radio input + label:before { border-radius: 50%; }
 
-.btn { -webkit-transition: background 0.2s ease-out 0s; transition: background 0.2s ease-out 0s; text-transform: uppercase; }
+.btn { -webkit-transition: background 0.2s ease-out 0s; transition: background 0.2s ease-out 0s; text-transform: uppercase; text-decoration: none !important; }
 
-.icon-square { height: 28px; width: 28px; text-align: center; line-height: 28px; font-size: 19px; border-radius: 4px; -webkit-transition: background 0.2s ease-out 0s; transition: background 0.2s ease-out 0s; }
+.icon-square, .icon-circle { text-align: center; font-size: 19px; -webkit-transition: background 0.2s ease-out 0s; transition: background 0.2s ease-out 0s; }
 
-.icon-main-color { color: #fff; background: #178cc6; }
-.icon-main-color:hover { background: #41b1e9; }
+.icon-square { height: 32px; width: 32px; line-height: 32px; }
+
+.icon-circle { height: 32px; width: 32px; line-height: 28px; font-size: 19px; border-radius: 50%; border: 2px solid transparent; }
+
+.icon-main-color { color: #fff; background: #1179b9; }
+.icon-main-color:hover { background: #2ba2ec; }
+
+.icon-main-color-in { color: #1179b9; background: #fff; border-color: #1179b9; }
+.icon-main-color-in:hover { background: #1179b9; color: #fff; }
+
+.icon-disabled-in, .icon-disabled-in:hover { background: #FFF; color: #e6e6e6; border-color: #e6e6e6; cursor: default; }
 
 .icon-add-color { color: #69570f; background: #ffd52c; }
 .icon-add-color:hover { background: #ffe478; }
@@ -34,65 +43,66 @@ html, body { height: 100%; }
 .icon-gray { color: #f7f7f7; background: #c4c4c4; }
 .icon-gray:hover { background: #d1d1d1; }
 
-.icon-square.fa-facebook:before, .icon-square.fa-twitter:before { position: relative; top: 1px; }
+.icon-square.fa-facebook:before, .icon-square.fa-twitter:before, .icon-circle.fa-facebook:before, .icon-circle.fa-twitter:before { position: relative; top: 1px; }
 
-.icon-square.fi-mail { font-size: 16px; }
+.icon-square.fi-mail, .icon-circle.fi-mail { font-size: 16px; }
 
 .form-group-last { margin-bottom: 0; }
 
 .badge-notif { position: absolute; font-weight: normal; font-size: 10px; padding: 3px 5px; top: 5px; right: 4px; box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.3); }
 
-.block-main-color { background: #178cc6; color: #fff; }
+.block-main-color { background: #1179b9; color: #fff; }
 .block-main-color .h3 { color: #fff; }
 .block-main-color .form-control { border-color: transparent; }
-.block-main-color a { color: #fff; }
+.block-main-color a { color: #fff; text-decoration: underline; }
+.block-main-color a:hover { text-decoration: none; }
 
-.btn-inverse { color: #fff; background: #178cc6; border: 2px solid #fff; }
-.btn-inverse:hover { color: #fff; background: #1a9cdd; }
+.btn-inverse { color: #fff; background: #1179b9; border: 2px solid #fff; }
+.btn-inverse:hover { color: #fff; background: #1388d0; }
 
 .navbar-brand { padding: 0 15px; line-height: 45px; }
-.navbar-brand i { color: #ffd52c; font-size: 31px; vertical-align: middle; position: relative; }
+.navbar-brand i { color: #ffd52c; font-size: 31px; vertical-align: middle; position: relative; top: 2px; }
 
 .navbar { border: 0; }
 .navbar .navbar-nav > li > a { -webkit-transition: all 0.2s ease-out 0s; transition: all 0.2s ease-out 0s; }
 .navbar .fi-globe { font-size: 21px; margin-top: -4px; }
 
 .navbar-inverse { box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.4); }
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus { box-shadow: 0 -5px 0 #41b1e9 inset; }
+.navbar-inverse .navbar-nav > li > a { padding: 0 15px; line-height: 45px; }
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus { box-shadow: 0 -5px 0 #2ba2ec inset; }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus { box-shadow: none; }
 
 .footer .navbar-text.navbar-right:last-child { margin-right: 15px; }
 
 .promo-page { padding-top: 140px; }
 .promo-page .col-md-6 { padding-left: 25px; padding-right: 25px; }
+.promo-page h1 { font-weight: 100; }
 
 .panel-authorization { margin-bottom: 0; }
 .panel-authorization .pull-right { float: right; }
 .panel-authorization .text-devider { margin: 0 15px; }
-.panel-authorization:after { content: ""; position: absolute; top: 0; bottom: 0; right: -1px; width: 2px; background: #ffd52c; }
 
 .btn-auth { width: 40%; }
 
 .btn-reg { color: #69570f !important; background: #ffd52c; border: 0; width: 100%; line-height: 27px; }
 .btn-reg:hover { background: #ffe478; }
 
-.profile { background: #fcfcfc; }
-
-.profile-header { background: #fff; padding: 0 0 30px; position: relative; min-height: 200px; }
+.profile-header { padding: 0 0 32px; position: relative; min-height: 190px; }
 .profile-header a { color: #fff; }
 .profile-header h1 { margin: 12px 0 -3px; word-wrap: break-word; font-weight: 400; }
 .profile-header h1 span { display: block; }
-.profile-header h1 small { display: block; margin-top: 18px; line-height: 1.18; text-transform: lowercase; font-weight: 100; color: #666666; letter-spacing: -0.01em; }
-.profile-header .icon-edit { position: absolute; bottom: 30px; right: 0; }
+.profile-header h1 small { display: block; margin-top: 15px; line-height: 1.18; text-transform: lowercase; font-weight: 100; color: #666666; letter-spacing: -0.01em; }
+.profile-header .icon-edit { position: absolute; bottom: -40px; z-index: 2; right: 0; }
+.profile-header .icon-edit .fi-pencil { height: 39px; width: 39px; line-height: 39px; text-align: center; font-size: 21px; }
 .profile-header:before, .profile-header:after { content: " "; display: table; }
 .profile-header:after { clear: both; }
 
-.profile-photo { float: left; height: 130px; width: 130px; background: #fff; border: 5px solid #178cc6; margin-right: 20px; overflow: hidden; margin-bottom: 35px; }
+.profile-photo { float: left; height: 130px; width: 130px; background: #fff; border: 5px solid #1179b9; margin-right: 20px; overflow: hidden; margin-bottom: 30px; }
 .profile-photo img { max-width: 130px; }
 
 .profile-photo-available { border-color: #2ecc71; }
 
-.profile-status { position: absolute; bottom: 30px; left: 0; }
+.profile-status { position: absolute; bottom: 40px; left: 0; }
 .profile-status .caret { position: absolute; top: 11px; right: 9px; font-size: 5px; }
 .profile-status .dropdown-menu { padding: 0; width: 130px; min-width: inherit; text-align: center; font-size: 13px; line-height: 20px; font-weight: bold; text-transform: uppercase; }
 .profile-status .dropdown-menu > li { cursor: pointer; }
@@ -103,33 +113,41 @@ div.profile-status-btn { text-transform: uppercase; color: #fff; background: #2e
 
 .profile-header-info { width: 340px; float: left; }
 
-.profile-header-contacts { position: absolute; right: 0; top: 0; text-align: right; }
+.profile-header-contacts { position: absolute; right: 0; top: 0; }
 
-.contacts-item { display: inline-block; vertical-align: top; margin: 0 0 10px 5px; }
+.contacts-item { display: inline-block; vertical-align: top; margin: 0 0 10px 7px; }
 
-.profile-header-phone { font-size: 16px; font-style: italic; word-spacing: 0.1em; }
-.profile-header-phone i { margin-right: 6px; position: relative; top: 3px; }
+.profile-header-phone, .profile-header-skype { max-width: 170px; word-wrap: break-word; font-style: italic; padding-left: 27px; position: relative; margin-bottom: 8px; }
+.profile-header-phone i, .profile-header-skype i { position: absolute; }
 
-.profile-tabs > li { background: whitesmoke; width: 33.3333333%; }
-.profile-tabs > li > a { margin: 0; border-bottom-color: #ddd; border-left-color: #ddd; border-top-color: #ddd; color: #999999; padding: 10px 20px; }
-.profile-tabs > li:last-child a { border-right-color: #ddd; }
-.profile-tabs > li.active + li a { border-left-color: transparent; }
-.profile-tabs > li.active a { font-weight: 500; }
-.profile-tabs > li:hover > a { background: #f0f0f0; color: gray; border-bottom-color: #ddd; border-left-color: #ddd; border-top-color: #ddd; }
+.profile-header-phone { word-spacing: 0.2em; font-size: 16px; }
+.profile-header-phone i { top: 3px; left: 4px; }
 
-.profile-tabs-content { border: 1px solid #ddd; border-top: 0; padding: 20px; position: relative; }
-.profile-tabs-content .icon-edit { float: right; margin: 0 0 20px 20px; opacity: 0.6; }
+.profile-header-skype { font-size: 13px; }
+.profile-header-skype i { color: #1179b9; top: -7px; font-size: 21px; left: 3px; }
 
+.profile-tabs { position: relative; border: 1px solid #d9d9d9; border-width: 1px 0; }
+.profile-tabs > li { margin-bottom: 0; }
+.profile-tabs > li > a { margin: 0; color: #999999; padding: 6px 12px; font-weight: 100; text-transform: uppercase; font-size: 15px; -webkit-transition: all 0.2s ease-out 0s; transition: all 0.2s ease-out 0s; }
+.profile-tabs > li:hover > a { background: transparent; color: #2ba2ec; border-bottom-color: transparent; }
+
+.profile-tabs-content { border-top: 0; padding: 40px 0 20px; position: relative; }
+
+.profile-info { margin-bottom: 25px; }
 .profile-info:before, .profile-info:after { content: " "; display: table; }
 .profile-info:after { clear: both; }
 
-.profile-title { color: #404040; font-weight: 500; }
+.profile-title { color: #bfbfbf; font-weight: 500; text-transform: uppercase; line-height: 1.5; font-size: 13px; }
 
-h3.profile-title { margin-top: 0; font-size: 18px; margin-bottom: 7px; }
+h3.profile-title { margin-top: 0; font-size: 22px; margin-bottom: 3px; font-weight: 100; }
+h3.profile-title .profile-role { font-size: 18px; font-weight: 100; text-transform: lowercase; font-style: italic; border-left: 1px solid; display: inline-block; margin-left: 10px; padding-left: 10px; }
 
-.profile-title-left { float: left; min-width: 29.3333333%; min-width: -webkit-calc(33.333333% - 25px); min-width: calc(33.333333% - 25px); margin-right: 15px; clear: left; }
+.profile-text { margin-bottom: 15px; line-height: 1.5; }
 
-.profile-tags span { display: inline-block; background: #41b1e9; margin: 6px 2px 0 0; padding: 0 8px; color: #fff; cursor: default; }
+.profile-date { font-size: 13px; color: #bfbfbf; }
+
+.profile-tags { margin-bottom: 15px; }
+.profile-tags span { display: inline-block; background: #2ba2ec; margin: 6px 2px 0 0; padding: 0 8px; color: #fff; cursor: default; }
 
 .bootstrap-tagsinput { background-color: #fff; border: 1px solid #ccc; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); padding: 4px 6px; margin-bottom: 10px; color: #555; vertical-align: middle; border-radius: 4px; max-width: 100%; line-height: 22px; }
 
@@ -148,3 +166,7 @@ h3.profile-title { margin-top: 0; font-size: 18px; margin-bottom: 7px; }
 .bootstrap-tagsinput .tag [data-role="remove"]:hover:active { box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 
 .profile-edit .profile-header-info { width: auto; float: none; margin-left: 150px; }
+
+.profile-sidebar { position: fixed; }
+
+.profile-nav { padding: 0; list-style: none; }
