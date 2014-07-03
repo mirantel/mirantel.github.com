@@ -89,16 +89,28 @@
 				0 0 $sh 60px #3300ff,
 				0 0 $sh 70px #ff00ff;
 }
-.box-shadow_4{
+.box-shadow_4,
+.box-shadow_5{
 	margin: 150px auto 0;
+	
+	border-radius: 50%;
+	
+}
+.box-shadow_4 {
 	width: 100px;
 	height: 100px;
-	border-radius: 50%;
 	box-shadow: 51px 71px 0 #c955f6,
 				-51px 71px 0 #c955f6,
 				0 -87px 0 #e8b6fb,
 				80px -26px 0 #d886f9,
 				-80px -26px 0 #d886f9;
+}
+
+.box-shadow_5 {
+	width: 30px;
+	height: 30px;
+	box-shadow: 441px 61px 0 25px #c955f6,
+	-41px 61px 0 25px #c955f6, 0 -72px 0 25px #e8b6fb, 65px -19px 0 25px #d886f9, -65px -19px 0 25px #d886f9
 }
 .block-holder{
 	width: 100%;
@@ -108,14 +120,14 @@
 	border-radius: 40px;
 	position: relative;
 }
-.box-shadow_5{
+.box-shadow_6{
 	background: transparent;
 }
-.box-shadow_6{
+.box-shadow_7{
 	background: #fff;
 }
-.box-shadow_5,
-.box-shadow_6{
+.box-shadow_6,
+.box-shadow_7{
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -317,10 +329,29 @@ div.foo{
 
 // new
 
-.bg-circles {
-	background-image: url(../pictures/circles.jpg) !important;
+.slide_bg {
 	background-size: cover;
 	h2 {
 		color: #FFF;
 	}
+}
+
+.bg-circles {
+	background-image: url(../pictures/circles.jpg) !important;
+}
+
+.bg-shadow {
+	background-image: url(../pictures/shadow.jpg) !important;
+}
+
+.bg-bg {
+	background-image: url(../pictures/bg.jpg) !important;
+}
+
+.bg-main {
+	background-image: url(../pictures/matrix-lines.jpg) !important;
+}
+
+.bg-radius-ex {
+	background-image: url(../pictures/ex-radius.jpg) !important;
 }
