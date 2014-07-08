@@ -91,7 +91,8 @@
 }
 
 .box-shadow_4,
-.box-shadow_5 {
+.box-shadow_5-1,
+.box-shadow_5-2 {
   margin: 150px auto 0;
   border-radius: 50%;
 }
@@ -102,10 +103,16 @@
   box-shadow: 51px 71px 0 #c955f6, -51px 71px 0 #c955f6, 0 -87px 0 #e8b6fb, 80px -26px 0 #d886f9, -80px -26px 0 #d886f9;
 }
 
-.box-shadow_5 {
+.box-shadow_5-1 {
   width: 30px;
   height: 30px;
-  box-shadow: 441px 61px 0 25px #c955f6, -41px 61px 0 25px #c955f6, 0 -72px 0 25px #e8b6fb, 65px -19px 0 25px #d886f9, -65px -19px 0 25px #d886f9;
+  box-shadow: 41px 61px 0 35px #c955f6, -41px 61px 0 35px #c955f6, 0 -72px 0 35px #e8b6fb, 65px -19px 0 35px #d886f9, -65px -19px 0 35px #d886f9;
+}
+
+.box-shadow_5-2 {
+  width: 100px;
+  height: 100px;
+  box-shadow: 41px 61px 0 -35px #c955f6, -41px 61px 0 -35px #c955f6, 0 -72px 0 -35px #e8b6fb, 65px -19px 0 -35px #d886f9, -65px -19px 0 -35px #d886f9;
 }
 
 .block-holder {
