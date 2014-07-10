@@ -26,51 +26,52 @@
 		</h2>
 	</div></section>
 
-	<section class="slide shout grow slide_bg bg-circles"><div>
+	<section class="slide shout grow"><div>
 		<h2>
-			Трансформации
-	</div></section>
-
-		<section class="slide"><div>
- <iframe src="http://codepen.io/mirantel/full/GBFKA" width="800" height="520">
-    Ваш браузер не поддерживает плавающие фреймы!
- </iframe>
-	</div></section>
-
-
-	<section class="slide shout grow slide_bg bg-radius-ex"><div>
-		
-	</div></section>bg-radius-ex
-
-	<section class="slide"><div>
-		<h2 class="h2">border-radius &ndash; скругляем уголки.</h2>
-		<code>
-			border-radius: a b c d;
-		</code>
-		<div class="block block_big border-radius_1 ">
-			<span>a</span>
-			<span>b</span>
-			<span>d</span>
-			<span>c</span>
-		</div>
+			2D Трансформации
 	</div></section>
 
 	<section class="slide"><div>
-		<h2>Можно так:</h2>
-		<div class="cols">
-			<div class="col">
-				<code>border-radius: 100px;</code>
-				<code>height: 200px;</code><br>
-				<code>width: 300px;</code><br>
-				<div class="block border-radius_3"></div>
-			</div>
-			<div class="col">
-				<code>border-radius: 50%;</code>
-				<code>height: 200px;</code><br>
-				<code>width: 300px;</code><br>
-				<div class="block border-radius_2"></div>
-			</div>
-		</div>
+		<h2 class="h2">Transform</h2>
+		<ul>
+			<li>translate - сдвиг</li>
+			<li>scale - масштабирование</li>
+			<li>rotate - поворот</li>
+			<li>skew - наклон</li>
+			<li>matrix - матрица</li>
+		</ul>
+	</div></section>
+
+<!-- 	<section class="slide"><div>
+		<pre><code><mark>transform:</mark> rotate(<угол>)
+			scale(sx[, sy])     translate(tx[, ty])
+			scaleX(sx)          translateX(tx)
+			scaleY(sy)          translateY(ty)
+			skewX(<угол>)       matrix
+			skewY(<угол>)
+</code></pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Система координат</h2>
+		<img src="pictures/axis.jpg" alt="" height="80%">
+	</div></section> -->
+
+	<section class="slide"><div>
+		<h2>Translate &ndash; сдвиг</h2>
+		<pre><code><mark>transform:</mark> translate(tx[, ty])
+			translateX(tx)
+			translateY(ty)
+</code></pre>
+	<div class="tr-box"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Translate &ndash; сдвиг</h2>
+		<pre><code><mark>transform:</mark> translate(tx[, ty])
+			translateX(tx)
+			translateY(ty)
+</code></pre>
 	</div></section>
 
 	<section class="slide"><div>
@@ -280,18 +281,7 @@
 	<section class="slide shout grow slide_bg bg-bg"><div>
 		<h2>Фоны<br>Градиенты</h2>
 	</div></section>
-	<section class="slide"><div>
-		<h2 class="h2">background &ndash; фон.</h2>
-		<pre><code><mark>background:</mark> background-color
-			 background-image
-			 background-repeat
-			 background-attachment
-			 background-position
-			 background-clip
-			 background-origin
-			 background-size
-</code></pre>
-	</div></section>
+	
 
 	<section class="slide"><div>
 		<code>background-color</code> &ndash; цвет фона;<br>
