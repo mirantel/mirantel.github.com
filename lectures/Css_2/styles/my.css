@@ -29,6 +29,13 @@
   height: 0;
   border: 70px solid;
   border-color: #0082d1 #ffd100 #0082d1 #ffd100;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.tr-box_1:hover {
+  -webkit-transform: translateX(50px) translateY(-20px);
+  transform: translateX(50px) translateY(-20px);
 }
 
 .slide_bg {

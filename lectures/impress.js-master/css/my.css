@@ -1,0 +1,13 @@
+.tr-box {
+	width: 0;
+	height: 0;
+	border: 100px solid;
+	border-color: #0082d1 #ffd100 #0082d1 #ffd100;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.tr-box_1:hover {
+	-webkit-transform: translateX(100px) translateY(-50px);
+	transform: translateX(50px) translateY(20px);
+}
