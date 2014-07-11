@@ -1,0 +1,171 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/my.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="title" data-x='-2800' data-y='-1000' data-z='500' data-rotate='60' data-rotate-x='-15' data-rotate-y='15' data-scale='1' class="step">
+        <h1>Advanced CSS <br>
+            Часть 3
+        </h1>
+    </div>
+
+    <div id="3d" data-x='0' data-y='-1000' data-rotate='90' data-scale='0.15' class="step">
+        <h2>3D Трансформации</h2>
+    </div>
+
+    <div id="3d-1" data-x='-2800' data-y='300' data-scale='0.5' class="step property">
+        <h3 class="h2">Transform-style</h3>
+        <code><mark>flat</mark></code> - дочерние элементы лежат в той же плоскости, что и их родитель
+        <code><mark>preserve-3d</mark></code> - дочерние элементы будут отображаться в 3D-пространстве.
+</code></pre>
+    </div>
+
+    <div id="3d-2"  data-x='-1800' data-y='300' data-scale='0.5' class="step property">
+        <h3 class="h2">Перспектива</h3>
+        <code><mark>perspective</mark> как сильно изменится блок</code>
+        <code><mark>perspective-origin</mark> точка опоры
+                    left | center | right | 
+                    top | bottom | процент | 
+                    длина</code>
+    </div>
+
+    <div id="3d-3" data-x='800' data-y='300' data-scale='0.5' class="step property">
+        <h3 class="h2">3D Transform</h3>
+        <ul>
+            <li>translate3D - сдвиг</li>
+            <li>scale3D - масштабирование</li>
+            <li>rotate3D - поворот</li>
+            <li>matrix3D - матрица</li>
+            <li>perspective - перспектива</li>
+        </ul>
+    </div>
+
+    <div id="3d-4"  data-x='1800' data-y='300' data-scale='0.5' class="step property">
+        <h3 class="h2">Translate3D &ndash; сдвиг</h3>
+        <pre><code><mark>transform3D:</mark> translate3D(x,y,z)
+              translateX(x)
+              translateY(y)
+              translateY(z)
+</code></pre>
+<div class="tr-box-hold">
+    <div class="tr-box tr-box_2-1"></div>
+</div>
+    </div>
+
+    <div id="3d-5"  data-x='2800' data-y='600' data-z='100' data-rotate-x='-75' data-scale='0.25' class="step">
+        <h3 class="h2">Код:</h3>
+        <pre><code><mark>transform:</mark> translate3D(50px, -50px, 100px);
+</code></pre>
+
+<div class="tr-box-hold">
+    <div class="tr-box tr-box_2-1"></div>
+</div>
+    </div>
+<!--     <div id="3d-4"  data-x='800' data-y='300' data-scale='0.5' class="step property">
+        <h3 class="h2">Scale3D &ndash; масштабирование</h3>
+        <pre><code><mark>transform:</mark> scale3D(x,y,z)
+            scaleX(x)
+            scaleY(y)
+            scaleY(z)
+</code></pre>
+<div class="tr-box tr-box_2-3"></div>
+<div class="tr-box tr-box_2-4"></div>
+    </div>
+
+    <div id="3d-5"  data-x='1800' data-y='600' data-z='100' data-rotate-x='-75' data-scale='0.25' class="step">
+        <h3 class="h2">Код:</h3>
+        <pre><code><mark>transform:</mark> scale3D(2, 1, 0);
+<mark>transform:</mark> scale3D(-2, 2, -3);
+</code></pre>
+<div class="tr-box-hold">
+<div class="tr-box tr-box_2-3"></div>
+</div>
+<div class="tr-box-hold">
+<div class="tr-box tr-box_2-4"></div>
+</div>
+    </div> -->
+
+
+    <div id="3d-6"  data-x='3800' data-y='300' data-scale='0.5' class="step property">
+        <h3 class="h2">Rotate3D &ndash; поворот</h3>
+        <pre><code><mark>transform:</mark> rotate3D(x,y,z,угол)
+</code></pre>
+<div class="tr-box-hold">
+    <div class="tr-box tr-box_2-5"></div>
+</div>
+
+    </div>
+
+    <div id="3d-7"  data-x='4800' data-y='600' data-z='100' data-rotate-x='-75' data-scale='0.25' class="step">
+        <h3 class="h2">Код:</h3>
+        <pre><code><mark>transform:</mark> rotate3D(-1, 1, 1, 180deg)
+</code></pre>
+<div class="tr-box-hold">
+    <div class="tr-box tr-box_2-5"></div>
+</div>
+    </div>
+
+    <div id="3d-8"  data-x='5800' data-y='300' data-scale='0.5' class="step property">
+
+    </div>
+
+    <div id="3d-9"  data-x='6800' data-y='600' data-z='100' data-rotate-x='-75' data-scale='0.25' class="step">
+
+    </div>
+
+    <div id="3d-10"  data-x='7800' data-y='300' data-scale='0.5' class="step property">
+
+    </div>
+
+    <div id="3d-11"  data-x='8800' data-y='300' data-scale='0.5' class="step property">
+
+    </div>
+
+
+
+
+
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
