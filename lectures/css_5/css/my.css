@@ -1,0 +1,30 @@
+.reveal li {
+	margin: 0.5em 0;
+}
+.reveal pre {
+	margin-bottom: 30px;
+	width: 100%;
+}
+.reveal .big-pre {
+	width: 60%;
+	font-size: 25px;
+	margin-bottom: 40px;
+	/*margin-top: 40px;*/
+}
+.reveal li .big-pre {
+	width: 100%;
+}
+.cols {
+	overflow: hidden;
+}
+.col-2 {
+	float: left;
+	width: 50%;
+}
+
+.reveal section .border-none,
+.reveal section .border-none:hover{
+	border: 0;
+	box-shadow: none;
+	background: none;
+}
