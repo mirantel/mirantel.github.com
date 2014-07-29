@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSS3</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=680, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="styles/screen.css">
+	<link rel="stylesheet" href="styles/my.css">
+	<link rel="stylesheet" href="styles/flowers.css">
+</head>
+<body class="list">
+	<!--
+		Debug class on <body> enables
+		cyan grid on slides
+		-->
+	<header class="caption">
+		<h1>CSS3<br>Магия в действии</h1>
+		<p><a href="">Светлана Пилипенко</a>, EPAM Systems.</p>
+	</header>
+
+	<section class="slide shout grow "><div>
+		<h2>
+			CSS3<br>
+			<span class="next">Магия в действии</span>
+		</h2>
+	</div></section>
+
+	<section class="slide" lang="ru"><div>
+		<h2>При помощи CSS3 можно:</h2>
+		<ul>
+			<li class="next">скруглять,</li>
+			<li class="next">вращать,</li>
+			<li class="next">перемещать</li>
+			<li class="next">и даже анимировать</li>
+			<li class="next">в ЗD!!!</li>
+		</ul>
+	</div></section>
+
+	<section class="slide shout grow"><div>
+		<h2>
+			Все <br>самое вкусное <br>по-порядку
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="h2">border-radius &ndash; скругляем уголки.</h2>
+		<code>
+			border-radius: a b c d;
+		</code>
+		<div class="block block_big border-radius_1 ">
+			<span>a</span>
+			<span>b</span>
+			<span>d</span>
+			<span>c</span>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Можно так:</h2>
+		<div class="cols">
+			<div class="col">
+				<code>border-radius: 100px;</code>
+				<code>height: 200px;</code><br>
+				<code>width: 300px;</code><br>
+				<div class="block border-radius_3"></div>
+			</div>
+			<div class="col">
+				<code>border-radius: 50%;</code>
+				<code>height: 200px;</code><br>
+				<code>width: 300px;</code><br>
+				<div class="block border-radius_2"></div>
+			</div>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Или так:</h2>
+		<div class="cols">
+			<div class="col">
+				<code>
+					border-radius: 100% 0;
+				</code>
+				<div class="block border-radius_4"></div>
+			</div>
+			<div class="col">
+				<code>
+					border-radius: 13% 25% 38% 50%;
+				</code>
+				<div class="block border-radius_5"></div>
+			</div>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="h2">box-shadow &ndash; тень для блока.</h2>
+		<pre><code><mark>box-shadow:</mark> сдвиг по x
+			 сдвиг по y
+			 радиус размытия
+			 растяжение
+			 цвет
+			 inset - если внутренняя
+</code></pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Что получаем:</h2>
+		<code>box-shadow: 10px 10px 30px 0 #ffcc00;</code>
+		<div class="block block_big box-shadow_1"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Теней может быть много:</h2>
+		<pre><code><mark>box-shadow:</mark> 10px 10px 30px 0 #ff6600,
+			 10px 10px 30px 0 #ff6600 inset;
+</code></pre>
+		<div class="block box-shadow_2"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Eще больше:</h2>
+<pre><code><mark>box-shadow:</mark> 0 0 5px 10px #ff0000,
+			 0 0 5px 20px #ffcc00,
+			 0 0 5px 30px #ffff00,
+			 0 0 5px 40px #00ff33,
+			 0 0 5px 50px #00ffff,
+			 0 0 5px 60px #3300ff,
+			 0 0 5px 70px #ff00ff;
+</code></pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Как это выглядит:</h2>
+		<div class="block box-shadow_3"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Лепестки цветка &ndash; это тени?</h2>
+		<div class="block box-shadow_4"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Да!</h2>
+<pre><code><mark>width:</mark> 100px;
+<mark>height:</mark> 100px;
+<mark>border-radius:</mark> 50%;
+<mark>box-shadow:</mark> 51px 71px 0 #c955f6,
+			 -51px 71px 0 #c955f6,
+			 0 -87px 0 #e8b6fb,
+			 80px -26px 0 #d886f9,
+			 -80px -26px 0 #d886f9;
+</code></pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>И это тень?</h2>
+		<div class="block-holder">
+			<div class="block box-shadow_5"></div>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Так понятней, правда?</h2>
+		<div class="block-holder">
+			<div class="block box-shadow_6"></div>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Смотрим код:</h2>
+<pre><code><mark>width:</mark> 150px;
+<mark>height:</mark> 150px;
+<mark>border-radius:</mark> 50%;
+<mark>box-shadow:</mark> -30px 20px 0 0 #ffff66;
+<mark>background:</mark> transparent;
+</code></pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="h2">text-shadow &ndash; тень у текста</h2>
+		<pre><code><mark>text-shadow:</mark> сдвиг по x
+			  сдвиг по y
+			  радиус размытия
+			  цвет
+</code></pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Палиндромы:</h2>
+		<code>text-shadow: 0 0 50px #333;</code>
+		<div class="text-shadow text-shadow_1">
+			Он дивен, палиндром, и ни морд, ни лап не видно...
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Цветной палиндром:</h2>
+		<pre><code><mark>text-shadow:</mark> 0 0 4px  #ccc,
+			  0 -5px 4px #ff3,
+			  2px -10px 6px #fd3,
+			  -2px -15px 11px #f80,
+			  2px -18px 18px #f20;</code></pre>
+		<div class="text-shadow text-shadow_2">
+			А роза упала на лапу азора.
+		</div>
+	</div></section>
+
+	<section class="slide shout grow"><div>
+		<h2>Красивые фоны</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="h2">background-size &ndash; масштабируем фон</h2>
+		<pre><code>
+<mark>background-size:</mark>значение / проценты / auto / 
+				 cover / contain
+</code></pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>А вы видите кота???</h2>
+		<code>background-image: url(../pictures/cat.jpg);</code>
+		<div class="background-size background-size_1"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>А кот есть!</h2>
+		<code>background-image: url(../pictures/cat.jpg);</code><br>
+		<code>background-size: 100% auto;</code>
+		<div class="background-size background-size_2"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Другие значения:</h2>
+		<div class="cols">
+			<div class="col">
+				<code>100% 100%</code>
+				<div class="background-size background-size_3"></div>
+				<code>200px 150px</code>
+				<div class="background-size background-size_4"></div>
+			</div>
+			<div class="col">
+				<code>cover</code>
+				<div class="background-size background-size_5"></div>
+				<code>contain</code>
+				<div class="background-size background-size_6"></div>
+			</div>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="h2">Линейный градиент &ndash; это фоновое изображение.</h2>
+		<pre><code><mark>background-image: linear-gradient</mark>
+			(направление,
+			начальный цвет,
+			промежуточные цвета и их положение в %,
+			конечный цвет)
+</code></pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Двухцветный градиент:</h2>
+		<code>background-image: linear-gradient(green, blue);</code>
+		<div class="linear-gradient linear-gradient_1"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Немного сложнее:</h2>
+		<code>background-image: linear-gradient(to top right, red, white, blue);</code>
+		<div class="linear-gradient linear-gradient_2"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Несколько градиентов:</h2>
+		<code>background-image: linear-gradient(to top left, rgba(255,255,0,0), #99ff00),</code><br>
+		<code>linear-gradient(to top right, rgba(255,255,0,0), red);</code>
+		<div class="linear-gradient linear-gradient_3"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Орнамент из градиентов:</h2>
+		<code>background-color: #026873 no-repeat;</code><br>
+		<code>background-image: linear-gradient(to left, transparent 50%, rgba(255,255,255,.5) 50%);</code><br>
+		<code>background-size: 50px auto;</code>
+		<div class="linear-gradient linear-gradient_4"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Повторяем фрагмент:</h2>
+		<code>background-color: #026873</code><br>
+		<code>background-image: linear-gradient(to left, transparent 50%, rgba(255,255,255,.5) 50%);</code><br>
+		<code>background-size: 50px auto;</code>
+		<div class="linear-gradient linear-gradient_5"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Если градиентов несколько:</h2>
+		<code>background-image: linear-gradient(to right, rgba(255,255,255,.07) 50%, transparent 50%),<br>
+		linear-gradient(to right, rgba(255,255,255,.13) 50%, transparent 50%),<br>
+		linear-gradient(to right, transparent 50%, rgba(255,255,255,.17) 50%),<br>
+		linear-gradient(to right, transparent 50%, rgba(255,255,255,.19) 50%);</code><br>
+		<code>background-size: 13px, 29px, 37px, 53px;</code><br>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Как это выглядит:</h2>
+		<div class="linear-gradient linear-gradient_6"></div>
+	</div></section>
+	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
+
+	<section class="slide"><div>
+		<h2>Другие орнаменты:</h2>
+		<a href="http://lea.verou.me/css3patterns/">lea.verou.me/css3patterns</a>
+		<img src="pictures/grad.jpg" alt="" width="100%">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Радиальный градиент:</h2>
+		<code>background: radial-gradient(ellipse at center, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%);</code><br>
+		<div class="linear-gradient linear-gradient_7"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Круглый:</h2>
+		<code>background: radial-gradient(circle at center, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%);</code><br>
+		<div class="linear-gradient linear-gradient_8"></div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Генератор градиентов:</h2>
+		<a href="http://www.colorzilla.com/gradient-editor/">colorzilla.com/gradient-editor</a>
+		<img src="pictures/grad2.jpg" alt="" width="100%">
+	</div></section>
+
+	<section class="slide shout grow"><div>
+		<h2>2D Анимации</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Летний день. <a href="http://codepen.io/mirantel/pen/bEhcF">код на Codepen</a></h2>
+		<div class='wrap'>
+			<div class='sky'>
+				<div class='night'></div>
+				<div class='day'></div>
+				<div class='stars'>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+					<div class='star'></div>
+				</div>
+			</div>
+			<div class='orbit'>
+				<div class='sun'></div>
+				<div class='moon'></div>
+			</div>
+			<div class='clouds_1'>
+				<div class='cloud'></div>
+				<div class='cloud'></div>
+				<div class='cloud'></div>
+			</div>
+			<div class='clouds_2'>
+				<div class='cloud'></div>
+				<div class='cloud'></div>
+				<div class='cloud'></div>
+				<div class='cloud'></div>
+				<div class='cloud'></div>
+			</div>
+			<div class='fields'>
+				<div class='field'>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+				</div>
+				<div class='field'>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+				</div>
+				<div class='field'>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+					<div class='flower'></div>
+				</div>
+			</div>
+		</div>
+	</div></section>
+
+	<section class="slide shout grow"><div>
+		<h2>3D, Transform,  Transition</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Буквы. <a href="http://codepen.io/diegopardo/pen/GqEho">код на Codepen</a></h2>
+		<div class="foo">
+			<span class="letter" data-letter="A">A</span>
+			<span class="letter" data-letter="B">B</span>
+			<span class="letter" data-letter="C">C</span>
+		</div>
+	</div></section>
+
+	<section class="slide" lang="ru"><div>
+		<h2>Что еще почитать:</h2>
+		<div class="cols lists-none">
+			<div class="col">
+				<ul>
+					<li class="next"><a href="http://web-standards.ru/">Сообщество Веб-стандарты</a></li>
+					<li class="next"><a href="http://tech.yandex.ru/">Яндекс Tech</a></li>
+					<li class="next">Юрий Артюх <a href="http://cssing.org.ua/">cssing.org.ua</a></li>
+					<li class="next">Вадим Макеев <a href="http://pepelsbey.net/">pepelsbey.net</a></li>
+					<li class="next">Антон Немцев <a href="http://frontender.info/">frontender.info</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<ul>
+					<li class="next">Роберт Харитонов <a href="http://rhr.me/">rhr.me</a></li>
+					<li class="next">Артем Сапегин <a href="http://sapegin.ru/">sapegin.ru</a></li>
+					<li class="next">Роман Комаров <a href="http://kizu.ru/">kizu.ru</a></li>
+					<li class="next">Андрей Ситник <a href="http://sitnik.ru/">sitnik.ru</a></li>
+				</ul>
+			</div>
+		</div>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Светлана Пилипенко, EPAM Systems.</h2>
+		<ul>
+			<li><a href="https://twitter.com/Mirantel">@mirantel</a></li>
+			<li><a href="https://github.com/mirantel">github.com/mirantel</a></li>
+		</ul>
+	</div></section>
+
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="js/shower.min.js"></script>
+	<!-- Copyright © 2013 Yours Truly, Famous Inc. -->
+</body>
+</html>
