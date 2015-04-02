@@ -1,0 +1,13 @@
+$items : dasher #f2836b, analytics #60b6e3, company #fb9f00, sites #8cb206, support #facf00, history #f26510;
+@each $i in $items{
+	.ico-#{nth($i,1)}{
+		border-left-color:#{nth($i,2)};
+		&__img{
+		  background: url(../img/icon_#{nth($i,1)}.png);
+		}
+		&:hover {
+		  color:#{nth($i,2)};
+		  box-shadow:0 0 25px rgba(0,0,0,.55) inset, 1px 0 0 #{nth($i,2)} inset;
+		}
+	}
+}

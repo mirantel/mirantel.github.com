@@ -91,7 +91,7 @@
 
 
 
-				<section>
+<!-- 				<section>
 					<h2>Установка</h2>
 					<h3>SASS</h3>
 					<pre><code data-trim contenteditable>
@@ -112,7 +112,7 @@ $ lessc styles.less
 $ npm install stylus
 $ stylus css --watch
 					</code></pre>
-				</section>
+				</section> -->
 				<section>
 					<h2>Синтаксис</h2>
 					<h3>LESS и SCSS</h3>
@@ -303,24 +303,32 @@ button-background = #27adec
 				</section>
 
 				<section>
-					<h2>Раскрытие импортов</h2>
-					<pre><code data-trim contenteditable>
-@import "compass/css3";
-@import "susy";
-@import "animation/animate";
-@import "myfile.scss";
-
-#main {
-  @include border-radius(5px); // from compass/css3
-  @include span-columns(10); // from susy
-  @include animation(fadeIn); // from animation/animate
-  background: $background-color; // from myfile.scss
+					<section>
+						<h2>Раскрытие импортов</h2>
+						<h2>@import</h2>
+					</section>
+					<section>
+						<h3>_reset.scss</h3>
+							<pre><code data-trim contenteditable>
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }
+							</code></pre>
+							<h3>base.scss</h3>
+							<pre><code data-trim contenteditable>
+@import 'reset';
 
-#sidebar {
-  @include span-columns(2 omega); // from susy
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
 }
-					</code></pre>
+							</code></pre>
+					</section>
+					
 				</section>
 
 				<section>
@@ -747,6 +755,31 @@ for
 						</code></pre>
 					</section>
 					<section>
+						<h3>SCSS</h3>
+						<pre><code data-trim contenteditable>
+@mixin buttons($color, $type) {
+  @if $type == "flat" {
+    background-color: $color;
+  }
+  @else if $type == "gradient" {
+    background: linear-gradient($color, darken($color, 20%));
+  }
+  @else if $type == "glossy" {
+    background: linear-gradient($color 50%, darken($color, 20%) 50%);
+  }
+  @else {
+    background-color: $color;
+  }
+}
+
+.button {
+  @include buttons(green, glossy);
+}
+
+
+						</code></pre>
+					</section>
+					<section>
 						<h3>LESS</h3>
 						<pre><code data-trim contenteditable>
 .buttons (@color, @type) when (@type == "flat") {
@@ -795,7 +828,7 @@ for
 				</section>
 				<section>
 					<section>
-						<h2>Циклы</h2>
+					<h2>Циклы</h2>
 					<h3>SASS</h3>
 					<pre><code data-trim contenteditable>
 @for $i from 1 to 5
@@ -805,7 +838,6 @@ for
 					</section>
 
 					<section>
-						<h2>Циклы</h2>
 					<h3>Stylus</h3>
 					<pre><code data-trim contenteditable>
 for i in (1..5)
@@ -865,7 +897,7 @@ $emotions: happy sad excited
 				<section>
 					<section>
 						<h2>Media Queries</h2>
-						<h3>SCSS</h3>
+						<h3>SASS</h3>
 						<pre><code data-trim contenteditable>
 $small-breakpoint: 480px
 $medium-breakpoint: 768px
@@ -873,12 +905,12 @@ $large-breakpoint: 1024px
 
 aside
   width: 100%
-  @media screen and (min-width: $small-breakpoint)
+  @media  (min-width: $small-breakpoint)
     width: 100px
     float: right
-  @media screen and (min-width: $medium-breakpoint)
+  @media (min-width: $medium-breakpoint)
     width: 200px
-  @media screen and (min-width: $large-breakpoint)
+  @media (min-width: $large-breakpoint)
     width: 400px
 						</code></pre>
 					</section>
@@ -892,16 +924,16 @@ aside
 aside {
   width: 100%;
 
-  @media screen and (min-width: @small-breakpoint) {
+  @media (min-width: @small-breakpoint) {
     width: 100px;
     float: right;
   }
 
-  @media screen and (min-width: @medium-breakpoint) {
+  @media (min-width: @medium-breakpoint) {
     width: 200px;
   }
 
-  @media screen and (min-width: @large-breakpoint) {
+  @media (min-width: @large-breakpoint) {
     width: 400px;
   }
 }
@@ -918,14 +950,14 @@ large-breakpoint 1024px
 aside
   width 100%
 
- @media screen and (min-width small-breakpoint)
+ @media (min-width small-breakpoint)
   width 100px
   float right
 
- @media screen and (min-width medium-breakpoint)
+ @media (min-width medium-breakpoint)
   width 200px
 
- @media screen and (min-width large-breakpoint)
+ @media (min-width large-breakpoint)
   width 400px
 						</code></pre>
 					</section>
@@ -937,20 +969,20 @@ aside {
   width: 100%;
 }
 
-@media screen and (min-width: 480px) {
+@media (min-width: 480px) {
   aside {
     width: 100px;
     float: right;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   aside {
     width: 200px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   aside {
     width: 400px;
   }
@@ -963,10 +995,10 @@ aside {
 						<pre><code data-trim contenteditable>
 =respond-to($name)
   @if $name == small-screen
-    @media only screen and (min-width: 320px)
+    @media (min-width: 320px)
       @content
   @if $name == large-screen
-    @media only screen and (min-width: 960px)
+    @media (min-width: 960px)
       @content
 
 aside
@@ -976,7 +1008,31 @@ aside
 
 						</code></pre>
 					</section>
+					<section>
+						<h3>@content – Scss</h3>
+						<pre><code data-trim contenteditable>
+@mixin respond-to($name) {
+  @if $name == small-screen {
+    @media (min-width: 320px) {
+      @content;
+    }
+  }
+  @if $name == large-screen {
+    @media (min-width: 960px) {
+      @content;
+    }
+  }
+}
 
+aside {
+  width: 25%;
+  @include respond-to(small-screen) {
+    width: 100%;
+  }
+}
+
+						</code></pre>
+					</section>
 					<section>
 						<h3>css</h3>
 						<pre><code data-trim contenteditable>
@@ -984,7 +1040,7 @@ aside {
   width: 25%;
 }
 
-@media only screen and (min-width: 320px) {
+@media (min-width: 320px) {
   aside {
     width: 100%;
   }
@@ -1019,13 +1075,14 @@ $icons: (
 						<section>
 						<h3>SASS</h3>
 						<pre><code data-trim contenteditable>
-$icons:( home: e601, about: e602, services: e603)
-// запись с столбик выдаст ошибку
+$icons: (home: e601, about: e602, services: e603)
+// запись с столбик вызовет ошибку
 
 @each $icon-name, $icon-keycode in $icons
   .icon-#{$icon-name}
     &:before
-      content: "#{$icon-keycode}"
+      content: #{$icon-keycode}
+
 							</code></pre>
 						</section>
 
@@ -1063,6 +1120,17 @@ for icon-name, icon-keycode in icons {
 							</code></pre>
 						</section>
 					</section>
+				</section>
+
+				<section>
+					<h2>Ссылки:</h2>
+					<ul>
+						<li><a href="http://sass-lang.com/">Sass</a></li>
+						<li><a href="http://learnboost.github.io/stylus/"></a>Stylus</li>
+						<li><a href="http://lesscss.org/">Less</a></li>
+						<li><a href="http://csspre.com/compare/">Compare CSS Preprocessors</a></li>
+						<li><a href="http://sass-compatibility.github.io/">Sass compatibility</a></li>
+					</ul>
 				</section>
 
 				<section>
