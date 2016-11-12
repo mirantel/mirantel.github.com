@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CSS Methodologies and Frameworks - Исаков Евгений</title>
+
+		<meta name="description" content="CSS Methodologies and Frameworks - internal EPAM Labs">
+		<meta name="author" content="Yevhen Isakov">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+        <link rel="stylesheet" href="css/theme/user.css" />
+
+        <!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/highlight/idea.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-state="greetings method-bg" data-background="url(assets/i/lake_view.jpg)">
+                    <h2>CSS препроцессоры</h2>
+                    <h3>Светлана Пилипенко</h3>
+				</section>
+
+                <section>
+                    <div class="topic-container">
+                        <h1>Светлана Пилипенко</h1>
+                        <ul>
+
+                            <li class="method-author">
+                                <img class="method-author__avatar" src="assets/i/photo.jpg"  alt=""/>
+                                <p>Frontend developer</p>
+                                <p>Пишу CSS более 10 лет</p>
+                                <p>4 года опыта на продакшин проектах</p>
+                                <p>2 мосто в UA Web Chellange 2012</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section data-state="bg-landing" data-background="#fff url(assets/i/world.jpg)"></section>
+
+                <section data-state="bg-landing" data-background="#fff url(assets/i/issues.jpg)"></section>
+
+                <section data-state="bg-landing" data-background="#fff url(assets/i/tools.jpg)"></section>
+
+                <section>
+                    <h2>Простой CSS</h2>
+                    <img width="1200" src="assets/i/sm.jpg" alt="">
+                </section>
+
+                <section>
+                    <img width="1200" src="assets/i/sm2.jpg" alt="">
+                    <h2>CSS-препроцессоры</h2>
+                </section>
+
+                <section>
+                    <h2>3 самых популярных <br>CSS-препроцессора</h2>
+                    <img height="500" src="assets/i/preprocessors.jpg" alt="">
+                </section>
+
+                <section data-state="bg-landing" data-background="#fff url(assets/i/sass.png)"></section>
+
+                <section>
+                    <h2>Что он умеет:</h2>
+                    <ul>
+                        <li class="fragment">Переменные</li>
+                        <li class="fragment">Вложенные селекторы</li>
+                        <li class="fragment">Раскрытие импортов</li>
+                        <li class="fragment">Вычисления</li>
+                        <li class="fragment">Миксины</li>
+                        <li class="fragment">Работа с цветом</li>
+                        <li class="fragment">Условия и циклы</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Переменные в SCSS</h2>
+                    <pre><code class="scss">$COLOR_GRAY: #f1f1f1;
+$BLUE: #0c7ace;
+
+$TEXT_COLOR: $COLOR_GRAY;
+$LINK_COLOR: $BLUE;
+
+.callout {
+  background: $BODY_BG;
+  color: $TEXT_COLOR;
+}</pre></code>
+                </section>
+
+                <section>
+                    <h2>Вложенные селекторы</h2>
+                    <pre><code class="scss">.nav {
+  margin: 0;
+
+  &__item {
+    padding: 10px;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .ie8 & {
+    padding: 20px;
+  }
+}</code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Раскрытие импортов</h2>
+                        <h2>@import</h2>
+                        <h3>_reset.scss</h3>
+                            <pre><code class="scss">ul,
+ol {
+  margin: 0;
+  padding: 0;
+}</code></pre>
+                            <h3>base.scss</h3>
+                            <pre><code class="scss">@import 'reset';
+
+body {
+  font: 100% Helvetica, sans-serif;
+}</code></pre>
+                    </section>
+
+                    <section>
+                    <h2>Вычисления</h2>
+                    <pre><code class="scss">.block {
+  margin: (14px/2);
+  top: 50px + 100px;
+  right: 100px - 50px;
+  left: 10px * 10;
+}</code></pre>
+                </section>
+
+                <section>
+                    <h2>Функции</h2>
+                    <pre><code class="scss">@function flex-grid($columns) {
+    $width: $columns * $column + ($columns - 1) * $gutter;
+    @return percentage($width / $grid-full-width);
+}</code></pre>
+                    </section>
+
+                <section>
+                    <h2>Миксины</h2>
+                    <pre><code class="scss">@mixin column($column-num) {
+    float: left;
+    margin-left: $grid-gutter;
+    width: flex-grid($column-num);
+}
+
+.main{
+  @include column(9)
+}</code></pre>
+                </section>
+
+                <section>
+                    <h2>Работа с цветом</h2>
+                    <pre><code class="scss">lighten($color, $amount)
+darken($color, $amount)
+saturate($color, $amount)
+desaturate($color, $amount)
+grayscale($color)
+complement($color)
+invert($color)
+...</code></pre>
+                        <a href="http://sass-lang.com/documentation/Sass/Script/Functions.html">другие функции</a>
+                    </section>
+
+                <section>
+                    <h2>Extend</h2>
+                    <pre><code class="scss">%field-error {
+    border-color: $INPUT_ERROR_COLOR;
+
+    &:focus {
+        box-shadow: 0 0 5px 2px lighten($INPUT_ERROR_COLOR, 20%);
+    }
+}
+
+.input,
+.textarea,
+.select {
+    &.ng-invalid.ng-dirty {
+        @extend %field-error;
+    }
+}</code></pre>
+			</section>
+
+            <section>
+                <h2>Условия и циклы</h2>
+                <pre><code class="scss">@if
+@else if
+@else
+@then
+@for
+@each
+@while
+                </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Hach map</h2>
+                        <pre><code class="scss">$FONT_ICONS: (
+  account: E001,
+  add: E002,
+  address-book: E003,
+);
+
+@function variable-icon-font($icon-code){
+    @return #{"\"\\"}#{$icon-code + "\""};
+}
+
+@each $name, $char in $FONT_ICONS {
+    .#{$ICONS_CLASS}-#{$name}:before {
+        content: variable-icon-font($char);
+    }
+}
+
+                            </code></pre>
+                        </section>
+
+                        <section data-state="bg-landing" data-background="#fff url(assets/i/flower.jpg)"></section>
+
+                <section data-state="bg-landing" data-background="#fff url(assets/i/life.jpg)"></section>
+
+                                        <section>
+                    <h1>Ссылки:</h1>
+                    <ul>
+                        <li><a href="http://sass-lang.com/">Sass</a></li>
+                        <li><a href="http://sass-compatibility.github.io/">Sass compatibility</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>Спасибо!</h1><br>
+                    <h2>Светлана Пилипенко, <br>EPAM Systems.</h2>
+                    <ul>
+                        <li><a href="https://twitter.com/Mirantel">@mirantel</a></li>
+                        <li><a href="https://github.com/mirantel">github.com/mirantel</a></li>
+                        <li>Skype: magi-mirantel</li>
+                    </ul>
+                </section>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+                slideNumber: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+                transitionSpeed: 'fast',
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+        <script>
+            Reveal.configure({backgroundTransition: 'fade'});
+        </script>
+	</body>
+</html>
