@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS & HTML FAQ - Svitlana Pylypenko</title>
+
+  <meta name="description" content="CSS & HTML FAQ">
+  <meta name="author" content="Svitlana Pylypenko">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+  <link rel="stylesheet" href="css/theme/user.css" />
+
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/highlight/idea.css">
+
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'css/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+  </script>
+</head>
+
+<body>
+
+<div class="reveal">
+
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+
+    <section data-state="greetings method-bg" data-background="url(assets/i/lake_view.jpg)">
+      <h2>CSS & HTML</h2>
+      <h3>Svitlana Pylypenko</h3>
+    </section>
+
+    <section>
+      <div class="topic-container">
+        <h1>Svitlana Pylypenko</h1>
+        <ul>
+          <li class="method-author">
+            <img class="method-author__avatar" src="assets/i/photo.jpg"  alt=""/>
+            <p>Senior Software Engineer</p>
+            <p>Graduated in Computer Scienc</p>
+            <p>8 years of commercial experience</p>
+            <p>2nd place on the UA Web Chellange 2012</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section>
+      <h1>Thank You!</h1><br>
+      <h2>Svitlana Pylypenko, <br>EPAM Systems.</h2>
+      <ul>
+        <li><a href="https://twitter.com/Mirantel">@mirantel</a></li>
+        <li><a href="https://github.com/mirantel">github.com/mirantel</a></li>
+        <li>Skype: magi-mirantel</li>
+      </ul>
+    </section>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: false,
+    progress: true,
+    history: true,
+    center: true,
+            slideNumber: true,
+
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+            transitionSpeed: 'fast',
+
+    // Parallax scrolling
+    // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+    // parallaxBackgroundSize: '2100px 900px',
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    ]
+  });
+
+</script>
+    <script>
+        Reveal.configure({backgroundTransition: 'fade'});
+    </script>
+</body>
+</html>
