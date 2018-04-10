@@ -1,0 +1,81 @@
+.preprocessor {
+  margin-left: 0 !important;
+  text-align: center;
+  }
+.preprocessor-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  padding-top: 200px !important;
+  text-align: center;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: auto 180px;
+}
+
+.preprocessor-item_sass {
+  background-image: url(../assets/i/sass-logo.svg);
+}
+
+.preprocessor-item_less {
+  background-image: url(../assets/i/less-logo.png);
+}
+
+.preprocessor-item_stylus {
+  background-image: url(../assets/i/stylus-logo.svg);
+}
+
+.preprocessor-which-to-choose {
+  margin-top: 2em !important;
+}
+
+.reveal .coloured-symbols_blue {
+  color: #39c2d7;
+}
+
+.wtfcode .slide-background {
+  background-image: url(../assets/i/wtfcode.png);
+  background-position: center !important;
+  background-size: contain !important;
+}
+
+.css-organizing-project-css .slide-background {
+	background-image: url(../assets/i/project-css.png);
+	background-position: center;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	}
+
+  .everything-is-block .slide-background {
+  	background-image: url(../assets/i/bricks.jpg);
+  	background-size: cover !important;
+  	background-position: center !important;
+  	}
+
+  .everything-is-block .slide-background::before {
+  	content: '';
+  	position: absolute;
+  	left: 0;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	background: rgba(0,0,0,.4);
+  	}
+
+  .everything-is-block .reveal * {
+  	color: #fff !important;
+  	}
+
+.methodologies-list h3 {
+  font-size: 1.3em !important;
+}
+
+    .methodologies-list li + li {
+    	margin-top: 2em;
+    	}
+      .rwd-image .slide-background {
+      	background-image: url(../assets/i/rwd.png);
+      	background-color: #141414 !important;
+      	background-size: auto !important;
+      	background-position: center !important;
+      	}
