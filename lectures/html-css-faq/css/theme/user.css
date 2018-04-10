@@ -74,11 +74,11 @@ body {
 	display: block;
 	list-style: none;
 	font-family: "PT Sans Narrow";
-	text-align: center;
+	/* text-align: center; */
 	font-size: 60px;
-	margin-left: 0;
+	/* margin-left: 0; */
 	line-height: 1.2;
-	}
+}
 
 .reveal h3 {
 	/*margin-top: 2em;*/
@@ -130,6 +130,25 @@ body {
 .cols-3 li figure {
 	text-align: center;
 	}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-between;
+}
+
+.col-3 {
+  width: 32%;
+}
+.col-2 {
+  width: 49%;
+}
+.col-4 {
+  width: 24%;
+}
 
 /* author */
 
@@ -186,10 +205,6 @@ iframe.twitter-tweet {
     width: 75%;
     vertical-align: middle;
 }
-
-
-
-
 
 .reveal .methodology-item {
     display: inline-block;
@@ -269,7 +284,7 @@ iframe.twitter-tweet {
 }
 
 .reveal .method-author p {
-	font-size: 80px;
+	font-size: 75px;
 }
 
 .reveal .method-name {
