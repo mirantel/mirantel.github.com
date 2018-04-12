@@ -38,104 +38,103 @@
 
 <div class="reveal">
 
-  <!-- Any section element inside of this container is displayed as a slide -->
-  <div class="slides">
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
 
-    <section data-state="greetings method-bg" data-background="url(assets/i/lake_view.jpg)">
-      <h2>CSS & HTML</h2>
-      <h3>Svitlana Pylypenko</h3>
-    </section>
+<section data-state="greetings method-bg" data-background="url(assets/i/lake_view.jpg)">
+  <h2>CSS & HTML</h2>
+  <h3>Svitlana Pylypenko</h3>
+</section>
 
-    <section>
-      <div class="topic-container">
-        <h1>Svitlana Pylypenko</h1>
+<section>
+  <div class="topic-container">
+    <h1>Svitlana Pylypenko</h1>
+    <ul>
+      <li class="method-author">
+        <img class="method-author__avatar" src="assets/i/photo.jpg"  alt=""/>
+        <p>Senior Software Engineer</p>
+        <p>Graduated in Computer Scienc</p>
+        <p>8 years of commercial experience</p>
+        <p>2nd place on the UA Web Chellange 2012</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="topic-container">
+    <h2>Agenda</h2>
+    <ul>
+      <li class="fragment">HTML & CSS history</li>
+      <li class="fragment">Semantic elements</li>
+      <li class="fragment">Organizing CSS code</li>
+      <li class="fragment">CSS Selectors</li>
+      <li class="fragment">CSS Preprocessors</li>
+      <li class="fragment">PostCSS</li>
+      <li class="fragment">Responsive Web Design</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="topic-container">
+    <h2>Web Standarts</h2>
+    <div class="row">
+      <div class="col-2">
         <ul>
-          <li class="method-author">
-            <img class="method-author__avatar" src="assets/i/photo.jpg"  alt=""/>
-            <p>Senior Software Engineer</p>
-            <p>Graduated in Computer Scienc</p>
-            <p>8 years of commercial experience</p>
-            <p>2nd place on the UA Web Chellange 2012</p>
-          </li>
+          <li class="fragment"><a target="_blank" href="https://www.w3.org/">W3C</a></li>
+          <li class="fragment"><a target="_blank" href="https://whatwg.org/">WHATWG</a></li>
         </ul>
       </div>
-    </section>
-
-    <section>
-      <div class="topic-container">
-        <h2>Agenda</h2>
-        <ul>
-          <li class="fragment">HTML & CSS history</li>
-          <li class="fragment">Semantic elements</li>
-          <li class="fragment">Organizing CSS code</li>
-          <li class="fragment">CSS Selectors</li>
-          <li class="fragment">CSS Preprocessors</li>
-          <li class="fragment">PostCSS</li>
-          <li class="fragment">Responsive Web Design</li>
-          <li class="fragment">CSS Linters</li>
+      <div class="col-2">
+        <ul class="fragment">
+          <li><a target="_blank" href="https://htmlacademy.ru/shorts/11">HTML Shorts by HTML Academy</a></li>
+          <li><a target="_blank" href="http://developer.telerik.com/featured/w3c-vs-whatwg-html5-specs-differences-documented/">W3C vs. WHATWG HTML5 Specs</a></li>
+          <li><a target="_blank" href="https://whatwg.org/">HTML Living Standard</a></li>
+          <li><a target="_blank" href="https://whatwg.org/">HTML Working Draft</a></li>
+          <li><a target="_blank" href="https://spec.whatwg.org/">WHATWG Specs</a></li>
         </ul>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section>
-      <div class="topic-container">
-        <h2>Web Standarts</h2>
-        <div class="row">
-          <div class="col-2">
-            <ul>
-              <li class="fragment"><a target="_blank" href="https://www.w3.org/">W3C</a></li>
-              <li class="fragment"><a target="_blank" href="https://whatwg.org/">WHATWG</a></li>
-            </ul>
-          </div>
-          <div class="col-2">
-            <ul class="fragment">
-              <li><a target="_blank" href="https://htmlacademy.ru/shorts/11">HTML Shorts by HTML Academy</a></li>
-              <li><a target="_blank" href="http://developer.telerik.com/featured/w3c-vs-whatwg-html5-specs-differences-documented/">W3C vs. WHATWG HTML5 Specs</a></li>
-              <li><a target="_blank" href="https://whatwg.org/">HTML Living Standard</a></li>
-              <li><a target="_blank" href="https://whatwg.org/">HTML Working Draft</a></li>
-              <li><a target="_blank" href="https://spec.whatwg.org/">WHATWG Specs</a></li>
-            </ul>
-          </div>
-        </div>
+<section>
+  <div class="topic-container">
+    <h2>HTML & CSS History</h2>
+    <div class="row">
+      <div class="col-2">
+        <ul>
+          <li class="fragment">1991 - HTML 1.0</li>
+          <li class="fragment">1994 - Established W3C</li>
+          <li class="fragment">1995 - HTML 2.0</li>
+          <li class="fragment">1996 - CSS 1.0</li>
+          <li class="fragment">1997 - HTML 3.2</li>
+          <li class="fragment">1998 - CSS 2.0</li>
+          <li class="fragment">1999 - HTML 4.01</li>
+        </ul>
       </div>
-    </section>
-
-    <section>
-      <div class="topic-container">
-        <h2>HTML & CSS History</h2>
-        <div class="row">
-          <div class="col-2">
-            <ul>
-              <li class="fragment">1991 - HTML 1.0</li>
-              <li class="fragment">1994 - Established W3C</li>
-              <li class="fragment">1995 - HTML 2.0</li>
-              <li class="fragment">1996 - CSS 1.0</li>
-              <li class="fragment">1997 - HTML 3.2</li>
-              <li class="fragment">1998 - CSS 2.0</li>
-              <li class="fragment">1999 - HTML 4.01</li>
-            </ul>
-          </div>
-          <div class="col-2">
-            <ul>
-              <li class="fragment">1999 - CSS3 draft</li>
-              <li class="fragment">2000 - XHTML 1.0</li>
-              <li class="fragment">2004 - Established WHATWG</li>
-              <li class="fragment">2002 - 2009 - XHTML 2.0</li>
-              <li class="fragment">2008 - HTML 5 working draft</li>
-              <li class="fragment">2012 - HTML 5</li>
-              <li class="fragment">2016 - HTML 5.1</li>
-            </ul>
-          </div>
-        </div>
+      <div class="col-2">
+        <ul>
+          <li class="fragment">1999 - CSS3 draft</li>
+          <li class="fragment">2000 - XHTML 1.0</li>
+          <li class="fragment">2004 - Established WHATWG</li>
+          <li class="fragment">2002 - 2009 - XHTML 2.0</li>
+          <li class="fragment">2008 - HTML 5 working draft</li>
+          <li class="fragment">2012 - HTML 5</li>
+          <li class="fragment">2016 - HTML 5.1</li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section data-state="bg-landing" data-background="#fff url(assets/i/HTML4v5.png)"></section>
-    <section data-state="bg-landing" data-background="#fff url(assets/i/caniuse.png)"></section>
+<section data-state="bg-landing" data-background="#fff url(assets/i/HTML4v5.png)"></section>
+<section data-state="bg-landing" data-background="#fff url(assets/i/caniuse.png)"></section>
 
-    <section>
-      <h2>Semantic Elements in HTML5</h2>
-      <pre><code class="html">    &lt;article>
+<section>
+  <h2>Semantic Elements in HTML5</h2>
+  <pre><code class="html">    &lt;article>
     &lt;aside>
     &lt;details>
     &lt;figcaption>
@@ -149,13 +148,13 @@
     &lt;summary>
     &lt;time>
     &lt;section></code></pre>
-    </section>
+</section>
 
-    <section data-state="bg-landing" data-background="#fff url(assets/i/html5_sectioning_specific_post.jpg)"></section>
+<section data-state="bg-landing" data-background="#fff url(assets/i/html5_sectioning_specific_post.jpg)"></section>
 
-    <section>
-      <h2>Header, Article, Section</h2>
-      <pre><code class="html">    &lt;article>
+<section>
+  <h2>Header, Article, Section</h2>
+  <pre><code class="html">    &lt;article>
       &lt;header>
         &lt;h2>Apples&lt;/h2>
         &lt;p>Tasty, delicious fruit!&lt;/p>
@@ -170,11 +169,11 @@
         &lt;p>These juicy, green apples make a great filling for apple pies.&lt;/p>
       &lt;/section>
     &lt;/article></code></pre>
-    </section>
+</section>
 
-    <section>
-      <h2>Footer</h2>
-      <pre><code class="html">    &lt;body>
+<section>
+  <h2>Footer</h2>
+  <pre><code class="html">    &lt;body>
       &lt;footer>&lt;a href="../">Back to index...&lt;/a>&lt;/footer>
       &lt;div>
         &lt;h1>Example Page&lt;/h1>
@@ -183,11 +182,11 @@
       &lt;p>Some text explaining the example.&lt;/p>
       &lt;footer>&lt;a href="../">Back to index...&lt;/a>&lt;/footer>
     &lt;/body></code></pre>
-    </section>
+</section>
 
-    <section>
-      <h2>Nav</h2>
-      <pre><code class="html">    &lt;nav>
+<section>
+  <h2>Nav</h2>
+  <pre><code class="html">    &lt;nav>
       &lt;h2>Folders&lt;/h2>
       &lt;ul>
         &lt;li> &lt;a href="/inbox">Inbox&lt;/a> &lt;span class="count">&lt;/span>&lt;/li>
@@ -197,27 +196,27 @@
         &lt;li> &lt;a href="/customers">Customers&lt;/a>&lt;/li>
       &lt;/ul>
     &lt;/nav></code></pre>
-    </section>
+</section>
 
-    <section>
-      <h2>Organizing <span class="coloured-symbols coloured-symbols_blue">CSS</span> Code</h2>
-    </section>
+<section>
+  <h2>Organizing <span class="coloured-symbols coloured-symbols_blue">CSS</span> Code</h2>
+</section>
 
-    <section>
-      <div style="font-style:italic;">Sooner or later...</div>
-    </section>
+<section>
+  <div style="font-style:italic;">Sooner or later...</div>
+</section>
 
-    <section data-state="wtfcode"></section>
+<section data-state="wtfcode"></section>
 
-    <section>
-      <h2>How to?</h2>
-    </section>
+<section>
+  <h2>How to?</h2>
+</section>
 
-    <section data-state="css-organizing-project-css"></section>
+<section data-state="css-organizing-project-css"></section>
 
-    <section>
-      <h4>main.scss</h4>
-      <pre><code>
+<section>
+  <h4>main.scss</h4>
+  <pre><code>
 @import '_variables';
 @import '_mixins';
 @import '_fonts';
@@ -226,13 +225,12 @@
 @import 'blocks/_layout';
 
 ...
-      </code></pre>
-    </section>
+  </code></pre>
+</section>
 
-  <section>
-    <section>
-      <h4>variables.scss</h4>
-      <pre><code>
+<section>
+  <h4>variables.scss</h4>
+  <pre><code>
 // Fonts
 
 $font-roboto-regular: 'roboto-regular', Tahoma, sans-serif;
@@ -248,12 +246,12 @@ $image-path: '../../img/';
 $black: #000;
 $white: #fff;
 ...
-      </code></pre>
-    </section>
+  </code></pre>
+</section>
 
-    <section>
-      <h4>variables.scss</h4>
-      <pre><code>
+<section>
+  <h4>variables.scss</h4>
+  <pre><code>
 // Layout
 
 $layout: (
@@ -273,20 +271,19 @@ $layout: (
     columns-amount: 4
   )
 );
-      </code></pre>
-    </section>
+  </code></pre>
 </section>
-    <section>
-      <h3>Block level variables</h3>
-    </section>
+<section>
+  <h3>Block level variables</h3>
+</section>
 
-    <section>
-      <img src="assets/i/notification.png" width="1000" alt="" />
-    </section>
+<section>
+  <img src="assets/i/notification.png" width="1000" alt="" />
+</section>
 
-    <section>
-      <h4>variables.scss</h4>
-      <pre><code>
+<section>
+  <h4>variables.scss</h4>
+  <pre><code>
 // Toasts
 
 $toast: (
@@ -305,12 +302,12 @@ $toast: (
         color: #800000
     )
 );
-      </code></pre>
-    </section>
+  </code></pre>
+</section>
 
-    <section>
-      <h4>toast.scss</h4>
-      <pre><code style="font-size:.75em">
+<section>
+  <h4>toast.scss</h4>
+  <pre><code style="font-size:.75em">
 .toast {
 
     &-item {
@@ -343,144 +340,139 @@ $toast: (
         }
     }
 }
-      </code></pre>
-    </section>
-
-    <section>
-      <h3>Reusing code</h3>
-      <h4 class="fragment" style="margin-top: 2em;">DRY</h4>
-    </section>
-
-    <section>
-      <h3>Imagine everything on page is <span class="coloured-symbols coloured-symbols_blue">block</span></h3>
-    </section>
-
-    <section data-state="everything-is-block">
-      <h2>Everything is block</h2>
-    </section>
-
-    <section>
-      <h2 class="coloured-symbols coloured-symbols_blue fragment">Methodology</h2>
-    </section>
-
-    <section>
-      <div>Most known and popular of them are</div>
-      <ul class="methodologies-list">
-        <li class="fragment">
-          <h3>BEM</h3>
-          <div><span class="coloured-symbols coloured-symbols_blue">B</span>lock
-            <span class="coloured-symbols coloured-symbols_blue">E</span>lement
-            <span class="coloured-symbols coloured-symbols_blue">M</span>odifier
-          </div>
-        </li>
-        <li class="fragment">
-          <h3>SMACSS</h3>
-          <div><span class="coloured-symbols coloured-symbols_blue">S</span>calable
-            and
-            <span class="coloured-symbols coloured-symbols_blue">M</span>odular
-            <span class="coloured-symbols coloured-symbols_blue">A</span>rchitecture
-            for
-            <span class="coloured-symbols coloured-symbols_blue">CSS</span>
-          </div>
-        </li>
-        <li class="fragment">
-          <h3>OOCSS</h3>
-          <div>
-            <span class="coloured-symbols coloured-symbols_blue">O</span>bject
-            <span class="coloured-symbols coloured-symbols_blue">O</span>riented
-            <span class="coloured-symbols coloured-symbols_blue">CSS</span>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>BEM Example</h3>
-      <pre><code class="html">
-&lt;div class="toast">
-    &lt;div class="toast-item toast-item_critical">
-        &lt;span class="toast-item__close">&lt;/span>
-        &lt;div class="toast-item__content">&lt;% text-critical %>&lt;/div>
-    &lt;/div>
-
-    &lt;div class="toast-item toast-item_warning">
-        &lt;span class="toast-item__close">&lt;/span>
-        &lt;div class="toast-item__content">&lt;% text-warning %>&lt;/div>
-    &lt;/div>
-
-    &lt;div class="toast-item toast-item_info">
-        &lt;span class="toast-item__close">&lt;/span>
-        &lt;div class="toast-item__content">&lt;% test-info %>&lt;/div>
-    &lt;/div>
-&lt;/div>
-      </code></pre>
-    </section>
-
-    <section>
-      <h2><a href="https://ru.bem.info/" target="_blank">ru.bem.info</a></h2>
-    </section>
-
-    <section>
-      <h3>Organizing <span class="coloured-symbols coloured-symbols_blue">CSS</span> Code</h3>
-      <ul>
-        <!-- <li class="fragment">Minify amount of static files on page</li> -->
-        <!-- <li class="fragment">Include CSS files in the &lt;head&gt;; JS &mdash; before &lt;/body&gt;</li> -->
-        <li class="fragment">Use tags according to their purpose</li>
-        <li class="fragment">Write and keep your code clean</li>
-        <li class="fragment">Divide different source parts to different files</li>
-        <li class="fragment">Use CSS animations instead of JS</li>
-        <li class="fragment">Enable GPU acceleration for animations/transformations</li>
-        <li class="fragment">Use comments</li>
-        <li class="fragment">Use source maps</li>
-        <li class="fragment">Use class selectors</li>
-        <li class="fragment">Use CSS Preprocessor / CSS Postprocessor</li>
-        <li class="fragment">Use methodology</li>
-
-      </ul>
-    </section>
-
-    <section>
-      <h3>You <span class="coloured-symbols coloured-symbols_blue">should</span> avoid</h3>
-      <ul>
-        <li class="fragment">Inline styles</li>
-        <li class="fragment">!important</li>
-        <li class="fragment">ID selectors (and tag selectors, as much as possible)</li>
-        <li class="fragment">Huge selectors or cascades</li>
-        <!-- <li class="fragment">Extra elements in markup</li> -->
-        <li class="fragment">Different units for the same tasks</li>
-        <li class="fragment">Things that aren't clear or obvious</li>
-        <li class="fragment">Transliteration and shortens in class names</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>CSS Selectors</h2>
-    </section>
-
-    <section>
-      <h2>Selectors</h2>
-      <div class="fragment coloured-symbols coloured-symbols_blue">From right to left!!!</div>
-      <ul>
-        <li class="fragment">*</li>
-        <li class="fragment">Tag</li>
-        <li class="fragment">Class</li>
-        <li class="fragment">Pseudo class</li>
-        <li class="fragment">Attribute</li>
-        <li class="fragment">ID</li>
-        <li class="fragment">Inline style</li>
-      </ul>
-    </section>
+  </code></pre>
+</section>
 
 <section>
-  <section>
-    <h2>CSS Specificity</h2>
-    <img width="1000" src="assets/i/selectors-sp.jpg" alt="">
-  </section>
+  <h3>Reusing code</h3>
+  <h4 class="fragment" style="margin-top: 2em;">DRY</h4>
+</section>
 
-  <section>
-    <h2>Examples</h2>
-    <img width="1000" src="assets/i/specificity.png" alt="">
-  </section>
+<section>
+  <h3>Imagine everything on page is <span class="coloured-symbols coloured-symbols_blue">block</span></h3>
+</section>
+
+<section data-state="everything-is-block">
+  <h2>Everything is block</h2>
+</section>
+
+<section>
+  <h2 class="coloured-symbols coloured-symbols_blue">Methodology</h2>
+</section>
+
+<section>
+  <div>Most known and popular of them are</div>
+  <ul class="methodologies-list">
+    <li class="fragment">
+      <h3>BEM</h3>
+      <div><span class="coloured-symbols coloured-symbols_blue">B</span>lock
+        <span class="coloured-symbols coloured-symbols_blue">E</span>lement
+        <span class="coloured-symbols coloured-symbols_blue">M</span>odifier
+      </div>
+    </li>
+    <li class="fragment">
+      <h3>SMACSS</h3>
+      <div><span class="coloured-symbols coloured-symbols_blue">S</span>calable
+        and
+        <span class="coloured-symbols coloured-symbols_blue">M</span>odular
+        <span class="coloured-symbols coloured-symbols_blue">A</span>rchitecture
+        for
+        <span class="coloured-symbols coloured-symbols_blue">CSS</span>
+      </div>
+    </li>
+    <li class="fragment">
+      <h3>OOCSS</h3>
+      <div>
+        <span class="coloured-symbols coloured-symbols_blue">O</span>bject
+        <span class="coloured-symbols coloured-symbols_blue">O</span>riented
+        <span class="coloured-symbols coloured-symbols_blue">CSS</span>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>BEM Example</h3>
+  <pre><code class="html">
+&lt;div class="toast">
+&lt;div class="toast-item toast-item_critical">
+    &lt;span class="toast-item__close">&lt;/span>
+    &lt;div class="toast-item__content">&lt;% text-critical %>&lt;/div>
+&lt;/div>
+
+&lt;div class="toast-item toast-item_warning">
+    &lt;span class="toast-item__close">&lt;/span>
+    &lt;div class="toast-item__content">&lt;% text-warning %>&lt;/div>
+&lt;/div>
+
+&lt;div class="toast-item toast-item_info">
+    &lt;span class="toast-item__close">&lt;/span>
+    &lt;div class="toast-item__content">&lt;% test-info %>&lt;/div>
+&lt;/div>
+&lt;/div>
+  </code></pre>
+</section>
+
+<section>
+  <h2><a href="https://ru.bem.info/" target="_blank">ru.bem.info</a></h2>
+</section>
+
+<section>
+  <h3>Organizing <span class="coloured-symbols coloured-symbols_blue">CSS</span> Code</h3>
+  <ul>
+    <li class="fragment">Minify amount of static files on page</li>
+    <li class="fragment">Use tags according to their purpose</li>
+    <li class="fragment">Write and keep your code clean</li>
+    <li class="fragment">Divide different source parts to different files</li>
+    <li class="fragment">Use CSS animations instead of JS</li>
+    <li class="fragment">Enable GPU acceleration for animations/transformations</li>
+    <li class="fragment">Use comments</li>
+    <li class="fragment">Use source maps</li>
+    <li class="fragment">Use class selectors</li>
+    <li class="fragment">Use CSS Preprocessor / CSS Postprocessor</li>
+    <li class="fragment">Use methodology</li>
+  </ul>
+</section>
+
+<section>
+  <h3>You <span class="coloured-symbols coloured-symbols_blue">should</span> avoid</h3>
+  <ul>
+    <li class="fragment">Inline styles</li>
+    <li class="fragment">!important</li>
+    <li class="fragment">ID selectors (and tag selectors, as much as possible)</li>
+    <li class="fragment">Huge selectors or cascades</li>
+    <li class="fragment">Different units for the same tasks</li>
+    <li class="fragment">Things that aren't clear or obvious</li>
+    <li class="fragment">Transliteration and shortens in class names</li>
+  </ul>
+</section>
+
+<section>
+  <h2>CSS Selectors</h2>
+</section>
+
+<section>
+  <h2>Selectors</h2>
+  <div class="fragment coloured-symbols coloured-symbols_blue">From right to left!!!</div>
+  <ul>
+    <li class="fragment">*</li>
+    <li class="fragment">Tag</li>
+    <li class="fragment">Class</li>
+    <li class="fragment">Pseudo class</li>
+    <li class="fragment">Attribute</li>
+    <li class="fragment">ID</li>
+    <li class="fragment">Inline style</li>
+  </ul>
+</section>
+
+<section>
+  <h2>CSS Specificity</h2>
+  <img width="1000" src="assets/i/selectors-sp.jpg" alt="">
+</section>
+
+<section>
+  <h2>Examples</h2>
+  <img width="1000" src="assets/i/specificity.png" alt="">
 </section>
 
 <section>
@@ -506,87 +498,86 @@ $toast: (
 </section>
 
 
-    <section>
-      <h3>CSS Preprocessors</h3>
-      <ul class="preprocessor">
-        <li class="preprocessor-item preprocessor-item_sass fragment">
-          <div class="preprocessor-item__title">
-            <a href="http://sass-lang.com/" target="_blank">Sass</a>
-          </div>
-        </li>
-        <li class="preprocessor-item preprocessor-item_less fragment">
-          <div class="preprocessor-item__title">
-            <a href="http://lesscss.org" target="_blank">LESS</a>
-          </div>
-        </li>
-        <li class="preprocessor-item preprocessor-item_stylus fragment">
-          <div class="preprocessor-item__title">
-            <a href="http://stylus-lang.com/" target="_blank">Stylus</a>
-          </div>
-        </li>
-      </ul>
-    </section>
+<section>
+  <h3>CSS Preprocessors</h3>
+  <ul class="preprocessor">
+    <li class="preprocessor-item preprocessor-item_sass fragment">
+      <div class="preprocessor-item__title">
+        <a href="http://sass-lang.com/" target="_blank">Sass</a>
+      </div>
+    </li>
+    <li class="preprocessor-item preprocessor-item_less fragment">
+      <div class="preprocessor-item__title">
+        <a href="http://lesscss.org" target="_blank">LESS</a>
+      </div>
+    </li>
+    <li class="preprocessor-item preprocessor-item_stylus fragment">
+      <div class="preprocessor-item__title">
+        <a href="http://stylus-lang.com/" target="_blank">Stylus</a>
+      </div>
+    </li>
+  </ul>
+</section>
 
-    <section>
-      <h2>Which to choose?</h2>
-      <h1 class="preprocessor-which-to-choose fragment"><span class="coloured-symbols coloured-symbols_blue">Any</span> of them</h1>
-    </section>
+<section>
+  <h2>Which to choose?</h2>
+  <h1 class="preprocessor-which-to-choose fragment"><span class="coloured-symbols coloured-symbols_blue">Any</span> of them</h1>
+</section>
 
-    <section>
-      <h4>Syntax</h4>
-      <div>LESS and SCSS</div>
-      <pre><code data-trim>body {
-  background-color: #efefef;
-  font-size: 100% Helvetica, sans-serif;
+<section>
+  <h4>Syntax</h4>
+  <div>LESS and SCSS</div>
+  <pre><code data-trim>body {
+background-color: #efefef;
+font-size: 100% Helvetica, sans-serif;
 }</code></pre>
-      <div>Sass</div>
-      <pre><code data-trim>body
+  <div>Sass</div>
+  <pre><code data-trim>body
 background-color: #efefef
 font-size: 100% Helvetica, sans-serif</code></pre>
-      <div>Stylus</div>
-      <pre><code data-trim>body
+  <div>Stylus</div>
+  <pre><code data-trim>body
 background-color #efefef
 font-size 100% Helvetica, sans-serif</code></pre>
-      <p>Stylus supports all 3 variants</p>
-    </section>
+  <p>Stylus supports all 3 variants</p>
+</section>
 
-    <section>
-      <h3>Features</h3>
-      <ul>
-        <li class="fragment">Variables</li>
-        <li class="fragment">Nesting selectors</li>
-        <li class="fragment">Imports</li>
-        <li class="fragment">Calculations</li>
-        <li class="fragment">Mixins</li>
-        <li class="fragment">Color functions</li>
-        <li class="fragment">Conditions</li>
-        <li class="fragment">Iterations</li>
-      </ul>
-    </section>
+<section>
+  <h3>Features</h3>
+  <ul>
+    <li class="fragment">Variables</li>
+    <li class="fragment">Nesting selectors</li>
+    <li class="fragment">Imports</li>
+    <li class="fragment">Calculations</li>
+    <li class="fragment">Mixins</li>
+    <li class="fragment">Color functions</li>
+    <li class="fragment">Conditions</li>
+    <li class="fragment">Iterations</li>
+  </ul>
+</section>
 
-    <section>
-      <h3>Variables</h3>
-      <h4>SCSS</h4>
-      <pre><code data-trim>$button-background: #bada55
+<section>
+  <h3>Variables</h3>
+  <h4>SCSS</h4>
+  <pre><code data-trim>$button-background: #bada55
 .btn {
   background: $button-background
 }</code></pre>
-      <h4>LESS</h4>
-      <pre><code data-trim>@button-background: #bada55;
+  <h4>LESS</h4>
+  <pre><code data-trim>@button-background: #bada55;
 .btn {
   background: @button-background;
 }</code></pre>
-      <h4>Stylus</h4>
-      <pre><code data-trim>$button-background = #bada55
+  <h4>Stylus</h4>
+  <pre><code data-trim>$button-background = #bada55
 .btn
   background $button-background</code></pre>
-    </section>
+</section>
 
-  <section>
-    <section>
-      <h3>Nesting selectors</h3>
-      <h4>Sass</h4>
-      <pre><code data-trim>.nav
+<section>
+  <h3>Nesting selectors</h3>
+  <h4>Sass</h4>
+  <pre><code data-trim>.nav
   margin: 0
 
   a
@@ -603,11 +594,11 @@ font-size 100% Helvetica, sans-serif</code></pre>
 
   .ie8 &
     padding: 20px</code></pre>
-  </section>
+</section>
 
-  <section>
-    <h4>LESS and SCSS</h4>
-    <pre><code data-trim>.nav {
+<section>
+  <h4>LESS and SCSS</h4>
+  <pre><code data-trim>.nav {
   margin: 0;
 
   a {
@@ -630,11 +621,12 @@ font-size 100% Helvetica, sans-serif</code></pre>
     padding: 20px;
   }
 }
-    </code></pre>
-  </section>
-  <section>
-    <h4>Stylus</h4>
-    <pre><code data-trim>.nav
+  </code></pre>
+</section>
+
+<section>
+  <h4>Stylus</h4>
+  <pre><code data-trim>.nav
   margin 0
 
   a
@@ -650,11 +642,13 @@ font-size 100% Helvetica, sans-serif</code></pre>
       color #fff
 
   .ie8 &
-    padding 20px</code></pre>
-  </section>
-  <section>
-    <h4>CSS</h4>
-    <pre><code data-trim>.nav {
+    padding 20px
+  </code></pre>
+</section>
+
+<section>
+  <h4>CSS</h4>
+  <pre><code data-trim>.nav {
   margin: 0;
 }
 
@@ -670,14 +664,13 @@ font-size 100% Helvetica, sans-serif</code></pre>
   padding: 10px;
 }
 
-.nav_item:hover {
+.nav__item:hover {
   color: #fff;
 }
 
 .ie8 .nav {
   padding: 20px;
 }</code></pre>
-  </section>
 </section>
 
 <section>
@@ -705,13 +698,12 @@ font-size 100% Helvetica, sans-serif</code></pre>
 </section>
 
 <section>
-  <section>
-    <h2>Mixins</h2>
-    <h3>LESS</h3>
-    <div class="row">
-      <div class="col-2">
-        <p>Without Arguments</p>
-        <pre><code data-trim contenteditable>
+  <h2>Mixins</h2>
+  <h3>LESS</h3>
+  <div class="row">
+    <div class="col-2">
+      <p>Without Arguments</p>
+      <pre><code data-trim contenteditable>
 .bordered {
   border: 1px solid #000;
   border-top-color: #444;
@@ -721,25 +713,26 @@ font-size 100% Helvetica, sans-serif</code></pre>
 .main {
   .bordered;
 }
-        </code></pre>
-      </div>
-      <div class="col-2">
-        <p>With Arguments</p>
-        <pre><code data-trim contenteditable>
+      </code></pre>
+    </div>
+    <div class="col-2">
+      <p>With Arguments</p>
+      <pre><code data-trim contenteditable>
 .transform-scale (@x, @y) {
-  -webkittransform: scale(@x, @y);
+  -webkit-transform: scale(@x, @y);
   transform: scale(@x, @y);
 }
 
 .main {
   .transform-scale(2,3);
 }
-        </code></pre>
-      </div>
+      </code></pre>
     </div>
-  </section>
-  <section>
-    <h3>SASS</h3>
+  </div>
+</section>
+
+<section>
+  <h3>SASS</h3>
   <pre><code data-trim contenteditable>
 =transform-scale($x: 2, $y: 2)
   -webkit-transform: scale($x, $y)
@@ -747,11 +740,11 @@ font-size 100% Helvetica, sans-serif</code></pre>
 
 .main
   +transform-scale(2, 3)
-    </code></pre>
-  </section>
+  </code></pre>
+</section>
 
-  <section>
-    <h3>SCSS</h3>
+<section>
+  <h3>SCSS</h3>
   <pre><code data-trim contenteditable>
 @mixin transform-scale ($x: 2, $y: 2){
   -webkit-transform: scale($x, $y);
@@ -761,11 +754,11 @@ font-size 100% Helvetica, sans-serif</code></pre>
 .main{
   @include transform-scale(2,3)
 }
-    </code></pre>
-  </section>
+  </code></pre>
+</section>
 
-  <section>
-    <h3>Stylus</h3>
+<section>
+  <h3>Stylus</h3>
   <pre><code data-trim contenteditable>
 transform-scale (x, y)
   -webkit-transform scale(x, y)
@@ -774,16 +767,13 @@ transform-scale (x, y)
 
 .main
   transform-scale(2,3)
-
-    </code></pre>
-  </section>
+  </code></pre>
 </section>
 
 <section>
-  <section>
-    <h3>Color functions</h3>
-    <h4>Sass</h4>
-    <pre><code data-trim>
+  <h3>Color functions</h3>
+  <h4>Sass</h4>
+  <pre><code data-trim>
 rgb($red, $green, $blue)
 hsl($hue, $saturation, $lightness)
 hue($color)
@@ -798,13 +788,13 @@ grayscale($color)
 complement($color)
 invert($color)
 ...
-      </code></pre>
-    <a href="http://sass-lang.com/documentation/Sass/Script/Functions.html" target="_blank">other functions</a>
-  </section>
+    </code></pre>
+  <a href="http://sass-lang.com/documentation/Sass/Script/Functions.html" target="_blank">other functions</a>
+</section>
 
-  <section>
-    <h4>LESS</h4>
-    <pre><code data-trim>
+<section>
+  <h4>LESS</h4>
+  <pre><code data-trim>
 rgb(@red, @green, @blue);
 hsl(@hue, @saturation, @lightness);
 hue(@color);
@@ -821,13 +811,13 @@ mix(@color, @angle);
 grayscale(@color);
 contrast(@color, @dark, @light, threshold);
 ...
-    </code></pre>
-    <a href="http://lesscss.org/functions/#color-operations" target="_blank">other functions</a>
-  </section>
+  </code></pre>
+  <a href="http://lesscss.org/functions/#color-operations" target="_blank">other functions</a>
+</section>
 
-  <section>
-    <h4>STYLUS</h4>
-    <pre><code data-trim>
+<section>
+  <h4>STYLUS</h4>
+  <pre><code data-trim>
 rgba(color, alpha)
 lighten(color, amount)
 darken(color, amount)
@@ -838,16 +828,14 @@ hue(color)
 saturation(color);
 lightness(color);
 ...
-    </code></pre>
-    <a href="http://learnboost.github.io/stylus/docs/bifs.html" target="_blank">other functions</a>
-  </section>
+  </code></pre>
+  <a href="http://learnboost.github.io/stylus/docs/bifs.html" target="_blank">other functions</a>
 </section>
 
 <section>
-  <section>
-    <h3>Conditions</h3>
-    <h4>Sass</h4>
-    <pre><code data-trim>
+  <h3>Conditions</h3>
+  <h4>Sass</h4>
+  <pre><code data-trim>
 @if
 @else if
 @else
@@ -855,52 +843,52 @@ lightness(color);
 @for
 @each
 @while
-    </code></pre>
-  </section>
-  <section>
-    <h4>LESS</h4>
-    <pre><code data-trim>
+  </code></pre>
+</section>
+
+<section>
+  <h4>LESS</h4>
+  <pre><code data-trim>
 when
 if
-    </code></pre>
-  </section>
+  </code></pre>
+</section>
 
-  <section>
-    <h4>Stylus</h4>
-    <pre><code data-trim>
+<section>
+  <h4>Stylus</h4>
+  <pre><code data-trim>
 if
 else if
 else
 unless
 for
     </code></pre>
-  </section>
 </section>
 
 <section>
-  <section>
-    <h3>Iterations</h3>
-    <h4>SCSS</h4>
-    <pre><code data-trim>
+  <h3>Iterations</h3>
+  <h4>SCSS</h4>
+  <pre><code data-trim>
 @for $i from 1 to 4 {
   .border-#{$i} {
     border: #{$i}px solid black;
   }
 }
-    </code></pre>
-  </section>
+  </code></pre>
+</section>
 
-  <section>
-    <h4>Stylus</h4>
-    <pre><code data-trim>
+<section>
+  <h4>Stylus</h4>
+  <pre><code data-trim>
 for i in (1..4)
   .border-{i}
     border (i)px solid black
-    </code></pre>
-  </section>
-  <section>
-    <h4>CSS</h4>
-    <pre><code data-trim>
+  </code></pre>
+</section>
+
+<section>
+  <h4>CSS</h4>
+  <pre><code data-trim>
 .border-1 {
   border: 1px solid black;
 }
@@ -916,23 +904,23 @@ for i in (1..4)
 .border-4 {
   border: 4px solid black;
 }
-    </code></pre>
-  </section>
+  </code></pre>
+</section>
 
-  <section>
-    <h4>Sass</h4>
-    <pre><code data-trim>
+<section>
+  <h4>Sass</h4>
+  <pre><code data-trim>
 $emotions: happy sad excited
 
 @each $emotion in $emotions
-  .feeling-#{$emotion}
-    background-image: url("images/feeling-#{$emotion}")
-    </code></pre>
-  </section>
+.feeling-#{$emotion}
+  background-image: url("images/feeling-#{$emotion}")
+  </code></pre>
+</section>
 
-  <section>
-    <h4>CSS</h4>
-    <pre><code data-trim>
+<section>
+  <h4>CSS</h4>
+  <pre><code data-trim>
 .feeling-happy {
   background-image: url("images/feeling-happy");
 }
@@ -944,8 +932,7 @@ $emotions: happy sad excited
 .feeling-excited {
   background-image: url("images/feeling-excited");
 }
-    </code></pre>
-  </section>
+  </code></pre>
 </section>
 
 <section data-state="bg-landing" data-background="#fff url(assets/i/postcss.jpeg)"></section>
@@ -995,7 +982,6 @@ $emotions: happy sad excited
 </section>
 
 <section>
-<section>
   <h3>@media</h3>
 
   <pre><code class="css">
@@ -1025,7 +1011,6 @@ $emotions: happy sad excited
     }
   &lt;/style>
   </code></pre>
-</section>
 </section>
 
 <section>
@@ -1068,7 +1053,7 @@ body {
 </section>
 
 <section>
-    <h4>Desktop-first</h4>
+  <h4>Desktop-first</h4>
   <pre><code data-trim>
 // This applies from 600px onwards
 body {
@@ -1091,7 +1076,7 @@ body {
     <br><br><br>
     <h3 class="row">
       <div class="col-4">
-        <a class="fragment" target="_blank" href="https://github.com/csscomb/csscomb.js">CSScomp</a>
+        <a class="fragment" target="_blank" href="https://github.com/csscomb/csscomb.js">CSScomb</a>
       </div>
       <div class="col-4">
         <a class="fragment" target="_blank" href="https://github.com/stylelint/stylelint">Stylelint</a>
@@ -1106,15 +1091,15 @@ body {
   </div>
 </section>
 
-    <section>
-      <h1>Thank You!</h1><br>
-      <h2>Svitlana Pylypenko, <br>EPAM Systems.</h2>
-      <ul style="text-align: center; margin: 0;">
-        <li><a target="_blank" href="https://twitter.com/Mirantel">@mirantel</a></li>
-        <li><a target="_blank" href="https://github.com/mirantel">github.com/mirantel</a></li>
-        <li>Skype: magi-mirantel</li>
-      </ul>
-    </section>
+<section>
+  <h1>Thank You!</h1><br>
+  <h2>Svitlana Pylypenko, <br>EPAM Systems.</h2>
+  <ul style="text-align: center; margin: 0;">
+    <li><a target="_blank" href="https://twitter.com/Mirantel">@mirantel</a></li>
+    <li><a target="_blank" href="https://github.com/mirantel">github.com/mirantel</a></li>
+    <li>Skype: magi-mirantel</li>
+  </ul>
+</section>
 
 </div>
 
