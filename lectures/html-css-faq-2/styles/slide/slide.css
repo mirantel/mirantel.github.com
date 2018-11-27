@@ -45,12 +45,16 @@
 
 .slide::after {
     position: absolute;
-    right: 0;
+    right: 38px;
     bottom: 38px;
     left: 0;
     color: var(--color-light);
     line-height: 18px;
-    text-align: center;
+    text-align: right;
     counter-increment: slide;
     content: counter(slide);
+}
+
+.slide.no-number::after {
+  opacity: 0;
 }

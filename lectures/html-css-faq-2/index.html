@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles/styles.css">
     <style>
         .shower {
-            --slide-ratio: calc(16 / 9);
-            --color-key: #4caf50;
+            --slide-ratio: calc(16 / 10);
+            --color-key: #39C2D7;
         }
     </style>
 </head>
@@ -18,6 +18,148 @@
         <h1>Presentation Title</h1>
         <p><a href="">Yours Truly</a>, Famous Inc.</p>
     </header>
+
+    <section class="slide no-number intro">
+        <img class="cover width" src="pictures/lake_view.jpg" alt="">
+        <img class="intro-logo" src="pictures/epam_logo_white.png" alt="EPAM logo">
+        <h2 class="intro-title">CSS & HTML</h2>
+        <h3 class="intro-author">SVITLANA PYLYPENKO</h3>
+        <p class="intro-date">30, November 2018</p>
+    </section>
+
+    <section class="slide">
+        <h2>Svitlana Pylypenko</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Agenda</h2>
+        <ul>
+            <!-- <li class="next">HTML & CSS history</li>
+            <li class="next">Semantic elements</li>
+            <li class="next">Organizing CSS code</li>
+            <li class="next">CSS Selectors</li>
+            <li class="next">CSS Preprocessors</li>
+            <li class="next">PostCSS</li>
+            <li class="next">Responsive Web Design</li> -->
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>HTML & CSS History</h2>
+        <div class="columns two">
+            <ul>
+              <li class="next">1991 - HTML 1.0</li>
+              <li class="next">1994 - Established W3C</li>
+              <li class="next">1995 - HTML 2.0</li>
+              <li class="next">1996 - CSS 1.0</li>
+              <li class="next">1997 - HTML 3.2</li>
+              <li class="next">1998 - CSS 2.0</li>
+              <li class="next">1999 - HTML 4.01</li>
+            </ul>
+            <ul>
+              <li class="next">1999 - CSS3 draft</li>
+              <li class="next">2000 - XHTML 1.0</li>
+              <li class="next">2004 - Established WHATWG</li>
+              <li class="next">2002 - 2009 - XHTML 2.0</li>
+              <li class="next">2008 - HTML 5 working draft</li>
+              <li class="next">2012 - HTML 5</li>
+              <li class="next">2016 - HTML 5.1</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Sources of truth</h2>
+        <div class="columns three">
+            <div class="next">
+              <h3>Web Standarts</h3>
+              <ul>
+                <li><a target="_blank" href="https://www.w3.org/">W3C</a></li>
+                <li><a target="_blank" href="https://whatwg.org/">WHATWG</a></li>
+              </ul>
+            </div>
+            <div class="next">
+                <h3>Web docs</h3>
+                <a target="_blank" href="https://developer.mozilla.org">MDN</a>
+            </div>
+            <div class="next">
+                <h3>Browser Support</h3>
+                <a target="_blank" href="https://caniuse.com/">Can I use</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            HTML<br>
+            <small>HyperText Markup Language</small>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <pre>
+            <code class="mark">&lt;!DOCTYPE html&gt;</code>
+            <code class="next">&lt;html lang="en"&gt;</code>
+            <div class="next">
+                <code>    &lt;head&gt;</code>
+                <code>        &lt;title&gt;Document&lt;/title&gt;</code>
+                <code>        &lt;meta charset="UTF-8"&gt;</code>
+                <code>    &lt;/head&gt;</code>
+            </div>
+            <div class="next">
+                <code>    &lt;body&gt;</code>
+                <code>        ...</code>
+                <code>    &lt;/body&gt;</code>
+            </div>
+            <code class="next">&lt;/html&gt;</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Tags</h2>
+        <div class="columns two">
+            <div class="next">
+                <h3>Paired Tags</h3>
+                <pre>
+                    <code class="tag">&lt;html&gt; &lt;/html&gt;</code>
+                    <code class="tag">&lt;div&gt; &lt;/div&gt;</code>
+                    <code class="tag">&lt;span&gt; &lt;/span&gt;</code>
+                    <code class="tag">&lt;form&gt; &lt;/form&gt;</code>
+                    <code class="tag">&lt;section&gt; &lt;/section&gt;</code>
+                    <code class="tag">...</code>
+                </pre>
+            </div>
+            <div class="next">
+                <h3>Unpaired Tags</h3>
+                <pre>
+                    <code class="tag">&lt;!DOCTYPE html&gt;</code>
+                    <code class="tag">&lt;br&gt;</code>
+                    <code class="tag">&lt;hr&gt;</code>
+                    <code class="tag">&lt;img&gt;</code>
+                    <code class="tag">&lt;meta&gt;</code>
+                    <code class="tag">...</code>
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <iframe
+        src="https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content"
+        class="iframe"
+        ></iframe>
+    </section>
+
+
+    <section class="slide">
+        <iframe id="cp_embed_ZYNeLW"
+
+        src="https://codepen.io/mirantel/embed/ZYNeLW?height=265&amp;theme-id=light&amp;slug-hash=ZYNeLW&amp;default-tab=css&amp;user=mirantel&amp;pen-title=Generator%20of%20random%20spiral%20with%20sass"
+
+        scrolling="no" frameborder="0" height="265" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" name="CodePen Embed" title="Generator of random spiral with sass" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe>
+        <p data-height="265" data-theme-id="light" data-slug-hash="ZYNeLW" data-default-tab="css" data-user="mirantel" data-pen-title="Generator of random spiral with sass" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/ZYNeLW/">Generator of random spiral with sass</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
 
     <section class="slide">
         <h2>Slide Header</h2>
@@ -481,7 +623,8 @@
 		</a>
 	</footer>
 
-	<script src="../../shower.min.js"></script>
+	<script src="shower.min.js"></script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 	<!-- Copyright © 2018 Yours Truly, Famous Inc. -->
 </body>
