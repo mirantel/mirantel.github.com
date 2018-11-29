@@ -21,7 +21,8 @@ mark.tag {
     border: none;
 }
 
-#cp_embed_MzzmKO {
+#cp_embed_MzzmKO,
+#result-iframe {
     height: 94vh;
 }
 
