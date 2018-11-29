@@ -27,30 +27,20 @@
         <p class="intro-date">30, November 2018</p>
     </section>
 
-    <section class="slide frame">
-
-        <div class="author">
-            <img class="author-photo" src="pictures/lana.jpg"  alt="">
-            <div class="author-info">
-                <h2>Svitlana Pylypenko</h2>
-
-                <p>Senior Software Engineer </p>
-                <p>5 Years at EPAM</p>
-                <p>8 years of commercial experience</p>
-                <p>2nd place on the UA Web Chellange 2012</p>
-            </div>
-        </div>
+    <section class="slide">
+        <h2>Svitlana Pylypenko</h2>
     </section>
 
     <section class="slide">
         <h2>Agenda</h2>
         <ul>
-            <li class="next">HTML</li>
-            <li class="next">CSS</li>
-            <li class="next">CSS Layouts</li>
-            <li class="next">CSS Approaches</li>
-            <li class="next">Tools</li>
-            <li class="next">Questions</li>
+            <!-- <li class="next">HTML & CSS history</li>
+            <li class="next">Semantic elements</li>
+            <li class="next">Organizing CSS code</li>
+            <li class="next">CSS Selectors</li>
+            <li class="next">CSS Preprocessors</li>
+            <li class="next">PostCSS</li>
+            <li class="next">Responsive Web Design</li> -->
         </ul>
     </section>
 
@@ -73,7 +63,7 @@
               <li class="next">2002 - 2009 - XHTML 2.0</li>
               <li class="next">2008 - HTML 5 working draft</li>
               <li class="next">2012 - HTML 5</li>
-              <li class="next">2017 - HTML 5.2</li>
+              <li class="next">2016 - HTML 5.1</li>
             </ul>
         </div>
     </section>
@@ -451,7 +441,7 @@
     </section>
 
     <section class="slide">
-        <h2>You <b>should</b> avoid</h2>
+        <h2>You <mark class="important">should</mark> avoid</h2>
         <ul>
             <li class="next">Inline styles</li>
             <li class="next">!important</li>
@@ -830,7 +820,7 @@
 
     <section class="slide">
         <h2>Z-index</h2>
-        <p>The z-index property specifies the stack <b>order</b> of an element.</p>
+        <p>The z-index property specifies the stack <mark>order</mark> of an element.</p>
         <code>z-index: auto | &lt;integer&gt;</code>
         <br><br>
         <p>Learn more here: <a target="_blanc" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index">MDN</a></p>
@@ -857,7 +847,7 @@
     </section>
 
     <section class="slide">
-        <h2>Notes</h2>
+        <h2></h2>
         <ul>
             <li class="next">Element with [positive] z-index always will be above element without it.</li>
             <li class="next">Lower amount of z-index elements is better.</li>
@@ -931,7 +921,7 @@ flex-direction: <mark>row</mark> | row-reverse | column | column-reverse</code><
     </section>
 
     <section class="slide frame">
-        <p data-height="632" data-theme-id="dark" data-slug-hash="BGvaad" data-default-tab="result" data-user="mirantel" data-pen-title="CSS Grid" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/BGvaad/">CSS Grid</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="632" data-theme-id="dark" data-slug-hash="pQRpBM" data-default-tab="result" data-user="brad4au57" data-pen-title="Stan Lee - In Memoriam (CSS Grid)" class="codepen">See the Pen <a href="https://codepen.io/brad4au57/pen/pQRpBM/">Stan Lee - In Memoriam (CSS Grid)</a> by Brad Bales (<a href="https://codepen.io/brad4au57">@brad4au57</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide water">
@@ -976,7 +966,7 @@ flex-direction: <mark>row</mark> | row-reverse | column | column-reverse</code><
 
     <section class="slide">
         <h2 class="shout">
-            CSS Approaches
+            CSS Architectures
         </h2>
     </section>
 
@@ -1001,91 +991,454 @@ flex-direction: <mark>row</mark> | row-reverse | column | column-reverse</code><
     </section>
 
     <section class="slide">
-        <h2>CSS Methodologies</h2>
+        <h2>Slide Header</h2>
+        <p>Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic. Farm-to-table bespoke fingerstache, kale chips umami brunch letterpress.</p>
+        <p>Whatever authentic disrupt, you probably haven’t heard of them direct trade mlkshk Etsy. Gluten-free roof party plaid four loko quinoa.</p>
+        <p class="note">Echo Park 8-bit sustainable umami deep v Kickstarter.</p>
+    </section>
+
+    <section class="slide">
+        <h2>
+            Multiline<br>
+            Header
+        </h2>
+        <p>Retro meh brunch aesthetic Cosby sweater Shoreditch. Banksy Tumblr sriracha, flexitarian pug chia master cleanse vinyl wayfarers fanny pack bespoke Helvetica roof party. Messenger bag retro cred Portland next level. Yr stumptown Schlitz Carles deep v small batch. Hella sustainable messenger bag, leggings skateboard literally1 bicycle rights H20 mumblecore banh mi DIY VHS. Semiotics four loko street art asymmetrical.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Inline Elements</h2>
+        <p>Retro meh brunch <a href="">aesthetic</a> Cosby sweater Shoreditch. Banksy Tumblr <strong>sriracha</strong>, flexitarian pug chia master cleanse vinyl <em>wayfarers</em> fanny pack bespoke Helvetica <b>roof</b> party. Messenger bag retro cred <i>Portland</i> next level. Yr stumptown Schlitz Carles deep v small batch. Hella sustainable messenger bag, <mark>leggings</mark> skateboard literally<sup>1</sup> bicycle rights H<sub>2</sub>0 mumblecore banh mi DIY VHS. Semiotics four loko street art asymmetrical. Asymmetrical <code>&lt;paleo&gt;</code> you probably haven’t heard of.</p>
+        <footer class="footer">
+            <p>Flannel bicycle rights locavore selfies skateboard. Authentic fanny pack paleo four loko bespoke. Artisan tattooed chia XOXO ennui, lomo disrupt 8-bit art party Tumblr scenester. Post-ironic fashion axe flexitarian, Tonx narwhal messenger bag Tumblr. Portland gentrify deep v kale chips literally.</p>
+        </footer>
+    </section>
+
+    <section class="slide">
+        <h2>Quotes</h2>
+        <blockquote>
+            <p>Flannel bicycle rights locavore selfies skateboard. Authentic fanny pack paleo four loko bespoke. Artisan tattooed chia XOXO ennui, lomo disrupt 8-bit art party Tumblr scenester.</p>
+        </blockquote>
+        <figure>
+            <blockquote>
+                <p>Post-ironic fashion axe flexitarian, Tonx narwhal messenger bag Tumblr. Portland gentrify deep v kale chips literally.</p>
+            </blockquote>
+            <figcaption>Yours Truly</figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Ordered Lists</h2>
+        <ol>
+            <li>Literally viral vegan, ugh drinking vinegar photo booth</li>
+            <li>Wes Anderson chillwave Marfa pour-over Etsy banh mi</li>
+            <li>Ethnic polaroid lo-fi iPhone ennui</li>
+            <li>Yr wayfarers before they sold out Kickstarter asymmetrical</li>
+            <li>Irony flexitarian readymade quinoa, kogi bespoke meggings narwhal</li>
+            <li>Skateboard Etsy twee artisan Echo Park</li>
+            <li>Tonx kitsch fingerstache readymade, retro single-origin coffee</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Unordered Lists</h2>
         <ul>
-            <li>2008 <a target="_blank" href="https://github.com/stubbornella/oocss/tree/master/oocss">OOCSS</a> (Object Oriented CSS)</li>
-            <li>2009 <a target="_blank" href="http://getbem.com/">BEM</a> (Block, Element, Modifier)</li>
-            <li>2011 <a target="_blank" href="https://smacss.com/">SMACSS</a> (Scalable and Modular Architecture for CSS)</li>
-            <li>2012 <a target="_blank" href="https://operatino.github.io/MCSS/en/">MCSS</a> (Multilayer CSS)</li>
-            <li>2014 <a target="_blank" href="https://acss.io/">ACSS</a> (Atomic CSS)</li>
+            <li>Literally viral vegan, ugh drinking vinegar photo booth</li>
+            <li>Wes Anderson chillwave Marfa pour-over Etsy banh mi</li>
+            <li>Ethnic polaroid lo-fi iPhone ennui</li>
+            <li>Yr wayfarers before they sold out Kickstarter asymmetrical</li>
+            <li>Irony flexitarian readymade quinoa, kogi bespoke meggings narwhal</li>
+            <li>Skateboard Etsy twee artisan Echo Park</li>
+            <li>Tonx kitsch fingerstache readymade, retro single-origin coffee</li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2 class="shout">
-            Tools
-        </h2>
-    </section>
-
-    <section class="slide purple">
-        <img class="cover height" src="pictures/automate.png" alt="">
+        <h2>Block Lists</h2>
+        <ul>
+            <li>Retro meh brunch aesthetic Cosby sweater Shoreditch. Banksy Tumblr sriracha, flexitarian pug chia master cleanse vinyl wayfarers fanny pack.</li>
+            <li>Messenger bag retro cred Portland next level. Yr stumptown Schlitz Carles deep v small batch. Hella sustainable messenger bag.</li>
+            <li>Leggings skateboard literally1 bicycle rights H20 mumblecore banh mi DIY VHS. Semiotics four loko street art asymmetrical. Asymmetrical paleo you probably haven’t heard of.</li>
+        </ul>
     </section>
 
     <section class="slide">
-        <h2>Build Tools / Task Runners</h2>
+        <h2>Nested Lists</h2>
         <ol>
-            <li><a target="_blank" href="https://gruntjs.com/">Grunt</a></li>
-            <li><a target="_blank" href="https://gulpjs.com/">Gulp</a></li>
-            <li><a target="_blank" href="https://webpack.js.org/">Webpack</a></li>
-        </ol>
-        <br>
-        <a href="https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners">Learn more</a>
-    </section>
-
-    <section class="slide">
-        <img class="cover width" src="pictures/trends-build.png" alt="">
-    </section>
-
-    <section class="slide">
-        <h2>Pre- and Post-processing</h2>
-        <ol>
-            <li><b>1996</b> CSS</li>
-            <li><b>2006</b> <a target="_blank" href="http://sass-lang.com/">Sass</a></li>
-            <li><b>2009</b> <a target="_blank" href="http://lesscss.org/">Less</a></li>
-            <li><b>2010</b> <a target="_blank" href="http://stylus-lang.com/">Stylus</a></li>
-            <li><b>2013</b> <a target="_blank" href="https://github.com/postcss/postcss">PostCSS</a></li>
+            <li>Literally viral vegan, ugh drinking vinegar photo booth</li>
+            <li>Wes Anderson chillwave Marfa pour-over Etsy banh mi</li>
+            <li>Ethnic polaroid lo-fi iPhone ennui
+                <ul>
+                    <li>Yr wayfarers before they sold out Kickstarter asymmetrical</li>
+                    <li>Irony flexitarian readymade quinoa, kogi bespoke meggings narwhal</li>
+                    <li>Skateboard Etsy twee artisan Echo Park</li>
+                </ul>
+            </li>
+            <li>Tonx kitsch fingerstache readymade, retro single-origin coffee</li>
         </ol>
     </section>
 
     <section class="slide">
-        <img class="cover width" src="pictures/trends-css.png" alt="">
+        <h2>Latin and Cyrillic List Bullets</h2>
+        <ul lang="en">
+            <li>Occupy locavore blog, mustache you probably haven’t heard of them</li>
+            <li>Skateboard pork belly aesthetic hoodie selfies brunch</li>
+            <li>Food truck gluten-free disrupt Portland</li>
+        </ul>
+        <ul lang="ru">
+            <li>Helvetica narwhal drinking vinegar chillwave, post-ironic ennui</li>
+            <li>Cray pug paleo retro, Echo Park narwhal Wes Anderson</li>
+            <li>Disrupt Williamsburg fixie, shabby chic bicycle rights hashtag kogi</li>
+        </ul>
     </section>
 
-    <section class="slide a-center">
-        <h2>CSS Linters</h2>
-        <br>
-            <img width="600" src="pictures/linter.png" alt="">
-        <br><br>
-        <div class="columns four">
-            <div>
-                <a target="_blank" href="https://github.com/csscomb/csscomb.js">
-                    CSScomb
-                </a>
-            </div>
-            <div>
-                <a target="_blank" href="https://github.com/stylelint/stylelint">
-                    Stylelint
-                </a>
-            </div>
-            <div>
-                <a target="_blank" href="https://github.com/CSSLint/csslint/">
-                    CSSLint
-                </a>
-            </div>
-            <div>
-                <a target="_blank" href="https://github.com/brigade/scss-lint">
-                    SCSSLint
-                </a>
-            </div>
+    <section class="slide">
+        <h2>Custom List Bullets</h2>
+        <ul>
+            <li value="+">Helvetica narwhal drinking vinegar chillwave, post-ironic ennui</li>
+            <li value="−">Cray pug paleo retro, Echo Park narwhal Wes Anderson</li>
+            <li value="+">Disrupt Williamsburg fixie, shabby chic bicycle rights hashtag kogi</li>
+        </ul>
+        <ol>
+            <li value="100">Occupy locavore blog, mustache you probably haven’t heard of them</li>
+            <li value="10">Skateboard pork belly aesthetic hoodie selfies brunch</li>
+            <li value="1">Food truck gluten-free disrupt Portland</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Two Columns</h2>
+        <div class="columns two">
+            <p>Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic. Farm-to-table bespoke fingerstache, kale chips umami brunch.</p>
+            <p>American Apparel letterpress. Whatever authentic disrupt, you probably haven’t heard of them direct trade mlkshk Etsy. Gluten-free roof party plaid American Apparel four loko quinoa.</p>
         </div>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Questions</h2>
+        <h2>Two Lists</h2>
+        <div class="columns two">
+            <ul>
+                <li>Occupy locavore, mustache you probably haven’t heard of them</li>
+                <li>Skateboard pork belly aesthetic hoodie selfies brunch</li>
+                <li>Food truck gluten-free disrupt Portland</li>
+            </ul>
+            <ul>
+                <li>Helvetica narwhal drinking vinegar chillwave, post-ironic ennui</li>
+                <li>Cray pug paleo retro, Echo Park narwhal Wes Anderson</li>
+                <li>Disrupt Williamsburg fixie, shabby chic bicycle rights hashtag kogi</li>
+            </ul>
+        </div>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Thank You!</h2>
+        <h2>Three Lists</h2>
+        <div class="columns three">
+            <ul>
+                <li>Skateboard pork belly aesthetic hoodie selfies brunch.</li>
+                <li>You probably haven’t heard of them.</li>
+            </ul>
+            <ul>
+                <li>Food truck gluten-free Portland.</li>
+                <li>Helvetica narwhal drinking vinegar chillwave, post-ironic ennui</li>
+            </ul>
+            <ul>
+                <li>Cray pug paleo retro, Echo Park narwhal Wes Anderson</li>
+                <li>Disrupt fixie, shabby chic bicycle rights hashtag kogi</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Four Lists</h2>
+        <div class="columns four">
+            <ul>
+                <li>Gentrify</li>
+                <li>Messenger</li>
+                <li>Meggings</li>
+                <li>Vegan</li>
+                <li>Next level</li>
+                <li>Umami</li>
+            </ul>
+            <ul>
+                <li>Twee</li>
+                <li>Mixtape</li>
+                <li>Freegan</li>
+                <li>Occupy</li>
+                <li>Selfies</li>
+                <li>Haven’t heard</li>
+            </ul>
+            <ul>
+                <li>Artisan</li>
+                <li>Small batch</li>
+                <li>Biodiesel</li>
+                <li>Normcore</li>
+                <li>Sustainable</li>
+                <li>Skateboard</li>
+            </ul>
+            <ul>
+                <li>Banksy</li>
+                <li>Bicycle rights</li>
+                <li>Slow-carb</li>
+                <li>Bird on it</li>
+                <li>Organic</li>
+                <li>Farm-to-table</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Simple Table</h2>
+        <table>
+        <tr>
+            <th scope="col">Gentrify</th>
+            <th>Twee</th>
+            <th>Artisan</th>
+            <th>Banksy</th>
+        </tr>
+        <tr>
+            <th scope="row">Messenger</th>
+            <td>Mixtape</td>
+            <td>Small batch</td>
+            <td>Bicycle rights</td>
+        </tr>
+        <tr>
+            <th scope="row">Meggings</th>
+            <td>Freegan</td>
+            <td>Retro biodiesel</td>
+            <td>Slow-carb</td>
+        </tr>
+        <tr>
+            <th scope="row">Vegan</th>
+            <td>Occupy</td>
+            <td>Normcore</td>
+            <td>Put a bird on it</td>
+        </tr>
+        <tr>
+            <th scope="row">Next level</th>
+            <td>Selfies</td>
+            <td>Sustainable</td>
+            <td>Organic</td>
+        </tr>
+        <tr>
+            <th scope="row">Umami</th>
+            <td>Asymmetrical</td>
+            <td>Keytar</td>
+            <td>Craft beer</td>
+        </tr>
+        <tr>
+            <th scope="row">Biodiesel</th>
+            <td>Haven’t heard</td>
+            <td>Skateboard</td>
+            <td>Farm-to-table</td>
+        </tr>
+        </table>
+    </section>
+
+    <section class="slide">
+        <h2>Striped Table</h2>
+        <table class="striped">
+        <tr>
+            <th scope="col">Gentrify</th>
+            <th>Twee</th>
+            <th>Artisan</th>
+            <th>Banksy</th>
+        </tr>
+        <tr>
+            <th scope="row">Messenger</th>
+            <td>Mixtape</td>
+            <td>Small batch</td>
+            <td>Bicycle rights</td>
+        </tr>
+        <tr>
+            <th scope="row">Meggings</th>
+            <td>Freegan</td>
+            <td>Retro biodiesel</td>
+            <td>Slow-carb</td>
+        </tr>
+        <tr>
+            <th scope="row">Vegan</th>
+            <td>Occupy</td>
+            <td>Normcore</td>
+            <td>Put a bird on it</td>
+        </tr>
+        <tr>
+            <th scope="row">Next level</th>
+            <td>Selfies</td>
+            <td>Sustainable</td>
+            <td>Organic</td>
+        </tr>
+        <tr>
+            <th scope="row">Umami</th>
+            <td>Asymmetrical</td>
+            <td>Keytar</td>
+            <td>Craft beer</td>
+        </tr>
+        <tr>
+            <th scope="row">Biodiesel</th>
+            <td>Haven’t heard</td>
+            <td>Skateboard</td>
+            <td>Farm-to-table</td>
+        </tr>
+        </table>
+    </section>
+
+    <section class="slide">
+        <h2>Plain Code Listing</h2>
+        <pre><code>&lt;html lang="en"&gt;
+<mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span>
+    &lt;title&gt;Shower&lt;/title&gt;
+    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;
+    &lt;link rel="stylesheet" href="screen.css"&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+<mark>&lt;/head&gt;</mark></code></pre>
+    </section>
+    <section class="slide">
+        <h2>Numbered Code Listing</h2>
+        <pre>
+            <code>&lt;html lang="en"&gt;</code>
+            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
+            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
+            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
+            <code>    &lt;script src="script.js"&gt;&lt;/script&gt;</code>
+            <code><mark>&lt;/head&gt;</mark></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Highlighted Code Lines</h2>
+        <pre>
+            <code>&lt;html lang="en"&gt;</code>
+            <code class="mark">&lt;head&gt; <span class="comment">&lt;!--Comment--&gt;</span></code>
+            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
+            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
+            <code>    &lt;script src="script.js"&gt;&lt;/script&gt;</code>
+            <code class="mark">&lt;/head&gt;</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Hidden Code Steps</h2>
+        <pre>
+            <code class="next">&lt;html lang="en"&gt;</code>
+            <code class="next"><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
+            <code class="next">    &lt;title&gt;Shower&lt;/title&gt;</code>
+            <code class="next">    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+            <code class="next">    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
+            <code class="next">    &lt;script src="script.js"&gt;&lt;/script&gt;</code>
+            <code class="next"><mark>&lt;/head&gt;</mark></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Highlighted Code Steps</h2>
+        <pre>
+            <code class="mark next">&lt;html lang="en"&gt;</code>
+            <code>&lt;head&gt; <span class="comment">&lt;!--Comment--&gt;</span></code>
+            <code class="mark next">    &lt;title&gt;Shower&lt;/title&gt;</code>
+            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+            <code class="mark next">    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
+            <code>    &lt;script src="script.js"&gt;&lt;/script&gt;</code>
+            <code class="mark next">&lt;/head&gt;</code>
+        </pre>
+    </section>
+
+    <section class="slide white">
+        <h2>White Slide</h2>
+    </section>
+
+    <section class="slide black">
+        <h2>Black Slide</h2>
+    </section>
+
+    <section class="slide clear">
+        <h2>Clear Slide</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Shout</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            Multiline<br>
+            Shout
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <a href="">Linked Shout</a>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <a href="">
+                Multiline<br>
+                Linked
+            </a>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2>Cover</h2>
+        <figure>
+            <img class="cover" src="pictures/exact.svg" alt="Picture placeholder.">
+            <figcaption class="copyright top">Copyright © 2018 <a href="">Yours Truly</a>, Famous Inc.</figcaption>
+            <figcaption class="copyright right">Copyright © 2018 <a href="">Yours Truly</a>, Famous Inc.</figcaption>
+            <figcaption class="copyright bottom">Copyright © 2018 <a href="">Yours Truly</a>, Famous Inc.</figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Tall Cover</h2>
+        <img class="cover" src="pictures/tall.svg" alt="Tall picture placeholder.">
+    </section>
+
+    <section class="slide">
+        <h2>Wide Cover</h2>
+        <img class="cover" src="pictures/wide.svg" alt="Wide picture placeholder.">
+    </section>
+
+    <section class="slide clear">
+        <h2>Place</h2>
+        <img class="place top left" src="pictures/square.svg" alt="Square picture placeholder.">
+        <img class="place top" src="pictures/square.svg" alt="Square picture placeholder.">
+        <img class="place top right" src="pictures/square.svg" alt="Square picture placeholder.">
+        <img class="place left" src="pictures/square.svg" alt="Square picture placeholder.">
+        <img class="place" src="pictures/square.svg" alt="Square picture placeholder.">
+        <img class="place right" src="pictures/square.svg" alt="Square picture placeholder.">
+        <img class="place bottom left" src="pictures/square.svg" alt="Square picture placeholder.">
+        <img class="place bottom" src="pictures/square.svg" alt="Square picture placeholder.">
+        <img class="place bottom right" src="pictures/square.svg" alt="Square picture placeholder.">
+    </section>
+
+    <section class="slide">
+        <h2>List Navigation</h2>
+        <ol>
+            <li>Ennui keffiyeh thundercats</li>
+            <li class="next">Jean shorts biodiesel</li>
+            <li class="next">Terry richardson, swag blog</li>
+            <li class="next">Locavore umami vegan helvetica</li>
+            <li class="next">Fingerstache kale chips</li>
+        </ol>
+        <p class="next">Before they sold out master</p>
+    </section>
+
+    <section class="slide clear">
+        <h2>Place + Next</h2>
+        <img class="place next left" height="100%" src="pictures/picture-1.svg" alt="Picture placeholder.">
+        <img class="place next" height="100%" src="pictures/picture-2.svg" alt="Picture placeholder.">
+        <img class="place next right" height="100%" src="pictures/picture-3.svg" alt="Picture placeholder.">
+    </section>
+
+    <section class="slide" data-timing="00:03">
+        <h2 class="shout">Timer</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">The End</h2>
     </section>
 
     <div class="progress"></div>

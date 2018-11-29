@@ -42,3 +42,32 @@ pre.columns code::before {
     background: var(--color-key);
     color: white;
 }
+
+.water {
+    background: #141414;
+}
+
+.purple {
+    background-color: #fdfcfc;
+}
+
+.a-center {
+    text-align: center;
+}
+
+.author {
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.author-info {
+    padding: 70px;
+}
+
+.author-photo {
+    height: 100%;
+}
