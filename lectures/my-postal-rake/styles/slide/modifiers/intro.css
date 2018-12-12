@@ -1,0 +1,27 @@
+.slide.intro {
+  color: white;
+  padding-top: 230px;
+}
+
+.intro-logo {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: 200px;
+}
+
+.slide .intro-title {
+  text-align: center;
+  color: inherit;
+  font-size: 98px;
+}
+
+.intro-author {
+  text-align: center;
+}
+
+.intro-date {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
