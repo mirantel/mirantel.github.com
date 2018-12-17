@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+        :root {
+            --epam-blue: #76cdd8;
+            --epam-lime-green: #CEDB56;
+            --epam-graphite: #222;
+            --epam-coral: #D35D47;
+            --epam-bright-blue: #008ACE;
+            --epam-sharp-blue: #39C2D7;
+            --epam-dark-blue: #263852;
+            --epam-light-gray: #ccc;
+            --epam-dark-gray: #464547;
+        }
+    
+        .box {
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            width: 19.5%;
+            background-color: #76cdd8;
+            padding: 10px;
+        }
+
+        .wrap {
+            border: 3px solid #D35D47;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 100%;
+            height: 30px;
+            border: 1px solid 464547;
+            border-radius: 4px;
+            padding: 2px 6px;
+        }
+    </style>
+    <title>inline-block</title>
+</head>
+<body>
+    <div class="wrap" lang="en">
+        <div class="box"><input type="text" placeholder="Quantity"></div>
+        <div class="box"><input type="text" placeholder="Units"></div>
+        <div class="box"><input type="text" placeholder="Item Value"></div>
+        <div class="box"><input type="text" placeholder="Net Weight"></div>
+        <div class="box"><input type="text" placeholder="Gross Weight"></div>
+    </div>
+
+    <div class="wrap" lang="ja">
+        <div class="box"><input type="text" placeholder="梱包タイプ"></div>
+        <div class="box"><input type="text" placeholder="数量"></div>
+        <div class="box"><input type="text" placeholder="付保金額"></div>
+        <div class="box"><input type="text" placeholder="寸法"></div>
+        <div class="box"><input type="text" placeholder="合計"></div>
+    </div>
+
+    <div class="wrap" lang="zh">
+        <div class="box"><input type="text" placeholder="邮政编码"></div>
+        <div class="box"><input type="text" placeholder="城市"></div>
+        <div class="box"><input type="text" placeholder="国家/地区"></div>
+        <div class="box"><input type="text" placeholder="了解更多缓存"></div>
+        <div class="box"><input type="text" placeholder="我们如何使用缓"></div>
+    </div>
+
+    <div class="wrap" lang="ko">
+        <div class="box"><input type="text" placeholder="발송인"></div>
+        <div class="box"><input type="text" placeholder="수취인"></div>
+        <div class="box"><input type="text" placeholder="연락처 유형"></div>
+        <div class="box"><input type="text" placeholder="국가코드"></div>
+        <div class="box"><input type="text" placeholder="전화번호"></div>
+    </div>
+</body>
+</html>
