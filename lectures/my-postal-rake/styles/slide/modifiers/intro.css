@@ -3,11 +3,32 @@
   padding-top: 230px;
 }
 
+.slide.intro::after {
+  opacity: 0;
+}
+
+.intro-cover::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: var(--epam-sharp-blue);
+  background-color: #1B9CB0;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.intro-cover .cover {
+  filter: grayscale(100%) contrast(200%);
+}
+
 .intro-logo {
   position: absolute;
-  right: 50px;
+  left: 50px;
   top: 50px;
-  width: 200px;
+  width: 120px;
 }
 
 .slide .intro-title {

@@ -1,0 +1,17 @@
+.author {
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    /* background-color: var(--epam-sharp-blue); */
+    /* color: white; */
+}
+
+.author-info {
+    padding: 70px;
+}
+
+.author-photo {
+    height: 100%;
+}

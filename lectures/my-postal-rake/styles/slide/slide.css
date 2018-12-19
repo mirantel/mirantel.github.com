@@ -27,7 +27,9 @@
 @import 'modifiers/clear.css';
 @import 'modifiers/white.css';
 @import 'modifiers/black.css';
+
 @import 'modifiers/intro.css';
+@import 'modifiers/author.css';
 
 /* Slide */
 
@@ -54,8 +56,4 @@
     text-align: right;
     counter-increment: slide;
     content: counter(slide);
-}
-
-.slide.no-number::after {
-  opacity: 0;
 }

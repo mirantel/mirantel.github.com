@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="921" height="369" viewBox="0 0 921 369">
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -5)">
+    <g transform="translate(0 293)">
+      <text fill="#E61A1A" font-family="Helvetica" font-size="18">
+        <tspan x="404" y="33">*</tspan>
+      </text>
+      <rect width="401" height="35" x=".5" y="19.5" fill="#FFF" stroke="#979797" rx="2"/>
+      <text fill="#393939" font-family="Helvetica" font-size="16">
+        <tspan x="1" y="15">Label</tspan>
+      </text>
+    </g>
+    <g transform="translate(0 208)">
+      <text fill="#E61A1A" font-family="Helvetica" font-size="18">
+        <tspan x="404" y="33">*</tspan>
+      </text>
+      <rect width="401" height="35" x=".5" y="19.5" fill="#FFF" stroke="#979797" rx="2"/>
+      <text fill="#393939" font-family="Helvetica" font-size="16">
+        <tspan x="1" y="15">Label</tspan>
+      </text>
+    </g>
+    <g transform="translate(0 123)">
+      <rect width="401" height="35" x=".5" y="19.5" fill="#FFF" stroke="#979797" rx="2"/>
+      <text fill="#393939" font-family="Helvetica" font-size="16">
+        <tspan x="1" y="15">Label</tspan>
+      </text>
+      <text fill="#E61A1A" font-family="Helvetica" font-size="18">
+        <tspan x="404" y="33">*</tspan>
+      </text>
+    </g>
+    <g transform="translate(0 38)">
+      <rect width="401" height="35" x=".5" y="19.5" fill="#FFF" stroke="#979797" rx="2"/>
+      <text fill="#393939" font-family="Helvetica" font-size="16">
+        <tspan x="1" y="15">Label</tspan>
+      </text>
+      <text fill="#E61A1A" font-family="Helvetica" font-size="12">
+        <tspan x="8" y="74">Required</tspan>
+      </text>
+      <text fill="#E61A1A" font-family="Helvetica" font-size="18">
+        <tspan x="404" y="33">*</tspan>
+      </text>
+      <rect width="401" height="21" x=".5" y="59.5" stroke="#E61A1A" rx="2"/>
+    </g>
+    <g transform="translate(0 38)">
+      <rect width="401" height="35" x=".5" y="19.5" fill="#FFF" stroke="#979797" rx="2"/>
+      <text fill="#393939" font-family="Helvetica" font-size="16">
+        <tspan x="1" y="15">Label</tspan>
+      </text>
+      <text fill="#E61A1A" font-family="Helvetica" font-size="12">
+        <tspan x="8" y="74">Required</tspan>
+      </text>
+      <text fill="#E61A1A" font-family="Helvetica" font-size="18">
+        <tspan x="404" y="33">*</tspan>
+      </text>
+      <rect width="401" height="21" x=".5" y="59.5" stroke="#E61A1A" rx="2"/>
+    </g>
+    <text fill="#393939" font-family="Helvetica" font-size="24">
+      <tspan x="1" y="23">From</tspan>
+    </text>
+    <g transform="translate(510 293)">
+      <g transform="translate(0 59)">
+        <text fill="#E61A1A" font-family="Helvetica" font-size="12">
+          <tspan x="8" y="15">Required</tspan>
+        </text>
+        <rect width="401" height="21" x=".5" y=".5" stroke="#E61A1A" rx="2"/>
+      </g>
+      <text fill="#E61A1A" font-family="Helvetica" font-size="18">
+        <tspan x="404" y="33">*</tspan>
+      </text>
+      <rect width="401" height="35" x=".5" y="19.5" fill="#FFF" stroke="#979797" rx="2"/>
+      <text fill="#393939" font-family="Helvetica" font-size="16">
+        <tspan x="1" y="15">Label</tspan>
+      </text>
+    </g>
+    <g transform="translate(510 208)">
+      <text fill="#E61A1A" font-family="Helvetica" font-size="18">
+        <tspan x="404" y="33">*</tspan>
+      </text>
+      <rect width="401" height="35" x=".5" y="19.5" fill="#FFF" stroke="#979797" rx="2"/>
+      <text fill="#393939" font-family="Helvetica" font-size="16">
+        <tspan x="1" y="15">Label</tspan>
+      </text>
+    </g>
+    <g transform="translate(510 123)">
+      <rect width="401" height="35" x=".5" y="19.5" fill="#FFF" stroke="#979797" rx="2"/>
+      <text fill="#393939" font-family="Helvetica" font-size="16">
+        <tspan x="1" y="15">Label</tspan>
+      </text>
+      <text fill="#E61A1A" font-family="Helvetica" font-size="18">
+        <tspan x="404" y="33">*</tspan>
+      </text>
+    </g>
+    <g transform="translate(510 38)">
+      <rect width="401" height="35" x=".5" y="19.5" fill="#FFF" stroke="#979797" rx="2"/>
+      <text fill="#393939" font-family="Helvetica" font-size="16">
+        <tspan x="1" y="15">Label</tspan>
+      </text>
+      <text fill="#E61A1A" font-family="Helvetica" font-size="18">
+        <tspan x="404" y="33">*</tspan>
+      </text>
+    </g>
+    <text fill="#393939" font-family="Helvetica" font-size="24">
+      <tspan x="511" y="23">To</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="854" height="424" viewBox="0 0 854 424">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="339" height="420" fill="#D8D8D8"/>
+    <rect width="339" height="420" x="515" y="4" fill="#D8D8D8"/>
+    <g transform="translate(19 23)">
+      <g transform="translate(517)">
+        <rect width="300" height="120" fill="#39C2D7" rx="8"/>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+          <tspan x="70.335" y="32">Style Guide</tspan>
+        </text>
+      </g>
+      <g transform="translate(0 257)">
+        <rect width="300" height="120" fill="#A3C644" rx="8"/>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+          <tspan x="25.26" y="32">CSS Sourse Code</tspan>
+        </text>
+      </g>
+      <g transform="translate(517 257)">
+        <rect width="300" height="120" fill="#A3C644" rx="8"/>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+          <tspan x="25.26" y="32">CSS Sourse Code</tspan>
+        </text>
+      </g>
+      <g transform="translate(1)">
+        <rect width="300" height="118.802" fill="#B22746" rx="8"/>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+          <tspan x="100.245" y="32">Project</tspan>
+        </text>
+      </g>
+      <path fill="#A3C644" fill-rule="nonzero" d="M178.707957 148.480993L179.499933 256.981752 179.518181 259.481686 174.518314 259.518181 174.500067 257.018248 173.70809 148.517488 161.70841 148.605077 175.99635 119.500013 190.707637 148.393404 178.707957 148.480993zM698 147L698 267.5 698 270 693 270 693 267.5 693 147 681 147 695.5 118 710 147 698 147z"/>
+      <path fill="#39C2D7" fill-rule="nonzero" d="M328,186 L514.5,186 L517,186 L517,191 L514.5,191 L328,191 L328,203 L299,188.5 L328,174 L328,186 Z"/>
+    </g>
+    <path fill="#B22746" fill-rule="nonzero" d="M125,257 L125,141.5 L125,139 L130,139 L130,141.5 L130,257 L142,257 L127.5,286 L113,257 L125,257 Z"/>
+    <path fill="#39C2D7" fill-rule="nonzero" d="M647,257 L647,141.5 L647,139 L652,139 L652,141.5 L652,257 L664,257 L649.5,286 L635,257 L647,257 Z"/>
+  </g>
+</svg>

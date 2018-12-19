@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="816" height="377" viewBox="0 0 816 377">
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(516)">
+      <rect width="300" height="120" fill="#39C2D7" rx="8"/>
+      <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+        <tspan x="70.335" y="32">Style Guide</tspan>
+      </text>
+    </g>
+    <g transform="translate(263 257)">
+      <rect width="300" height="120" fill="#A3C644" rx="8"/>
+      <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+        <tspan x="25.26" y="32">CSS Sourse Code</tspan>
+      </text>
+    </g>
+    <g transform="translate(258 257)">
+      <rect width="300" height="120" fill="#A3C644" rx="8"/>
+      <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+        <tspan x="25.26" y="32">CSS Sourse Code</tspan>
+      </text>
+    </g>
+    <rect width="300" height="118.802" fill="#B22746" rx="8"/>
+    <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+      <tspan x="100.245" y="32">Project</tspan>
+    </text>
+    <path fill="#A3C644" fill-rule="nonzero" d="M167.040855 142.204224L265.070625 287.099103 266.471522 289.169727 262.330273 291.971522 260.929375 289.900897 162.899606 145.006019 152.960607 151.730326 148.719821 119.585875 176.979853 135.479916 167.040855 142.204224zM669.039035 142.571946L563.477392 279.02968 561.947711 281.007072 557.992928 277.947711 559.522608 275.97032 665.084252 139.512585 655.592772 132.170119 684.805936 118.104522 678.530516 149.914412 669.039035 142.571946z"/>
+    <path fill="#39C2D7" fill-rule="nonzero" d="M330,51 L516.5,51 L519,51 L519,56 L516.5,56 L330,56 L330,68 L301,53.5 L330,39 L330,51 Z"/>
+    <path fill="#B22746" fill-rule="nonzero" d="M236.891363 324.769408L90.4662692 119.953939 89.0123301 117.920208 93.0797917 115.01233 94.5337308 117.046061 240.958825 321.86153 250.720733 314.882622 255.790788 346.906746 227.129455 331.748316 236.891363 324.769408zM716.468414 142.842379L563.504211 347.994368 562.009843 349.99858 558.00142 347.009843 559.495789 345.005632 712.459991 139.853643 702.839776 132.680675 731.798874 118.099158 726.088629 150.015346 716.468414 142.842379z"/>
+  </g>
+</svg>

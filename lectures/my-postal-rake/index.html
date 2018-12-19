@@ -97,6 +97,21 @@
             width: 100%;
             vertical-align: top;
         }
+        .angular-mark {
+            position: absolute;
+            right: 53px;
+            bottom: 90px;
+        }
+        .big-number {
+            font-size: 50px;
+            margin: 0 0 40px !important;
+            line-height: 1;
+        }
+        .big-number b {
+            color: var(--epam-sharp-blue);
+            font-size: 90px;
+            vertical-align: sub;
+        }
     </style>
 </head>
 <body class="shower list">
@@ -131,52 +146,39 @@
     </section>
 
     <section class="slide">
-        <h2>Project</h2>
-        <h3>Цель проекта объеденить около 20 сайтов в один</h3>
+        <img src="pictures/lang-2.svg" style="width: 100%" alt="">
+    </section>
 
-        <ul>
-            <li>IE8+</li>
-            <li>Safari for Windows</li> 
-            <li>Мультиязычность</li>
-        </ul>
+    <section class="slide">
+        <h2>Platforms / Solutions</h2>
+        <img class="width place" src="pictures/platforms.png" alt="">
+        <p class="angular-mark">* Angular 1.228</p>
+    </section>
 
-        <h3>Технологии</h3>
-        <ul>
-            <li>Angular 1.228</li>
-            <li>SCSS</li>
-        </ul>
+    <section class="slide">
+        <img class="place" style="max-width: 95%" src="pictures/team.svg" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>Big numbers</h2>
+
+        <p class="next big-number"><b>22117</b> - Unit tests</p>
+        <p class="next big-number"><b>93-98%</b> - Сaverage</p>
+    </section>
+
+    <section class="slide">
+        <img class="" style="max-width: 95%" src="pictures/layout.svg" alt="">
 
     </section>
 
     <section class="slide">
-        <img class=" width cover" src="pictures/temp/slide.png" alt="">
-    </section>
-
-    <section class="slide">
-
-
-    </section>
-
-    <section class="slide">
-        <h2>UI зависит от:</h2>
-        <div class="columns three">
-            <div>
-                Main site
-            </div>
-            <div>
-                Admin tool
-            </div>
-            <div>
-                Сервисы
-            </div>
-        </div>
-    </section>
-
-    <section class="slide">
-            <h2 class="shout">Team: ~ 160</h2>
-    </section>
-
-
+            <h2>FE Requirements:</h2>
+            <ul>
+                <li>Internet Explorer 8+</li>
+                <li>Safari for Windows</li>
+                <li>Multilingual</li>
+            </ul>
+        </section>
 
     <section class="slide">
         <img class="cover height" src="pictures/world.png" alt="">
@@ -189,6 +191,10 @@
 
     <section class="slide">
         <div class="columns two">
+                <div>
+                    <h2>SCSS Code State </h2>
+                        <!-- <img style="max-width: 100%" src="pictures/temp/ring.png" alt=""> -->
+                    </div>
             <pre style="font-size: 16px" class="scss"><code>.wrapper {
     .header {
         .logo {
@@ -210,28 +216,75 @@
         }
     }
 }</code></pre>
-            <div>
-                <img style="max-width: 100%" src="pictures/temp/ring.png" alt="">
-            </div>
         </div>
     </section>
 
     <section class="slide">
         <h2>Problems and solutions</h2>
-        <img style="max-width: 100%" src="pictures/temp/problems.png" alt="">
+        <svg style="max-width: 100%" xmlns="http://www.w3.org/2000/svg" width="1220" height="440" viewBox="0 0 1220 440">
+            <g fill="none" fill-rule="evenodd">
+                <g class="next">
+                    <rect width="380" height="118.802" fill="#B22746" rx="8"/>
+                    <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+                        <tspan x="43.87" y="68">One file for all Styles</tspan>
+                    </text>
+                </g>
+                <g class="next" transform="translate(420)">
+                    <rect width="380" height="118.802" fill="#B22746" rx="8"/>
+                    <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+                    <tspan x="128.26" y="48">Incorrect </tspan> <tspan x="139.3" y="90">nesting</tspan>
+                    </text>
+                </g>
+                <g class="next" transform="translate(840)">
+                    <rect width="380" height="118.802" fill="#B22746" rx="8"/>
+                    <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+                    <tspan x="11.305" y="48">Lack of Name convention </tspan> <tspan x="69.235" y="90">and Methodology</tspan>
+                    </text>
+                </g>
+                <g class="next" transform="translate(0 122)">
+                    <g transform="translate(0 197)">
+                    <rect width="380" height="120" fill="#39C2D7" rx="8"/>
+                    <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+                        <tspan x="23.215" y="69">Add SCSS file structure</tspan>
+                    </text>
+                    </g>
+                    <path fill="#A3C644" fill-rule="nonzero" d="M187.5,168.5 L187.5,0 L187.5,-2.5 L192.5,-2.5 L192.5,0 L192.5,168.5 L204.5,168.5 L190,197.5 L175.5,168.5 L187.5,168.5 Z"/>
+                </g>
+                <g class="next" transform="translate(420 120)">
+                    <g transform="translate(0 200)">
+                    <rect width="380" height="120" fill="#39C2D7" rx="8"/>
+                    <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+                        <tspan x="78.67" y="69">Remove nesting</tspan>
+                    </text>
+                    </g>
+                    <path fill="#A3C644" fill-rule="nonzero" d="M187.5,168.5 L187.5,0 L187.5,-2.5 L192.5,-2.5 L192.5,0 L192.5,168.5 L204.5,168.5 L190,197.5 L175.5,168.5 L187.5,168.5 Z"/>
+                </g>
+                <g class="next" transform="translate(840 120)">
+                    <g transform="translate(0 197)">
+                    <rect width="380" height="120" fill="#39C2D7" rx="8"/>
+                    <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+                        <tspan x="36.805" y="49">Add Methodology and </tspan> <tspan x="79.495" y="91">Code standards</tspan>
+                    </text>
+                    </g>
+                    <path fill="#A3C644" fill-rule="nonzero" d="M188.5,168.5 L188.5,0 L188.5,-2.5 L193.5,-2.5 L193.5,0 L193.5,168.5 L205.5,168.5 L191,197.5 L176.5,168.5 L188.5,168.5 Z"/>
+                </g>
+            </g>
+        </svg>          
     </section>
 
     <section class="slide">
-        <h2>Constants</h2>
+        <h2 class="shout">Constants</h2>
+    </section>
 
-        <iframe src="bootstrap.html" class="iframe" style="height: 90vh"></iframe>
+    <section class="slide">
+        <iframe src="bootstrap.html" class="iframe" style="height: 99%"></iframe>
     </section>
 
     <section class="slide">
         <h2>Constants</h2>
         <div class="columns two">
             <div>
-<pre><code class="scss next" style="font-size: 18px;">// Color system
+<pre><code class="scss" style="font-size: 18px;">// Color system
     $blue:       #007bff;
     $color-blue: #007bff;
     $COLOR_BLUE: #007bff;</code></pre>
@@ -277,15 +330,18 @@
     </section>
 
     <section class="slide">
+        <h2 class="shout">Forms</h2>
+    </section>
+
+    <section class="slide">
         <h2>Forms</h2>
         <img class="max-width" src="pictures/form-1.svg" alt="">
-        <pre><code class="html" style="font-size: 18px;">&lt;label class="field-wrapper">
-    &lt;span class="label">Label&lt;/span>
-    &lt;input type="text" class="input input_width_full">
-    &lt;span class="validation-mark">&lt;/span>
-    &lt;span class="msg-error">Required&lt;/span>
-&lt;/label>
-        </code></pre>
+        <pre class="html"><code style="font-size: 18px;">&lt;label class="field-wrapper"&gt;
+    &lt;span class="label"&gt;Label&lt;/span&gt;
+    &lt;input type="text" class="input input_width_full"&gt;
+    &lt;span class="validation-mark"&gt;&lt;/span&gt;
+    &lt;span class="msg-error"&gt;Required&lt;/span&gt;
+&lt;/label&gt;</code></pre>
     </section>
 
     <section class="slide">
@@ -318,6 +374,10 @@
             <br>
             <li class="next">Валидация происходит внутри обертки</li>
         </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Grid</h2>
     </section>
 
     <section class="slide">
@@ -386,6 +446,10 @@
     </section>
 
     <section class="slide">
+        <h2 class="shout">Vertical margins</h2>
+    </section>
+
+    <section class="slide">
         <h2>Vertical margins</h2>
         <div class="wrap">
             <div class="box-1 margin">block</div>
@@ -418,9 +482,7 @@
             <div class="box-1 margin">block</div>
         </div>
 
-    <pre class="html">
-            <code>
-&lt;div class="wrap">
+    <pre class="html"><code>&lt;div class="wrap">
     &lt;div ng-if="myVar">&lt;/div>
     &lt;div class="box">box&lt;/div>
     &lt;div class="inline-block">box&lt;/div>
@@ -438,13 +500,17 @@
     </section>
 
     <section class="slide">
+        <h2 class="shout">Methodologies</h2>
+    </section>
+
+    <section class="slide">
         <h2>Methodologies</h2>
         
         <h2 class="place center"><img src="pictures/bem.svg" width="200" alt=""> BEM
             <br><br>
             + <s>Non Semantic Modifiers</s>
             <br>
-            Presentational Class Names
+            <!-- Presentational Class Names -->
         </h2>
     </section>
 
@@ -461,7 +527,7 @@
     </section>
 
     <section class="slide">
-        <h2>Presentational Class Names</h2>
+        <h2>Non Semantic Modifiers</h2>
         <h3>States - Ok</h3>
         <pre class="scss"><code>.is-visible {
     visibility: visible;
@@ -525,10 +591,10 @@
         </code></pre>
         <div class="columns two">
             <ul>
-                <li class="next">легко создавать компоненты</li>
-                <li class="next">сложно поддерживать</li>
-                <li class="next">сложно отлаживать</li>
-                <li class="next">теряется консистентность дизайна</li>
+                <li class="next">Easy to create components</li>
+                <li class="next">Difficult to maintain</li>
+                <li class="next">Hard to debug</li>
+                <li class="next">Design consistency is lost</li>
             </ul>
             <img  class="next" src="pictures/sad.gif" alt="">
         </div>
@@ -543,6 +609,10 @@
             <br>
             <li class="next">Ну разве что для состояний: is-hidden</li>
         </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Inline-block</h2>
     </section>
 
     <section class="slide">
@@ -613,45 +683,229 @@ p:lang(en) {
     </section>
 
     <section class="slide">
-        <img class="place center left" src="pictures/ltr.png" alt="">
-        <img class="place center right" src="pictures/rtl.png" alt="">
-    </section>
-    
-    <section class="slide">
-        <img class="cover height" src="pictures/img-ltr.png" alt="">
+        <h2 class="shout">RTL</h2>
     </section>
 
     <section class="slide">
-        <img class="cover height" src="pictures/img-rtl.png" alt="">
+        <img class="cover" src="pictures/rtl/Writing_directions_of_the_world.svg" alt="">
+        <!-- Автор: SPQRobin - Based on File:WritingSystemsOfTheWorld.svg, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15907384 -->
+    </section>
+
+    <section class="slide">
+        <h2>Hebrew</h2>
+        <div lang="he" dir="rtl">קובץ
+                סרטונים מדינת ישראל - וידאו
+                יִשְׂרָאֵל (בערבית: إسرائيل, אִסְרַאאִיל) היא מדינה במזרח התיכון, השוכנת על החוף הדרום-מזרחי של הים התיכון. ישראל הוקמה בשטחי ארץ ישראל, ביתו הלאומי וארץ מולדתו של העם היהודי. המדינה, שהכריזה על עצמאותה בה' באייר תש"ח, 14 במאי 1948, היא בעלת משטר של דמוקרטיה פרלמנטרית.</div>
+        <h2>Arabic</h2>
+        <div lang="ar" dir="rtl">اللُّغَة العَرَبِيّة هي أكثر اللغات تحدثاً ونطقاً ضمن مجموعة اللغات السامية، وإحدى أكثر اللغات انتشاراً في العالم، يتحدثها أكثر من 467 مليون نسمة،[4](1) ويتوزع متحدثوها في الوطن العربي، بالإضافة إلى العديد من المناطق الأخرى المجاورة كالأحواز وتركيا وتشاد ومالي والسنغال وإرتيريا وإثيوبيا وجنوب السودان وإيران. اللغة العربية ذات أهمية قصوى لدى المسلمين، فهي عندهم لغة مقدسة إذ أنها لغة القرآن، وهي لغة الصلاة وأساسية في القيام بالعديد من العبادات والشعائر الإسلامية.</div>
+
+    </section>
+
+    <section class="slide frame">
+        <iframe style="height: 99%" class="iframe" src="https://he.wikipedia.org/wiki/%D7%99%D7%A9%D7%A8%D7%90%D7%9C" frameborder="0"></iframe>
     </section>
 
     <section class="slide">
         <h2>RTL</h2>
-        <div class="next">
-                <pre class="html"><code>&lt;body dir="ltr"></code></pre>
-                <pre class="scss"><code>body {
-    direction : ltr;
+        <div class="columns two">
+            <pre class="html"><code>&lt;!-- recommended --&gt;
+&lt;body dir="rtl"></code></pre>
+            <pre class="next scss"><code>/* not recommended */
+body {
+    direction : rlt;
 }</code></pre>
-<!-- https://habr.com/company/2gis/blog/358148/ -->
         </div>
+        <br>
+        <ul class="next" style="font-family: monospace;">
+            <li>Initial:	ltr</li>
+            <li>Applies to:	all elements</li>
+            <li>Inherited:	yes</li>
+        </ul>
+    </section>
 
-        <p class="next">Add PostCSS plugin: <a href="#">rtlcss.com</a></p>
+    <section class="slide frame">
+        <p data-height="760" data-theme-id="light" data-slug-hash="bOwJeV" data-default-tab="result" data-user="mirantel" data-pen-title="Experiment with unicode-bidi: embed;" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/bOwJeV/">Experiment with unicode-bidi: embed;</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide frame">
+        <p data-height="760" data-theme-id="light" data-slug-hash="EGgMrv" data-default-tab="result" data-user="mirantel" data-pen-title="EGgMrv" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/EGgMrv/">EGgMrv</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide frame">
+        <p data-height="760" data-theme-id="light" data-slug-hash="GPNprd" data-default-tab="css,result" data-user="mirantel" data-pen-title="RTL Layout" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/GPNprd/">RTL Layout</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
-        <mark>Draft</mark>
-        <h2>RTL</h2>
+        <h2>Abstract Box Terminology</h2>
+        <div class="columns two">
+            <img style="max-width: 137%;" src="pictures/sizing-ltr-tb.svg" alt="">
+            <img style="max-width: 137%;" src="pictures/sizing-ttb-rl.svg" alt="">
+        </div>
+        <br>
+        <p>Specification: <a href="https://www.w3.org/TR/css-writing-modes-4">CSS Writing Modes Level 4</a></p>
+        <p>Specification: <a href="https://www.w3.org/TR/css-logical-1/">CSS Logical Properties and Values Level 1</a></p>
+    </section>
+
+    <section class="slide frame">
+        <iframe style="height: 99%" class="iframe" src="https://rtlcss.com/" frameborder="0"></iframe>
+    </section>
+
+    <section class="slide">
+        <h2>Summary</h2>
         <ul>
-            <li>dir="rtl" задаёт направление потока, выравнивает текст как text-align: right, меняет порядок ячеек таблицы, флексов и гридов. За последовательность символов в строке отвечает unicode bidirectional algorithm;</li>
-            <li>Каждый символ имеет тип направленности — строго типизированные (буквы), слабо типизированные (цифры) и нейтральные (знаки пунктуации и пробелы);</li>
-            <li>Проблемы возникают чаще всего на границе между разными типами символов.</li>
+            <li>RTL это не страшно</li>
+            <li>Add dir="rtl"</li>
+            <li>Add RtlCss</li>
+            <li>Use bdi</li>
         </ul>
     </section>
 
     <section class="slide">
-        <mark>Draft</mark>
+        <h2 class="shout">Style Guide</h2>
+    </section>
+
+    <section class="slide">
         <h2>Style Guide</h2>
-        <img style="max-width: 100%"  src="pictures/temp/style-guide.png" alt="">
+        <svg class="place center" xmlns="http://www.w3.org/2000/svg" width="816" height="377" viewBox="0 0 816 377">
+            <g fill="none" fill-rule="evenodd">
+                <g>
+                    <rect width="300" height="118.802" fill="#B22746" rx="8"/>
+                    <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+                        <tspan x="100.245" y="69">Project</tspan>
+                    </text>
+                </g>
+                <g class="next" transform="translate(516)">
+                    <rect width="300" height="120" fill="#39C2D7" rx="8"/>
+                    <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+                    <tspan x="70.335" y="69">UI Style Guide</tspan>
+                    </text>
+                </g>
+                <g class="next"transform="translate(258 257)">
+                    <rect width="300" height="120" fill="#A3C644" rx="8"/>
+                    <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+                    <tspan x="25.26" y="69">CSS Sourse Code</tspan>
+                    </text>
+                </g>
+              <path class="next" fill="#39C2D7" fill-rule="nonzero" d="M330,51 L516.5,51 L519,51 L519,56 L516.5,56 L330,56 L330,68 L301,53.5 L330,39 L330,51 Z"/>
+              <path class="next" fill="#A3C644" fill-rule="nonzero" d="M167.040855 142.204224L265.070625 287.099103 266.471522 289.169727 262.330273 291.971522 260.929375 289.900897 162.899606 145.006019 152.960607 151.730326 148.719821 119.585875 176.979853 135.479916 167.040855 142.204224zM669.039035 142.571946L563.477392 279.02968 561.947711 281.007072 557.992928 277.947711 559.522608 275.97032 665.084252 139.512585 655.592772 132.170119 684.805936 118.104522 678.530516 149.914412 669.039035 142.571946z"/>
+              <path class="next" fill="#B22746" fill-rule="nonzero" d="M236.891363 324.769408L90.4662692 119.953939 89.0123301 117.920208 93.0797917 115.01233 94.5337308 117.046061 240.958825 321.86153 250.720733 314.882622 255.790788 346.906746 227.129455 331.748316 236.891363 324.769408zM716.468414 142.842379L563.504211 347.994368 562.009843 349.99858 558.00142 347.009843 559.495789 345.005632 712.459991 139.853643 702.839776 132.680675 731.798874 118.099158 726.088629 150.015346 716.468414 142.842379z"/>
+            </g>
+          </svg>
+    </section>
+    <section class="slide">
+        <h2>Style Guide</h2>
+        <svg class="place center" xmlns="http://www.w3.org/2000/svg" width="854" height="424" viewBox="0 0 854 424">
+            <g fill="none" fill-rule="evenodd">
+              <rect width="339" height="420" fill="#D8D8D8"/>
+              <rect width="339" height="420" x="515" y="4" fill="#D8D8D8"/>
+              <g transform="translate(19 23)">
+                <g transform="translate(517)">
+                  <rect width="300" height="120" fill="#39C2D7" rx="8"/>
+                  <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+                    <tspan x="70.335" y="70">UI Style Guide</tspan>
+                  </text>
+                </g>
+                <g transform="translate(0 257)">
+                  <rect width="300" height="120" fill="#A3C644" rx="8"/>
+                  <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+                    <tspan x="25.26" y="70">CSS Sourse Code</tspan>
+                  </text>
+                </g>
+                <g transform="translate(517 257)">
+                  <rect width="300" height="120" fill="#A3C644" rx="8"/>
+                  <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+                    <tspan x="25.26" y="70">CSS Sourse Code</tspan>
+                  </text>
+                </g>
+                <g transform="translate(1)">
+                  <rect width="300" height="118.802" fill="#B22746" rx="8"/>
+                  <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+                    <tspan x="100.245" y="70">Project</tspan>
+                  </text>
+                </g>
+                <path fill="#A3C644" fill-rule="nonzero" d="M178.707957 148.480993L179.499933 256.981752 179.518181 259.481686 174.518314 259.518181 174.500067 257.018248 173.70809 148.517488 161.70841 148.605077 175.99635 119.500013 190.707637 148.393404 178.707957 148.480993zM698 147L698 267.5 698 270 693 270 693 267.5 693 147 681 147 695.5 118 710 147 698 147z"/>
+                <path fill="#39C2D7" fill-rule="nonzero" d="M328,186 L514.5,186 L517,186 L517,191 L514.5,191 L328,191 L328,203 L299,188.5 L328,174 L328,186 Z"/>
+              </g>
+              <path fill="#B22746" fill-rule="nonzero" d="M125,257 L125,141.5 L125,139 L130,139 L130,141.5 L130,257 L142,257 L127.5,286 L113,257 L125,257 Z"/>
+              <path fill="#39C2D7" fill-rule="nonzero" d="M647,257 L647,141.5 L647,139 L652,139 L652,141.5 L652,257 L664,257 L649.5,286 L635,257 L647,257 Z"/>
+            </g>
+          </svg>
+    </section>
+
+    <section class="slide">
+        <h2>CSS Code Style Guides</h2>
+        <div class="columns two">
+                <ul>
+                    <li>
+                        <a href="https://google.github.io/styleguide/htmlcssguide.html">Google HTML/CSS Style Guide</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/airbnb/css">Airbnb CSS / Sass Styleguide</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/dropbox/css-style-guide?ref=ddtomorrow.com">Dropbox (S)CSS Style Guide</a>
+                    </li>
+                    <li>
+                        <a href="http://nucleus.tmol.co/coding-style.html">Nucleus Coding Style</a>
+                    </li>
+                    <li>
+                        <a href="http://codeguide.co/">Code Guide by @mdo</a>
+                    </li>
+                    <li>
+                        <a href="https://cssguidelin.es/">CSS Guidelines by Harry Roberts</a>
+                    </li>
+                </ul>
+                <div>
+                    <pre style="font-size: 16px;" class="scss"><code>// Nucleus Coding Style
+// bad
+.parent {
+    ...
+
+    &__child {
+    ...
+    }
+}
+
+// good
+.parent {
+  ...
+}
+
+.parent__child {
+  ...
+}</code></pre>
+                </div>
+        </div>
+
+    </section>
+
+    <section class="slide a-center">
+        <h2>CSS Linters</h2>
+        <br>
+        <p style="text-align: center;">
+            <img  src="pictures/linter.png" alt="">
+        </p>
+
+        <p class="next">
+            <a target="_blank" href="https://github.com/stylelint/stylelint">
+                Stylelint
+            </a> - 5708 stars on Github
+        </p>
+        <p class="next">Configs: 
+            <a href="https://github.com/hudochenkov/stylelint-order">stylelint-order</a>,
+            <a href="https://github.com/htmlacademy/stylelint-config-htmlacademy">stylelint-config-htmlacademy</a>
+        </p>
+        <p class="next">Other: 
+            <a target="_blank" href="https://github.com/CSSLint/csslint/">
+                CSSLint
+            </a>,
+            <a target="_blank" href="https://github.com/brigade/scss-lint">
+                SCSSLint
+            </a>,
+            <a target="_blank" href="https://github.com/csscomb/csscomb.js">
+                CSScomb
+            </a>
+        </p>
     </section>
 
     <section class="slide">

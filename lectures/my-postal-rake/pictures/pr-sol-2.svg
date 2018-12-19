@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="440" viewBox="0 0 1220 440">
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(840 120)">
+      <g transform="translate(0 197)">
+        <rect width="380" height="120" fill="#39C2D7" rx="8"/>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+          <tspan x="36.805" y="49">Add Methodology and </tspan> <tspan x="79.495" y="91">Code standards</tspan>
+        </text>
+      </g>
+      <path fill="#A3C644" fill-rule="nonzero" d="M188.5,168.5 L188.5,0 L188.5,-2.5 L193.5,-2.5 L193.5,0 L193.5,168.5 L205.5,168.5 L191,197.5 L176.5,168.5 L188.5,168.5 Z"/>
+    </g>
+    <g transform="translate(420 120)">
+      <g transform="translate(0 200)">
+        <rect width="380" height="120" fill="#39C2D7" rx="8"/>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+          <tspan x="78.67" y="69">Remove nesting</tspan>
+        </text>
+      </g>
+      <path fill="#A3C644" fill-rule="nonzero" d="M187.5,168.5 L187.5,0 L187.5,-2.5 L192.5,-2.5 L192.5,0 L192.5,168.5 L204.5,168.5 L190,197.5 L175.5,168.5 L187.5,168.5 Z"/>
+    </g>
+    <g transform="translate(0 122)">
+      <g transform="translate(0 197)">
+        <rect width="380" height="120" fill="#39C2D7" rx="8"/>
+        <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+          <tspan x="53.215" y="69">SCSS file structure.</tspan>
+        </text>
+      </g>
+      <path fill="#A3C644" fill-rule="nonzero" d="M187.5,168.5 L187.5,0 L187.5,-2.5 L192.5,-2.5 L192.5,0 L192.5,168.5 L204.5,168.5 L190,197.5 L175.5,168.5 L187.5,168.5 Z"/>
+    </g>
+    <g transform="translate(840)">
+      <rect width="380" height="118.802" fill="#B22746" rx="8"/>
+      <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+        <tspan x="11.305" y="48">Lack of Name convention </tspan> <tspan x="69.235" y="90">and Methodology</tspan>
+      </text>
+    </g>
+    <g transform="translate(420)">
+      <rect width="380" height="118.802" fill="#B22746" rx="8"/>
+      <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+        <tspan x="128.26" y="48">Incorrect </tspan> <tspan x="139.3" y="90">nesting</tspan>
+      </text>
+    </g>
+    <rect width="380" height="118.802" fill="#B22746" rx="8"/>
+    <text fill="#FFF" font-family="PingFangSC-Regular, PingFang SC" font-size="30">
+      <tspan x="43.87" y="68">One file for all Styles</tspan>
+    </text>
+  </g>
+</svg>

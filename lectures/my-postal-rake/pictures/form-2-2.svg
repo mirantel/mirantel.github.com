@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="445" height="79" viewBox="0 0 445 79">
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -2)">
+    <rect width="434" height="21" x=".5" y="59.5" stroke="#E61A1A" rx="2"/>
+    <rect width="134" height="35" x=".5" y="19.5" fill="#FFF" stroke="#979797" rx="2"/>
+    <text fill="#E61A1A" font-family="Helvetica" font-size="12">
+      <tspan x="8" y="74">Required</tspan>
+    </text>
+    <rect width="134" height="35" x="150.5" y="19.5" fill="#FFF" stroke="#979797" rx="2"/>
+    <text fill="#393939" font-family="Helvetica" font-size="16">
+      <tspan x="1" y="15">Label</tspan>
+    </text>
+    <g transform="translate(300 15)">
+      <rect width="134" height="35" x=".5" y="4.5" fill="#FFF" stroke="#979797" rx="2"/>
+      <text fill="#E61A1A" font-family="Helvetica" font-size="18">
+        <tspan x="138" y="18">*</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
