@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTML & CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 10);
+            --color-key: #39C2D7;
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>HTML & CSS</h1>
+        <p><a href="https://twitter.com/Mirantel">Svitlana Pylypenko</a>, EPAM SYSTEMS</p>
+    </header>
+
+    <section class="slide no-number intro">
+        <img class="cover width" src="pictures/lake_view.jpg" alt="">
+        <img class="intro-logo" src="pictures/epam_logo_white.png" alt="EPAM logo">
+        <h2 class="intro-title">HTML & CSS</h2>
+        <h3 class="intro-author">SVITLANA PYLYPENKO</h3>
+        <p class="intro-date">7, March 2019</p>
+    </section>
+
+    <section class="slide frame">
+        <div class="author">
+            <img class="author-photo" src="pictures/lana.jpg"  alt="">
+            <div class="author-info">
+                <h2>Svitlana Pylypenko</h2>
+
+                <p>Senior Software Engineer </p>
+                <p>5 Years at EPAM</p>
+                <p>8 years of commercial experience</p>
+                <p>2nd place on the UA Web Challenge 2012</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Agenda</h2>
+        <ul>
+            <li class="next">CSS</li>
+            <li class="next">CSS Layouts</li>
+            <li class="next">CSS Approaches</li>
+            <li class="next">Tools</li>
+            <li class="next">Questions</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Sources of truth</h2>
+        <div class="columns three">
+            <div class="next">
+              <h3>Web Standarts</h3>
+              <ul>
+                <li><a target="_blank" href="https://www.w3.org/">W3C</a></li>
+                <li><a target="_blank" href="https://whatwg.org/">WHATWG</a></li>
+              </ul>
+            </div>
+            <div class="next">
+                <h3>Web Docs</h3>
+                <a target="_blank" href="https://developer.mozilla.org">MDN</a>
+            </div>
+            <div class="next">
+                <h3>Browser Support</h3>
+                <a target="_blank" href="https://caniuse.com/">Can I use</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            CSS<br>
+            <small>Cascading Style Sheets</small>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2>Reset VS Normalize</h2>
+        <div class="columns two">
+            <div class="next">
+                <h3>Reset styles</h3>
+                <p>GitHub:
+                    <a target="_blank" href="https://github.com/jasonkarns/css-reset">CSS Reset</a>
+                </p>
+            </div>
+            <div class="next">
+                <h3>Normalizes styles</h3>
+                <p>GitHub:
+                    <a target="_blank" href="https://github.com/necolas/normalize.css/">Normalize.css</a>
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p class="next">
+            Read more on
+            <a target="_blank" href="https://htmlacademy.ru/blog/64-about-normalize-css">HtmlAcademy.ru</a>
+        </p>
+    </section>
+
+    <section class="slide">
+        <img class="place" src="pictures/3dview.png" alt="3D view to site">
+    </section>
+
+    <section class="slide">
+        <h2>Normal flow</h2>
+        <div class="columns two">
+            <div>
+                <h3 class="margin-none">Block formatting contexts</h3>
+                <img src="pictures/block.png" alt="">
+            </div>
+            <div>
+                <h3 class="margin-none">Inline formatting contexts</h3>
+                <img src="pictures/inline.png" alt="">
+            </div>
+        </div>
+        <p>Learn more here:
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Formatting_Contexts_Explained">MDN</a>
+        </p>
+    </section>
+
+    <section class="slide">
+        <div class="columns three">
+            <div>
+                <h2>Block</h2>
+                <code>
+                    div, h1 - h6, p, form, ul, etc.
+                </code>
+            </div>
+            <div>
+                <h2>Inline</h2>
+                <code>
+                    span, a, em, strong, etc.
+                </code>
+            </div>
+            <div>
+                <h2>Inline-Block</h2>
+                <code>
+                     input, button, select, textarea, etc.
+                </code>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="bQQRwM" data-default-tab="css,result" data-user="mirantel" data-pen-title="bQQRwM" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/bQQRwM/">bQQRwM</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="vQQJYj" data-default-tab="html,result" data-user="mirantel" data-pen-title="vQQJYj" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/vQQJYj/">vQQJYj</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Block</h2>
+        <code>display: block;</code>
+        <ul>
+            <li class="next">Block formatting contexts</li>
+            <li class="next">Adjustable width, height</li>
+            <li class="next">Take all horizontal available place</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Inline</h2>
+        <code>display: inline;</code>
+        <ul>
+            <li class="next">Inline formatting contexts</li>
+            <li class="next">Cannot set width, height</li>
+            <li class="next">Vertical margin and padding do not affect elements position</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Inline-Block</h2>
+        <code>display: inline-block;</code>
+        <ul>
+            <li class="next">Inline formatting contexts</li>
+            <li class="next">Adjustable width, height, margin, padding</li>
+            <li class="next">Behaves like a symbol</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Box Model</h2>
+        <img class="place" src="pictures/css_box_model_chrome.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>Margin collapse</h2>
+        <p data-height="460" data-theme-id="dark" data-slug-hash="aQQYoe" data-default-tab="css,result" data-user="mirantel" data-pen-title="margin collapse" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/aQQYoe/">margin collapse</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Margin dropping out</h2>
+        <p data-height="460" data-theme-id="dark" data-slug-hash="OaaQeg" data-default-tab="css,result" data-user="mirantel" data-pen-title="margin dropping out" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/OaaQeg/">margin dropping out</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            CSS Layouts
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2>CSS Layouts</h2>
+        <ul>
+            <li class="next"><i>Normal flow</i></li>
+            <li class="next"><i>The display property</i></li>
+            <li class="next">Table layout</li>
+            <li class="next">Floats</li>
+            <li class="next">Positioning</li>
+            <li class="next">Multiple-column layout</li>
+            <li class="next">Flexbox</li>
+            <li class="next">Grid</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Which to choose?</h2>
+        <p>It depends on:</p>
+        <ul>
+            <li class="next">Design</li>
+            <li class="next">Project Browser Stats</li>
+            <li class="next">Your / Project Goals</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Table</h2>
+        <ul>
+            <li>For e-mail templates</li>
+            <li>For table information</li>
+            <li>For table like markup</li>
+        </ul>
+        <a target="_blanc" href="http://w3c.github.io/html/single-page.html#tabular-data">W3C HTML5 draft specification</a>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="mQQKBe" data-default-tab="html,result" data-user="mirantel" data-pen-title="mQQKBe" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/mQQKBe/">mQQKBe</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Floats</h2>
+        <ul>
+            <li>For old browsers</li>
+            <li>To set the flow around the right or left</li>
+        </ul>
+        <code>float: <mark>none</mark> | left | right | inherit</code>
+        <br>
+        <br>
+        <a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/CSS/float">MDN</a>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="RqqBZg" data-default-tab="css,result" data-user="mirantel" data-pen-title="RqqBZg" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/RqqBZg/">RqqBZg</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="yQQqvW" data-default-tab="css,result" data-user="mirantel" data-pen-title="yQQqvW" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/yQQqvW/">yQQqvW</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="BGGPPP" data-default-tab="css,result" data-user="mirantel" data-pen-title="BGGPPP" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/BGGPPP/">BGGPPP</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>How to clear float?</h2>
+        <ul>
+            <li>clear: both;</li>
+            <li>Clearfix</li>
+            <li>Other less canonic</li>
+        </ul>
+        <p>Learn more about clearfix:
+            <a target="_blanc" href="https://css-tricks.com/snippets/css/clear-fix/">CSS-TRICKS</a>
+        </p>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="RqqBvQ" data-default-tab="css,result" data-user="mirantel" data-pen-title="RqqBvQ" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/RqqBvQ/">RqqBvQ</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="qQQMqV" data-default-tab="html,result" data-user="mirantel" data-pen-title="qQQMqV" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/qQQMqV/">qQQMqV</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Positioning</h2>
+        <ul>
+            <li>For modals, alerts.</li>
+            <li>For navigation.</li>
+            <li>For decorative elements.</li>
+        </ul>
+        <code>position: <mark>static</mark> | relative | absolute | sticky | fixed</code>
+        <br>
+        <br>
+        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">MDN</a>
+    </section>
+
+    <section class="slide">
+        <p>
+            The 'top', 'right', 'bottom', and 'left' properties <b>do not</b> apply for <b>position: static</b>
+        </p>
+        <p data-height="440" data-theme-id="dark" data-slug-hash="YRRdMB" data-default-tab="result" data-user="mirantel" data-pen-title="Position 1" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/YRRdMB/">Position 1</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>position: relative</h2>
+<pre><code>span {
+    position: <mark>relative</mark>;
+    top: 20px;
+    left: 20px;
+}</code></pre>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="NEEoWN" data-default-tab="result" data-user="mirantel" data-pen-title="Position 2" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/NEEoWN/">Position 2</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="NEEoNR" data-default-tab="result" data-user="mirantel" data-pen-title="NEEoNR" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/NEEoNR/">NEEoNR</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>position: absolute</h2>
+<pre><code>span {
+    position: <mark>absolute</mark>;
+    top: 20px;
+    left: 20px;
+}</code></pre>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="Jeexbe" data-default-tab="result" data-user="mirantel" data-pen-title="Position 4" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/Jeexbe/">Position 4</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="OaadOX" data-default-tab="result" data-user="mirantel" data-pen-title="Position 5" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/OaadOX/">Position 5</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>position: fixed</h2>
+<pre><code>span {
+    position: <mark>fixed</mark>;
+    top: 20px;
+    left: 20px;
+}</code></pre>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="PxxVQz" data-default-tab="result" data-user="mirantel" data-pen-title="Position 6" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/PxxVQz/">Position 6</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Z-index</h2>
+        <p>The z-index property specifies the stack <b>order</b> of an element.</p>
+        <code>z-index: auto | &lt;integer&gt;</code>
+        <br><br>
+        <p>Learn more here: <a target="_blanc" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index">MDN</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Z-index</h2>
+        <img class="place" src="pictures/z-index.gif" alt="">
+    </section>
+
+    <section class="slide">
+        <code>position: static</code>
+        <p data-height="400" data-theme-id="dark" data-slug-hash="YRRBMw" data-default-tab="result" data-user="mirantel" data-pen-title="Z-index 1" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/YRRBMw/">Z-index 1</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <code>position: relative</code>
+        <p data-height="400" data-theme-id="dark" data-slug-hash="XyyOwO" data-default-tab="result" data-user="mirantel" data-pen-title="XyyOwO" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/XyyOwO/">XyyOwO</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <code>z-index: 1</code>
+        <p data-height="400" data-theme-id="dark" data-slug-hash="mQQobO" data-default-tab="result" data-user="mirantel" data-pen-title="mQQobO" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/mQQobO/">mQQobO</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Notes</h2>
+        <ul>
+            <li class="next">Element with [positive] z-index always will be above element without it.</li>
+            <li class="next">Lower amount of z-index elements is better.</li>
+            <li class="next">On the same level the last element will be the highest one.</li>
+            <li class="next">In most cases you actually <b>do not</b> need z-index.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Multiple-column layout</h2>
+        <p>Method of flowing information in multiple <columns></columns></p>
+        <ul>
+            <li>For text content</li>
+            <li>IE10+</li>
+        </ul>
+        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns">MDN</a>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="QJJoGB" data-default-tab="result" data-user="mirantel" data-pen-title="Multiple Column Layout Test" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/QJJoGB/">Multiple Column Layout Test</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Flexbox</h2>
+        <p>Method of positioning elements in horizontal or vertical stacks.</p>
+        <ul>
+            <li>For layouts</li>
+            <li>IE10+</li>
+            <li>For mobile layouts</li>
+        </ul>
+        <br>
+        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">MDN</a>
+        <br>
+        <a target="_blank" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a>
+        <br>
+        <a target="_blank" href="https://vimeo.com/67011034">Flexbox, теперь понятно</a>
+    </section>
+
+    <section class="slide">
+        <img class="place" src="pictures/flex-direction-terms.svg" alt="">
+    </section>
+
+    <section class="slide">
+        <pre><code>display: flex;
+flex-direction: <mark>row</mark> | row-reverse | column | column-reverse</code></pre>
+
+        <p data-height="360" data-theme-id="dark" data-slug-hash="vQQMWz" data-default-tab="result" data-user="mirantel" data-pen-title="Flex" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/vQQMWz/">Flex</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Grid</h2>
+        <p>CSS Grid Layout is the most powerful layout system available in CSS.</p>
+        <ul>
+            <li>For layouts</li>
+            <li>IE10+</li>
+            <li>For mobile layouts</li>
+        </ul>
+        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">MDN</a>
+        <br>
+        <a target="_blank" href="https://mozilladevelopers.github.io/playground/">Introduction to CSS Grid Layout - Firefox DevTools PlayGround</a>
+        <br>
+        <a target="_blank" href="http://cssgridgarden.com/">A game for learning CSS grid</a>
+    </section>
+
+    <section class="slide">
+        <img class="place" src="pictures/grid-concepts.svg" alt="">
+    </section>
+
+    <section class="slide frame">
+        <p data-height="632" data-theme-id="dark" data-slug-hash="BGvaad" data-default-tab="result" data-user="mirantel" data-pen-title="CSS Grid" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/BGvaad/">CSS Grid</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide water">
+        <img class="place" src="pictures/rwd.png" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover width" src="pictures/view.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>Responsive Web Design</h2>
+        <ol>
+            <li class="next">Add viewport <br>
+            <code>&lt;meta name="viewport" content="width=device-width"&gt;</code></li>
+            <li class="next">Use relative to width units: <code>%, vw</code></li>
+            <li class="next">Add  <code>@media</code></li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Media Queries</h2>
+        <ul>
+            <li>Device type</li>
+            <li>Dimension (min/max width or height)</li>
+            <li>Pixel ratio</li>
+            <li>Device orientation</li>
+            <li>...and so on</li>
+        </ul>
+        <p>Learn more here:
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">MDN</a>
+        </p>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="vQQqWm" data-default-tab="css" data-user="mirantel" data-pen-title="Media" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/vQQqWm/">Media</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <p data-height="460" data-theme-id="dark" data-slug-hash="NEEZYL" data-default-tab="html" data-user="mirantel" data-pen-title="Media 2" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/NEEZYL/">Media 2</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            CSS Approaches
+        </h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover width height" src="pictures/mobile-first.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>Responsive Web Design</h2>
+        <p data-height="400" data-theme-id="dark" data-slug-hash="oQQrrw" data-default-tab="css,result" data-user="mirantel" data-pen-title="Desktop first" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/oQQrrw/">Desktop first</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Mobile First Web Design</h2>
+        <p data-height="400" data-theme-id="dark" data-slug-hash="BGGgEO" data-default-tab="css,result" data-user="mirantel" data-pen-title="Mobile first" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/BGGgEO/">Mobile first</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide a-center">
+        <h2>Two development approaches:</h2>
+        <img src="pictures/progressive-enhancement-va-graceful-degradation.jpg" alt="">
+        <p class="place bottom">One goal: keep products useful to every user!</p>
+    </section>
+
+    <section class="slide">
+        <h2>CSS Methodologies</h2>
+        <ul>
+            <li>2008 <a target="_blank" href="https://github.com/stubbornella/oocss/tree/master/oocss">OOCSS</a> (Object Oriented CSS)</li>
+            <li>2009 <a target="_blank" href="http://getbem.com/">BEM</a> (Block, Element, Modifier)</li>
+            <li>2011 <a target="_blank" href="https://smacss.com/">SMACSS</a> (Scalable and Modular Architecture for CSS)</li>
+            <li>2012 <a target="_blank" href="https://operatino.github.io/MCSS/en/">MCSS</a> (Multilayer CSS)</li>
+            <li>2014 <a target="_blank" href="https://acss.io/">ACSS</a> (Atomic CSS)</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            Tools
+        </h2>
+    </section>
+
+    <section class="slide purple">
+        <img class="cover height" src="pictures/automate.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>Build Tools / Task Runners</h2>
+        <ol>
+            <li><a target="_blank" href="https://gruntjs.com/">Grunt</a></li>
+            <li><a target="_blank" href="https://gulpjs.com/">Gulp</a></li>
+            <li><a target="_blank" href="https://webpack.js.org/">Webpack</a></li>
+        </ol>
+        <br>
+        <a target="_blank" href="https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners">Learn more</a>
+    </section>
+
+    <section class="slide">
+        <img class="cover width" src="pictures/trends-build.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>Pre- and Post-processing</h2>
+        <ol>
+            <li><b>1996</b> CSS</li>
+            <li><b>2006</b> <a target="_blank" href="http://sass-lang.com/">Sass</a></li>
+            <li><b>2009</b> <a target="_blank" href="http://lesscss.org/">Less</a></li>
+            <li><b>2010</b> <a target="_blank" href="http://stylus-lang.com/">Stylus</a></li>
+            <li><b>2013</b> <a target="_blank" href="https://github.com/postcss/postcss">PostCSS</a></li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <img class="cover width" src="pictures/trends-css.png" alt="">
+    </section>
+
+    <section class="slide a-center">
+        <h2>CSS Linters</h2>
+        <br>
+            <img width="600" src="pictures/linter.png" alt="">
+        <br><br>
+        <div class="columns four">
+            <div>
+                <a target="_blank" href="https://github.com/csscomb/csscomb.js">
+                    CSScomb
+                </a>
+            </div>
+            <div>
+                <a target="_blank" href="https://github.com/stylelint/stylelint">
+                    Stylelint
+                </a>
+            </div>
+            <div>
+                <a target="_blank" href="https://github.com/CSSLint/csslint/">
+                    CSSLint
+                </a>
+            </div>
+            <div>
+                <a target="_blank" href="https://github.com/brigade/scss-lint">
+                    SCSSLint
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Questions</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Thank You!</h2>
+    </section>
+
+    <div class="progress"></div>
+
+	<footer class="badge">
+		<a href="https://github.com/shower/shower">
+			<svg width="81" height="79" viewBox="0 0 81 79" aria-hidden="true">
+				<path d="M40.5 0a40.5 40.5 0 0 0-12.8 78.93c2 .37 2.76-.88 2.76-2s0-3.51-.05-6.89c-11.27 2.45-13.64-5.43-13.64-5.43-1.84-4.68-4.5-5.92-4.5-5.92-3.68-2.51.28-2.46.28-2.46 4.06.29 6.2 4.17 6.2 4.17 3.61 6.19 9.48 4.4 11.79 3.37a8.65 8.65 0 0 1 2.57-5.41c-9-1-18.45-4.5-18.45-20a15.65 15.65 0 0 1 4.17-10.87 14.57 14.57 0 0 1 .4-10.72s3.4-1.09 11.14 4.15a38.39 38.39 0 0 1 20.28 0c7.73-5.24 11.13-4.15 11.13-4.15a14.55 14.55 0 0 1 .4 10.72 15.63 15.63 0 0 1 4.16 10.87c0 15.56-9.47 19-18.49 20 1.45 1.25 2.75 3.72 2.75 7.5v11.11c0 1.08.73 2.34 2.78 1.95A40.51 40.51 0 0 0 40.5 0z"/>
+			</svg>
+			Fork me<br>on GitHub
+		</a>
+	</footer>
+
+	<script src="shower.min.js"></script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+	<!-- Copyright © 2018 Yours Truly, Famous Inc. -->
+</body>
+</html>
