@@ -5,9 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/highlight/Github.css">
+    <!-- 
+        Atelier-Cave-Light
+        Arduino-Light
+        Atom-One-Light
+        Color-Brewer
+        Docco
+        Foundation
+        Github-Gist
+        Github
+        Googlecode
+        Idea
+        Isbl Editor Light
+        Mono Blue
+        Qtcreator Light
+        Routeros
+        Tomorrow
+        Vs
+        Xcode 
+    -->
     <style>
         .shower {
-            --slide-ratio: calc(16 / 10);
+            --slide-ratio: calc(16 / 9);
             --color-key: #39C2D7;
         }
     </style>
@@ -44,10 +64,8 @@
     <section class="slide">
         <h2>Agenda</h2>
         <ul>
-            <li class="next">CSS</li>
             <li class="next">CSS Layouts</li>
             <li class="next">CSS Approaches</li>
-            <li class="next">Tools</li>
             <li class="next">Questions</li>
         </ul>
     </section>
@@ -75,37 +93,32 @@
 
     <section class="slide">
         <h2 class="shout">
-            CSS<br>
-            <small>Cascading Style Sheets</small>
+            CSS Layouts
         </h2>
     </section>
 
     <section class="slide">
-        <h2>Reset VS Normalize</h2>
-        <div class="columns two">
-            <div class="next">
-                <h3>Reset styles</h3>
-                <p>GitHub:
-                    <a target="_blank" href="https://github.com/jasonkarns/css-reset">CSS Reset</a>
-                </p>
-            </div>
-            <div class="next">
-                <h3>Normalizes styles</h3>
-                <p>GitHub:
-                    <a target="_blank" href="https://github.com/necolas/normalize.css/">Normalize.css</a>
-                </p>
-            </div>
-        </div>
-        <br>
-        <br>
-        <p class="next">
-            Read more on
-            <a target="_blank" href="https://htmlacademy.ru/blog/64-about-normalize-css">HtmlAcademy.ru</a>
-        </p>
+        <h2>CSS Layouts</h2>
+        <ul>
+            <li class="next">Normal flow</li>
+            <li class="next">The display property</li>
+            <li class="next">Table layout</li>
+            <li class="next">Floats</li>
+            <li class="next">Positioning</li>
+            <li class="next">Multiple-column layout</li>
+            <li class="next">Flexbox</li>
+            <li class="next">Grid</li>
+        </ul>
     </section>
 
     <section class="slide">
-        <img class="place" src="pictures/3dview.png" alt="3D view to site">
+        <h2>Which to choose?</h2>
+        <p>It depends on:</p>
+        <ul>
+            <li class="next">Design</li>
+            <li class="next">Project Browser Stats</li>
+            <li class="next">Your / Project Goals</li>
+        </ul>
     </section>
 
     <section class="slide">
@@ -149,11 +162,11 @@
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="bQQRwM" data-default-tab="css,result" data-user="mirantel" data-pen-title="bQQRwM" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/bQQRwM/">bQQRwM</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="bQQRwM" data-default-tab="html,result" data-user="mirantel" data-pen-title="bQQRwM" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/bQQRwM/">bQQRwM</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="vQQJYj" data-default-tab="html,result" data-user="mirantel" data-pen-title="vQQJYj" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/vQQJYj/">vQQJYj</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="vQQJYj" data-default-tab="html,result" data-user="mirantel" data-pen-title="vQQJYj" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/vQQJYj/">vQQJYj</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
@@ -188,47 +201,19 @@
 
     <section class="slide">
         <h2>Box Model</h2>
-        <img class="place" src="pictures/css_box_model_chrome.png" alt="">
+        <div class="a-center">
+            <img src="pictures/css_box_model_chrome.png" alt="">
+        </div>
     </section>
 
     <section class="slide">
         <h2>Margin collapse</h2>
-        <p data-height="460" data-theme-id="dark" data-slug-hash="aQQYoe" data-default-tab="css,result" data-user="mirantel" data-pen-title="margin collapse" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/aQQYoe/">margin collapse</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="380" data-theme-id="light" data-slug-hash="aQQYoe" data-default-tab="css,result" data-user="mirantel" data-pen-title="margin collapse" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/aQQYoe/">margin collapse</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
         <h2>Margin dropping out</h2>
-        <p data-height="460" data-theme-id="dark" data-slug-hash="OaaQeg" data-default-tab="css,result" data-user="mirantel" data-pen-title="margin dropping out" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/OaaQeg/">margin dropping out</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-    </section>
-
-    <section class="slide">
-        <h2 class="shout">
-            CSS Layouts
-        </h2>
-    </section>
-
-    <section class="slide">
-        <h2>CSS Layouts</h2>
-        <ul>
-            <li class="next"><i>Normal flow</i></li>
-            <li class="next"><i>The display property</i></li>
-            <li class="next">Table layout</li>
-            <li class="next">Floats</li>
-            <li class="next">Positioning</li>
-            <li class="next">Multiple-column layout</li>
-            <li class="next">Flexbox</li>
-            <li class="next">Grid</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Which to choose?</h2>
-        <p>It depends on:</p>
-        <ul>
-            <li class="next">Design</li>
-            <li class="next">Project Browser Stats</li>
-            <li class="next">Your / Project Goals</li>
-        </ul>
+        <p data-height="380" data-theme-id="light" data-slug-hash="OaaQeg" data-default-tab="html,result" data-user="mirantel" data-pen-title="margin dropping out" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/OaaQeg/">margin dropping out</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
@@ -242,7 +227,7 @@
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="mQQKBe" data-default-tab="html,result" data-user="mirantel" data-pen-title="mQQKBe" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/mQQKBe/">mQQKBe</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="mQQKBe" data-default-tab="html,result" data-user="mirantel" data-pen-title="mQQKBe" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/mQQKBe/">mQQKBe</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
@@ -258,15 +243,15 @@
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="RqqBZg" data-default-tab="css,result" data-user="mirantel" data-pen-title="RqqBZg" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/RqqBZg/">RqqBZg</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="RqqBZg" data-default-tab="result" data-user="mirantel" data-pen-title="RqqBZg" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/RqqBZg/">RqqBZg</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="yQQqvW" data-default-tab="css,result" data-user="mirantel" data-pen-title="yQQqvW" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/yQQqvW/">yQQqvW</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="yQQqvW" data-default-tab="css,result" data-user="mirantel" data-pen-title="yQQqvW" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/yQQqvW/">yQQqvW</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="BGGPPP" data-default-tab="css,result" data-user="mirantel" data-pen-title="BGGPPP" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/BGGPPP/">BGGPPP</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="BGGPPP" data-default-tab="css,result" data-user="mirantel" data-pen-title="BGGPPP" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/BGGPPP/">BGGPPP</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
@@ -282,11 +267,11 @@
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="RqqBvQ" data-default-tab="css,result" data-user="mirantel" data-pen-title="RqqBvQ" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/RqqBvQ/">RqqBvQ</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="RqqBvQ" data-default-tab="css,result" data-user="mirantel" data-pen-title="RqqBvQ" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/RqqBvQ/">RqqBvQ</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="qQQMqV" data-default-tab="html,result" data-user="mirantel" data-pen-title="qQQMqV" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/qQQMqV/">qQQMqV</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="qQQMqV" data-default-tab="css,result" data-user="mirantel" data-pen-title="qQQMqV" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/qQQMqV/">qQQMqV</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
@@ -306,7 +291,7 @@
         <p>
             The 'top', 'right', 'bottom', and 'left' properties <b>do not</b> apply for <b>position: static</b>
         </p>
-        <p data-height="440" data-theme-id="dark" data-slug-hash="YRRdMB" data-default-tab="result" data-user="mirantel" data-pen-title="Position 1" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/YRRdMB/">Position 1</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="380" data-theme-id="light" data-slug-hash="YRRdMB" data-default-tab="result" data-user="mirantel" data-pen-title="Position 1" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/YRRdMB/">Position 1</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
@@ -319,11 +304,11 @@
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="NEEoWN" data-default-tab="result" data-user="mirantel" data-pen-title="Position 2" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/NEEoWN/">Position 2</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="NEEoWN" data-default-tab="result" data-user="mirantel" data-pen-title="Position 2" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/NEEoWN/">Position 2</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="NEEoNR" data-default-tab="result" data-user="mirantel" data-pen-title="NEEoNR" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/NEEoNR/">NEEoNR</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="NEEoNR" data-default-tab="result" data-user="mirantel" data-pen-title="NEEoNR" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/NEEoNR/">NEEoNR</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
@@ -336,11 +321,11 @@
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="Jeexbe" data-default-tab="result" data-user="mirantel" data-pen-title="Position 4" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/Jeexbe/">Position 4</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="Jeexbe" data-default-tab="result" data-user="mirantel" data-pen-title="Position 4" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/Jeexbe/">Position 4</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="OaadOX" data-default-tab="result" data-user="mirantel" data-pen-title="Position 5" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/OaadOX/">Position 5</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="OaadOX" data-default-tab="result" data-user="mirantel" data-pen-title="Position 5" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/OaadOX/">Position 5</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
@@ -353,7 +338,7 @@
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="PxxVQz" data-default-tab="result" data-user="mirantel" data-pen-title="Position 6" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/PxxVQz/">Position 6</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="PxxVQz" data-default-tab="result" data-user="mirantel" data-pen-title="Position 6" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/PxxVQz/">Position 6</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
@@ -371,17 +356,17 @@
 
     <section class="slide">
         <code>position: static</code>
-        <p data-height="400" data-theme-id="dark" data-slug-hash="YRRBMw" data-default-tab="result" data-user="mirantel" data-pen-title="Z-index 1" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/YRRBMw/">Z-index 1</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="400" data-theme-id="light" data-slug-hash="YRRBMw" data-default-tab="result" data-user="mirantel" data-pen-title="Z-index 1" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/YRRBMw/">Z-index 1</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
         <code>position: relative</code>
-        <p data-height="400" data-theme-id="dark" data-slug-hash="XyyOwO" data-default-tab="result" data-user="mirantel" data-pen-title="XyyOwO" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/XyyOwO/">XyyOwO</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="400" data-theme-id="light" data-slug-hash="XyyOwO" data-default-tab="result" data-user="mirantel" data-pen-title="XyyOwO" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/XyyOwO/">XyyOwO</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
         <code>z-index: 1</code>
-        <p data-height="400" data-theme-id="dark" data-slug-hash="mQQobO" data-default-tab="result" data-user="mirantel" data-pen-title="mQQobO" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/mQQobO/">mQQobO</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="400" data-theme-id="light" data-slug-hash="mQQobO" data-default-tab="result" data-user="mirantel" data-pen-title="mQQobO" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/mQQobO/">mQQobO</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
@@ -405,7 +390,7 @@
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="QJJoGB" data-default-tab="result" data-user="mirantel" data-pen-title="Multiple Column Layout Test" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/QJJoGB/">Multiple Column Layout Test</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="460" data-theme-id="light" data-slug-hash="QJJoGB" data-default-tab="result" data-user="mirantel" data-pen-title="Multiple Column Layout Test" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/QJJoGB/">Multiple Column Layout Test</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
@@ -416,7 +401,6 @@
             <li>IE10+</li>
             <li>For mobile layouts</li>
         </ul>
-        <br>
         <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">MDN</a>
         <br>
         <a target="_blank" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a>
@@ -429,10 +413,57 @@
     </section>
 
     <section class="slide">
-        <pre><code>display: flex;
-flex-direction: <mark>row</mark> | row-reverse | column | column-reverse</code></pre>
+        <pre class="margin-none"><code>flex</code></pre>
+        <p class="codepen" data-height="440" data-theme-id="light" data-default-tab="css,result" data-user="mirantel" data-slug-hash="ywJZYP" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="flexbox">
+            <span>See the Pen <a href="https://codepen.io/mirantel/pen/ywJZYP/">
+            flexbox</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+    </section>
 
-        <p data-height="360" data-theme-id="dark" data-slug-hash="vQQMWz" data-default-tab="result" data-user="mirantel" data-pen-title="Flex" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/vQQMWz/">Flex</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    <section class="slide">
+        <pre class="margin-none"><code>flex-direction: row | row-reverse</code></pre>
+        <p class="codepen" data-height="440" data-theme-id="light" data-default-tab="css,result" data-user="mirantel" data-slug-hash="NJroRj" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="ROW flex-direction">
+            <span>See the Pen <a href="https://codepen.io/mirantel/pen/NJroRj/">
+            ROW flex-direction</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+    </section>
+
+    <section class="slide">
+        <pre class="margin-none"><code>flex-direction: column | column-reverse</code></pre>
+        <p class="codepen" data-height="440" data-theme-id="light" data-default-tab="css,result" data-user="mirantel" data-slug-hash="wOWNqd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="COLUMN flex-direction">
+            <span>See the Pen <a href="https://codepen.io/mirantel/pen/wOWNqd/">
+            COLUMN flex-direction</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+    </section>
+
+    <section class="slide">
+        <pre class="margin-none"><code>flex-wrap</code></pre>
+        <p class="codepen" data-height="440" data-theme-id="light" data-default-tab="css,result" data-user="mirantel" data-slug-hash="WmxVBG" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Flex-Wrap">
+            <span>See the Pen <a href="https://codepen.io/mirantel/pen/WmxVBG/">
+            Flex-Wrap</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+    </section>
+
+    <section class="slide">
+        <pre class="margin-none"><code>justify-content</code></pre>
+        <p class="codepen" data-height="420" data-theme-id="light" data-default-tab="css,result" data-user="mirantel" data-slug-hash="KEMOxN" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Flex justify-content">
+            <span>See the Pen <a href="https://codepen.io/mirantel/pen/KEMOxN/">
+            Flex justify-content</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+    </section>
+
+    <section class="slide">
+        <pre class="margin-none"><code>order</code></pre>
+        <p class="codepen" data-height="420" data-theme-id="light" data-default-tab="css,result" data-user="mirantel" data-slug-hash="QoKLgq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="flex order">
+            <span>See the Pen <a href="https://codepen.io/mirantel/pen/QoKLgq/">
+            flex order</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
     </section>
 
     <section class="slide">
@@ -451,11 +482,17 @@ flex-direction: <mark>row</mark> | row-reverse | column | column-reverse</code><
     </section>
 
     <section class="slide">
-        <img class="place" src="pictures/grid-concepts.svg" alt="">
+        <img class="cover height" src="pictures/grid-concepts.svg" alt="">
     </section>
 
     <section class="slide frame">
-        <p data-height="632" data-theme-id="dark" data-slug-hash="BGvaad" data-default-tab="result" data-user="mirantel" data-pen-title="CSS Grid" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/BGvaad/">CSS Grid</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="632" data-theme-id="light" data-slug-hash="BGvaad" data-default-tab="result" data-user="mirantel" data-pen-title="CSS Grid" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/BGvaad/">CSS Grid</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            Responsive
+        </h2>
     </section>
 
     <section class="slide water">
@@ -469,10 +506,31 @@ flex-direction: <mark>row</mark> | row-reverse | column | column-reverse</code><
     <section class="slide">
         <h2>Responsive Web Design</h2>
         <ol>
-            <li class="next">Add viewport <br>
-            <code>&lt;meta name="viewport" content="width=device-width"&gt;</code></li>
-            <li class="next">Use relative to width units: <code>%, vw</code></li>
-            <li class="next">Add  <code>@media</code></li>
+            <li class="next">Fluid grids</li>
+            <li class="next">Flexible images</li>
+            <li class="next">Media queries</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Fluid grids</h2>
+        <ol>
+            <li class="next">Define block sizes in %, vw, vh</li>
+            <li class="next">Convert font sizes from px to rem (em)</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Flexible images</h2>
+        <ol>
+            <li class="next">max-width: 100%</li>
+             <!-- <li class="next">Image replacement</li> -->
+            <li class="next">HTML5 &nbsp;<code>&lt;picture&gt;</code>&nbsp; tag and &nbsp;<code>srcset</code>&nbsp; 
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">learn more on MDN</a>
+            </li>
+            <li class="next">Vector graphic 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/SVG">learn more on MDN</a>
+            </li>
         </ol>
     </section>
 
@@ -491,36 +549,669 @@ flex-direction: <mark>row</mark> | row-reverse | column | column-reverse</code><
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="vQQqWm" data-default-tab="css" data-user="mirantel" data-pen-title="Media" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/vQQqWm/">Media</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <h2>Media Queries</h2>
+        <pre><code>@media all and (min-width: 768px) { … }
+@media (orientation: portrait) { … }
+@media only screen and (min-resolution: 192dpi) { … }
+@media screen and (device-width: 800px) { … }
+@media (min-device-pixel-ratio: 2) { … }
+        </code></pre>
     </section>
 
     <section class="slide">
-        <p data-height="460" data-theme-id="dark" data-slug-hash="NEEZYL" data-default-tab="html" data-user="mirantel" data-pen-title="Media 2" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/NEEZYL/">Media 2</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <h2>Meta viewport</h2>
+        <pre><code>&lt;meta name="viewport" content="width=device-width", 
+initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;</code></pre>
     </section>
 
     <section class="slide">
-        <h2 class="shout">
-            CSS Approaches
-        </h2>
+        <h2>The 4 main steps:</h2>
+        <ol>
+            <li class="next">Add viewport <br>
+            <code>&lt;meta name="viewport" content="width=device-width"&gt;</code></li>
+            <li class="next">Use relative to width units: <code>%, vw, vh, rem, em</code></li>
+            <li class="next">Use flexible images</code></li>
+            <li class="next">Add  <code>@media</code></li>
+        </ol>
     </section>
 
     <section class="slide">
-        <img class="cover width height" src="pictures/mobile-first.png" alt="">
+        <img class="cover height" src="pictures/mobile-first.png" alt="">
     </section>
 
     <section class="slide">
         <h2>Responsive Web Design</h2>
-        <p data-height="400" data-theme-id="dark" data-slug-hash="oQQrrw" data-default-tab="css,result" data-user="mirantel" data-pen-title="Desktop first" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/oQQrrw/">Desktop first</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="400" data-theme-id="light" data-slug-hash="oQQrrw" data-default-tab="css,result" data-user="mirantel" data-pen-title="Desktop first" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/oQQrrw/">Desktop first</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
     </section>
 
     <section class="slide">
         <h2>Mobile First Web Design</h2>
-        <p data-height="400" data-theme-id="dark" data-slug-hash="BGGgEO" data-default-tab="css,result" data-user="mirantel" data-pen-title="Mobile first" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/BGGgEO/">Mobile first</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        <p data-height="400" data-theme-id="light" data-slug-hash="BGGgEO" data-default-tab="css,result" data-user="mirantel" data-pen-title="Mobile first" class="codepen">See the Pen <a href="https://codepen.io/mirantel/pen/BGGgEO/">Mobile first</a> by Pylypenko Svitlana (<a href="https://codepen.io/mirantel">@mirantel</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    </section>
+
+    <!-- <section class="slide">
+        <h2>The physical pixel VS The CSS pixel</h2>
+    </section>-->
+
+    <section class="slide">
+        <h2>Retina</h2>
+        <img class="cover" src="pictures/pixels.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            Pre- and Post-processing
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2>Pre- and Post-processors</h2>
+        <ol>
+            <li><b>1996</b> CSS</li>
+            <li class="next"><b>2006</b> <a target="_blank" href="http://sass-lang.com/">Sass</a></li>
+            <li class="next"><b>2009</b> <a target="_blank" href="http://lesscss.org/">Less</a></li>
+            <li class="next"><b>2010</b> <a target="_blank" href="http://stylus-lang.com/">Stylus</a></li>
+            <li class="next"><b>2013</b> <a target="_blank" href="https://postcss.org/">PostCSS</a></li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <img class="cover width" src="pictures/trends-css.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>CSS Preprocessors. Main Features</h2>
+        <div class="columns two">
+            <ul>
+                <li class="next">Nesting</li>
+                <li class="next">Imports</li>
+                <li class="next">Variables</li>
+                <li class="next">Mixins</li>
+                <li class="next">Extends</li>
+            </ul>
+            <ul>
+                <li class="next">Math</li>
+                <li class="next">Color Operations</li>
+                <li class="next">Functions</li>
+                <li class="next">If/Else Statements</li>
+                <li class="next">Loops</li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <section class="slide">
+        <h2>Syntax</h2>
+        <pre class="code-block font-mid scssless"><code>body {
+    background-color: #efefef;
+    font-size: 100% Helvetica, sans-serif;
+}</code></pre>
+
+        <pre class="code-block font-mid sass"><code>body
+    background-color: #efefef
+    font-size: 100% Helvetica, sans-serif</code></pre>
+
+        <pre class="code-block font-mid stylus"><code>body
+    background-color #efefef
+    font-size 100% Helvetica, sans-serif</code></pre>
+        <p>Stylus supports all 3 syntaxes.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Nesting</h2>
+        <div class="columns two">
+            <div>
+                <pre class="code-block full-width scss"><code>$sky-blue: #87ceeb;
+.nav {
+    margin: 0;
+    a {
+        color: #ccc;
+        &:hover {
+            background: $sky-blue;
+        }
+    }
+    &__item {
+        padding: 10px;
+        .ie10 & {
+            padding: 20px;
+        }
+    }
+}</code></pre>
+            </div>
+            <div>
+                <pre class="code-block full-width sass"><code>$sky-blue: #87ceeb
+.nav
+    margin: 0
+    a 
+    color: #ccc
+        &:hover 
+            background: $sky-blue
+    &__item
+        padding: 10px
+        .ie10 &
+            padding: 20px </code></pre>
+            <pre class="code-block full-width css"><code>.nav { margin: 0; }
+.nav a { color: #ccc; }
+.nav a:hover { background: #87ceeb; }
+.nav__item { padding: 10px; }
+.ie10 .nav__item { padding: 20px; }</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Nesting</h2>
+        <div class="columns two">
+            <div>
+                <pre class="code-block full-width less"><code>@sky-blue: #87ceeb;
+.nav {
+    margin: 0;
+    a {
+        color: #ccc;
+        &:hover {
+            background: @sky-blue;
+        }
+    }
+    &__item {
+        padding: 10px;
+        .ie10 & {
+            padding: 20px;
+        }
+    }
+}</code></pre>
+            </div>
+            <div>
+                <pre class="code-block full-width stylus"><code>$sky-blue = #87ceeb
+.nav
+    margin 0
+    a 
+    color #ccc
+        &:hover 
+            background $sky-blue
+    &__item
+        padding 10px
+        .ie10 &
+            padding 20px </code></pre>
+            <pre class="code-block full-width css"><code>.nav { margin: 0; }
+.nav a { color: #ccc; }
+.nav a:hover { background: #87ceeb; }
+.nav__item { padding: 10px; }
+.ie10 .nav__item { padding: 20px; }</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Imports</h2>
+        <pre class="code-block font-mid scss"><code>@import "normolize";
+@import "mixins/grid.scss";
+@import "global/font-face"; </code></pre>
+
+        <pre class="code-block font-mid less"><code class="stylus">@import "normolize"
+@import "mixins/grid.less"
+@import "global/font-face" </code></pre>
+
+        <pre class="code-block font-mid stylus"><code class="stylus">@import "normolize"
+@import "mixins/grid.styl"
+@import "global/font-face" </code></pre>
+    </section>
+
+    <section class="slide">
+        <h2>Variables</h2>
+        <div class="columns two">
+            <div>
+                <pre class="code-block full-width font-mid scss"><code class="scss">$sky-blue: #87ceeb;
+.btn {
+    background: $sky-blue;
+}</code></pre>
+                <pre class="code-block full-width font-mid sass"><code class="sass">$sky-blue: #87ceeb
+.btn
+    background: $sky-blue</code></pre>
+            </div>
+            <div>
+                <pre class="code-block full-width font-mid less"><code class="less">@sky-blue: #87ceeb;
+.btn {
+    background: @sky-blue;
+}</code></pre>
+        <pre class="code-block full-width font-mid stylus"><code class="stylus">sky-blue = #87ceeb
+.btn
+    background sky-blue</code></pre>
+        <pre class="code-block full-width font-mid css"><code class="css">.btn {
+    background: #87ceeb
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Mixins</h2>
+        <div class="columns two">
+            <pre class="code-block font-mid scss"><code class="sass">@mixin bordered($width) {
+    border: $width solid #ddd;
+
+    &:hover {
+        border-color: #999;
+    }
+}
+
+div {
+    @include bordered(5px);
+}</code></pre>
+<pre class="code-block font-mid less"><code class="less">.bordered(@width) {
+    border: @width solid #ddd;
+
+    &:hover {
+        border-color: #999;
+    }
+}
+
+div {
+    .bordered(5px);
+}</code></pre>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Mixins</h2>
+        <div class="columns two">
+                <pre class="code-block font-mid stylus"><code class="stylus">bordered(width)
+    border: width solid #ddd
+
+    &:hover 
+        border-color: #999
+
+div 
+    bordered(5px)</code></pre>
+<pre class="code-block font-mid css"><code class="css">div {
+    border: 5px solid #ddd;
+}
+div:hover {
+    border-color: #999;
+}
+</code></pre>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Extends</h2>
+        <div class="columns two">
+            <pre class="code-block font-mid scss"><code class="sass">.block {
+    margin: 10px 5px;
+}
+
+p {
+    @extend .block;
+    border: 1px solid #eee;
+}
+
+ul, ol {
+    @extend .block;
+    color: #333;
+    text-transform: uppercase;
+}</code></pre>
+            <pre class="code-block font-mid less"><code class="less">.block {
+    margin: 10px 5px;
+}
+
+p {
+    &:extend(.block);
+    border: 1px solid #eee;
+}
+
+ul, ol {
+    &:extend(.block);
+    color: #333;
+    text-transform: uppercase;
+}</code></pre>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Extends</h2>
+        <div class="columns two">
+            <pre class="code-block font-mid stylus"><code class="stylus">.block 
+    margin 10px 5px
+
+p 
+    @extend .block
+    border 1px solid #eee
+
+ul, ol 
+    @extend .block
+    color #333
+    text-transform uppercase</code></pre>
+            <pre class="code-block font-mid css"><code class="css">.block, p, ul, ol {
+    margin: 10px 5px;
+}
+
+p {
+    border: 1px solid #eee;
+}
+
+ul, ol {
+    color: #333;
+    text-transform: uppercase;
+}</code></pre>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Math</h2>
+        <div class="columns two">
+        <pre class="code-block scss"><code>p {
+    $width: 1000px;
+    $font-size: 12px;
+    $line-height: 30px;
+
+    font: 10px/8px; // Plain CSS, no division
+    font: #{$font-size}/#{$line-height};
+    width: $width/2;
+    height: (500px/2);
+    margin-left: 5px + 8px/2px;
+    top: round(1.5)/2 + 'px';
+    color: hsla(random(50), 100, 50, 1);
+
+    margin: calc(1rem - 2px) calc(1rem - 1px);
+}</code></pre>
+          <pre class="code-block css"><code>
+              
+
+
+p {
+    font: 10px/8px;
+    font: 12px/30px;
+    width: 500px;
+    height: 250px;
+    margin-left: 9px; 
+    top: 1px;
+    color: #ffae00; // hsla(41, 100, 50, 1);
+
+    margin: calc(1rem - 2px) calc(1rem - 1px);
+}</code></pre>
+</div>
+    </section>
+
+    <section class="slide">
+        <h2>Color Operations</h2>
+        
+        <pre class="code-block"><code>rgba(red, green, blue, alpha)
+hsla(hue, saturation, lightness, alpha)
+lighten(color, amount)
+darken(color, amount)
+saturate(color, amount)
+desaturate(color, amount)
+mix(color1, color2, weight: 50%)
+...</code></pre>
+<p>Useful for hover, active states.</p>
+<a target="_blank" href="https://sass-lang.com/documentation/Sass/Script/Functions.html">Sass</a>
+<a target="_blank" href="http://lesscss.org/functions/#color-definition">Less</a>
+<a target="_blank" href="http://stylus-lang.com/docs/bifs.html">Stylus</a>
+    </section>
+
+    <section class="slide">
+        <h2>Functions</h2>
+        <div class="columns two">
+            <pre class="code-block scss"><code>$grid-columns: 12;
+
+@function calculate-column-width($cols) {
+    @return  $cols / $grid-columns * 100%;
+}
+.container {
+    display: flex;
+}
+.article {
+    flex: 1 0 calculate-column-width(8);
+}
+.aside {
+    flex: 0 0 calculate-column-width(4);
+}</code></pre>
+            <pre class="code-block stylus"><code>grid-columns = 12
+
+calculate-column-width(cols)
+    cols / grid-columns * 100%
+
+.container
+    display flex
+
+.article
+    flex: 1 0 calculate-column-width(8)
+
+.aside
+    flex: 0 0 calculate-column-width(4)</code></pre>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Functions</h2>
+        <pre class="code-block css"><code>.container {
+    display: flex;
+}
+
+.article {
+    flex: 1 0 66.66667%;
+}
+
+.aside {
+    flex: 0 0 33.33333%;
+}</code></pre>
+    </section>
+
+    <section class="slide">
+        <h2>If/Else Statements</h2>
+        <div class="columns two">
+            <div>
+                <pre class="code-block full-width scss"><code class="sass">@if lightness($color) > 30% {
+    background-color: black;
+}
+
+@else {
+    background-color: white;
+}</code></pre>
+                <pre class="code-block full-width less"><code class="less">.mixin (@color) when (lightness(@color) > 30%) {
+    background-color: black;
+}
+
+.mixin (@color) when (lightness(@color) &lt;= 30%) {
+    background-color: white;
+}</code></pre>
+            </div>
+            <div>
+                <pre class="code-block full-width stylus"><code class="stylus">if lightness(color) > 30%
+    background-color black
+
+else
+    background-color: white</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Loops</h2>
+        <div class="columns two">
+            <div>
+                    <pre class="code-block full-width scss"><code class="sass">@for $i from 1 to 3 {
+    .border-#{$i} {
+        border: $i+px solid blue;
+    }
+}</code></pre>
+                <pre class="code-block full-width less"><code class="less">.loop(@counter) when (@counter > 0) {
+    .loop((@counter - 1));
+    .border-@{counter} {
+        border: (1px * @counter) solid blue;
+    }
+}
+
+.loop(3);</code></pre>
+                </div>
+                <div>
+                        <pre class="code-block full-width stylus"><code class="stylus">for i in (1..3)
+.border-{i}
+    border (i)px solid blue</code></pre>
+            <pre class="code-block full-width css"><code class="css">.border-1 {
+    border: 1px solid #00f;
+}
+.border-2 {
+    border: 2px solid #00f;
+}
+.border-3 {
+    border: 3px solid #00f;
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+    <section class="slide">
+        <h2>Usage</h2>
+        <p>How to install?</p>
+        <ul>
+            <li class="next">Console</li>
+            <li class="next">Bulders and task runners</li>
+            <li class="next">Online</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Console</h2>
+        <pre class="code-block sass"><code>npm install -g sass
+    sass source/stylesheets/index.scss build/stylesheets/index.css</code></pre>
+    <br>    
+    <br>    
+    <pre class="code-block less"><code>npm install -g less
+    lessc styles.less styles.css</code></pre>
+    <br>    
+    <br>
+        <pre class="code-block stylus"><code>npm install -g stylus
+    stylus -w style.styl -o style.css</code></pre>
+    </section>
+
+    <section class="slide">
+        <h2>Bulders and task runners</h2>
+        <div class="a-center">
+            <p>Webpack and Gulp</p>
+            <img width="140" src="pictures/gulp.png" alt="">
+            <img width="250" src="pictures/webpack.png" alt="">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Online</h2>
+        <ul>
+            <li class="next"><a target="_blank" href="https://codepen.io/">CodePen</a></li>
+            <li class="next"><a target="_blank" href="https://jsfiddle.net/">JSFiddle</a></li>
+            <li class="next"><a target="_blank" href="https://plnkr.co/">Plunker</a></li>
+            <li class="next">...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <img class="cover" src="pictures/postcss.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover height" src="pictures/PostCSS_scheme.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>What can I do with PostCSS?</h2>
+        <ul>
+            <li class="next">Polyfills</li>
+            <li class="next">Older browsers Support</li>
+            <li class="next">Extensions</li>
+            <li class="next">Optimization</li>
+            <li class="next">Syntax sugar</li>
+            <li class="next">Analytics</li>
+            <li class="next">...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>More than 90 plugins!</h2>
+        <ul >
+            <li class="next">
+                <a target="_blank" href="https://autoprefixer.github.io/">Autoprefixer</a> — adds vendor prefixes to CSS rules where it’s necessary</li>
+            <li class="next">
+                <a target="_blank" href="https://stylelint.io/">StyleLint</a> — proofreads and validates your CSS code</li>
+            <li class="next">
+                <a target="_blank" href="https://github.com/cssdream/cssgrace">CSSgrace</a> — provides old browser support</li>
+            <li class="next">
+                <a target="_blank" href="http://cssnext.io/">CSSnext</a> — allows you to use future CSS syntax on current sites</li>
+            <li class="next">
+                <a target="_blank" href="https://cssnano.co/">CSSNano</a> — optimized and minified CSS files for a production site</li>
+            <li class="next">
+                 <a target="_blank" href="https://rtlcss.com/">RTLCSS</a> — converting from Left-To-Right (LTR)  to Right-To-Left (RTL)</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Usage: add to the build</h2>
+        <div class="a-center">
+            <p>Webpack and Gulp</p>
+            <img width="130" src="pictures/gulp.png" alt="">
+            <img width="240" src="pictures/webpack.png" alt="">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Not enough?..</h2>
+        <div class="a-center">
+            <img width="400" src="pictures/terminator_2_judgment_day_profilelarge.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Combo!</h2>
+        <div class="a-center">
+            <img width="800" src="pictures/pre_post_css_1.png" alt="">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Links:</h2>
+        <ul>
+            <li><a href="http://sass-lang.com/">Sass</a></li>
+            <li><a href="http://stylus-lang.com/">Stylus</a></li>
+            <li><a href="http://lesscss.org/">Less</a></li>
+            <li><a href="http://csspre.com/compare/">Compare CSS Preprocessors</a></li>
+            <li><a href="http://sass-compatibility.github.io/">Sass compatibility</a></li>
+            <li><a href="http://postcss.org/">PostCSS</a></li>
+            <li><a href="https://habrahabr.ru/company/oleg-bunin/blog/310710/">One more PostCSS talk</a></li>
+            <li><a href="http://cakeinpanic.github.io/hackathon/">How create PostCSS plugins</a></li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            Extra topics
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2>Reset VS Normalize</h2>
+        <div class="columns two">
+            <div class="next">
+                <h3>Reset styles</h3>
+                <p>GitHub:
+                    <a target="_blank" href="https://github.com/jasonkarns/css-reset">CSS Reset</a>
+                </p>
+            </div>
+            <div class="next">
+                <h3>Normalizes styles</h3>
+                <p>GitHub:
+                    <a target="_blank" href="https://github.com/necolas/normalize.css/">Normalize.css</a>
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p class="next">
+            Read more on
+            <a target="_blank" href="https://htmlacademy.ru/blog/64-about-normalize-css">HtmlAcademy.ru</a>
+        </p>
     </section>
 
     <section class="slide a-center">
         <h2>Two development approaches:</h2>
-        <img src="pictures/progressive-enhancement-va-graceful-degradation.jpg" alt="">
+        <img height="330" src="pictures/progressive-enhancement-va-graceful-degradation.jpg" alt="">
         <p class="place bottom">One goal: keep products useful to every user!</p>
     </section>
 
@@ -533,16 +1224,6 @@ flex-direction: <mark>row</mark> | row-reverse | column | column-reverse</code><
             <li>2012 <a target="_blank" href="https://operatino.github.io/MCSS/en/">MCSS</a> (Multilayer CSS)</li>
             <li>2014 <a target="_blank" href="https://acss.io/">ACSS</a> (Atomic CSS)</li>
         </ul>
-    </section>
-
-    <section class="slide">
-        <h2 class="shout">
-            Tools
-        </h2>
-    </section>
-
-    <section class="slide purple">
-        <img class="cover height" src="pictures/automate.png" alt="">
     </section>
 
     <section class="slide">
@@ -560,48 +1241,6 @@ flex-direction: <mark>row</mark> | row-reverse | column | column-reverse</code><
         <img class="cover width" src="pictures/trends-build.png" alt="">
     </section>
 
-    <section class="slide">
-        <h2>Pre- and Post-processing</h2>
-        <ol>
-            <li><b>1996</b> CSS</li>
-            <li><b>2006</b> <a target="_blank" href="http://sass-lang.com/">Sass</a></li>
-            <li><b>2009</b> <a target="_blank" href="http://lesscss.org/">Less</a></li>
-            <li><b>2010</b> <a target="_blank" href="http://stylus-lang.com/">Stylus</a></li>
-            <li><b>2013</b> <a target="_blank" href="https://github.com/postcss/postcss">PostCSS</a></li>
-        </ol>
-    </section>
-
-    <section class="slide">
-        <img class="cover width" src="pictures/trends-css.png" alt="">
-    </section>
-
-    <section class="slide a-center">
-        <h2>CSS Linters</h2>
-        <br>
-            <img width="600" src="pictures/linter.png" alt="">
-        <br><br>
-        <div class="columns four">
-            <div>
-                <a target="_blank" href="https://github.com/csscomb/csscomb.js">
-                    CSScomb
-                </a>
-            </div>
-            <div>
-                <a target="_blank" href="https://github.com/stylelint/stylelint">
-                    Stylelint
-                </a>
-            </div>
-            <div>
-                <a target="_blank" href="https://github.com/CSSLint/csslint/">
-                    CSSLint
-                </a>
-            </div>
-            <div>
-                <a target="_blank" href="https://github.com/brigade/scss-lint">
-                    SCSSLint
-                </a>
-            </div>
-        </div>
     </section>
 
     <section class="slide">
@@ -624,7 +1263,9 @@ flex-direction: <mark>row</mark> | row-reverse | column | column-reverse</code><
 	</footer>
 
 	<script src="shower.min.js"></script>
-  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    <script src="highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
 	<!-- Copyright © 2018 Yours Truly, Famous Inc. -->
 </body>
