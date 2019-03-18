@@ -1,0 +1,880 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>html/css performance</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link id="theme" rel="stylesheet" href="css/epam.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="css/custom.css">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/user.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <!-- SLIDES -->
+            <div class="slides">
+                    <!-- TITLE -->
+                    <section id="mainpage"
+                        class="has-dark-background-custom"
+                        data-background="img/lake_view.jpg"
+                        data-state="title-page"
+                        data-background-image="img/lake_view.jpg">
+                        <div class="title">
+                            <h1>HTML/CSS <span>PERFORMANCE</span></h1>
+                        </div>
+                        <p>Svitlana Pylypenko</p>
+                        <div>
+                            <img class="plain" src="img/epam_logo_white.png" alt="EPAM">
+                        </div>
+                    </section>
+                    <!-- /TITLE -->
+                    <!-- AGENDA -->
+                    <section>
+                        <h2>Agenda</h2>
+                        <ul class="agenda">
+                            <li class="fragment" data-fragment-index="1">What is web performance?</li>
+                            <li class="fragment" data-fragment-index="2">How browser rendering works — behind the scenes</li>
+                            <li class="fragment" data-fragment-index="3">Analysis Tools</li>
+                            <li class="fragment" data-fragment-index="4">Optimization web performance</li>
+                        </ul>
+                    </section>
+                    <!-- /AGENDA -->
+                    <!-- SECTION 1 -->
+                    <section>
+                        <h2>Performance?</h2>
+                    </section>
+                    <section
+                        data-background="img/john-pratt-272235-unsplash.jpg"
+                        data-background-image="img/john-pratt-272235-unsplash.jpg">
+                    </section>
+                    <section
+                        data-background="img/isaac-smith-1182057-unsplash.jpg"
+                        data-background-image="img/isaac-smith-1182057-unsplash.jpg">
+                    </section>
+                    <section>
+                        <h3>Performance refers to</h3>
+                        <p> <b>Speed</b> in which web pages are downloaded and displayed on the user's web browser</p>
+                        <img class="plain" src="img/img02.jpg" alt="building page">
+                    </section>
+                    <section>
+                        <p><b>Non laggy</b></p>
+                        <img class="plain" src="img/img49.jpg" alt="building page">
+                    </section>
+                    <section>
+                        <p><b>Usability: </b>users may not remember what the padding width is on your columns, but they will remember how it feels to visit your site</p>
+                        <a href="https://giphy.com/gifs/3aYzHeLfhZf1sQn8e2/fullscreen" target="_blank"><img class="plain" src="img/img03.png" alt="building page"></a>
+                    </section>
+                    <section>
+                        <p>Slow websites are <b>bad for business</b></p>
+                        <img class="plain" src="img/img51.png" alt="building page">
+                    </section>
+                    <section>
+                        <p><b>The art of avoiding work</b>, and making any work you do as efficient as possible</p>
+                        <img class="plain" src="img/img01.jpg" alt="building page">
+                    </section>
+                    <!-- /SECTION 1 -->
+                    <!-- SECTION 2 -->
+                    <section>
+                        <h3>Steps of a webpage being displayed?</h3>
+                        <ol>
+                            <li class="fragment" data-fragment-index="0">User type URL into the browser address bar</li>
+                            <li class="fragment" data-fragment-index="1">The browser will lookup the hostname in DNS(Domain Name System), if it is not already in the browser cache </li>
+                            <li class="fragment" data-fragment-index="2">The browser initiates a TCP connection with the server </li>
+                            <li class="fragment" data-fragment-index="3">The browser sends an HTTP request to the web server</li>
+                            <li class="fragment" data-fragment-index="4">The server handles the request and sends back a response(HTML file)</li>
+                            <li class="fragment" data-fragment-index="5"><b>The browser receives the response and starts parsing the HTML file</b></li>
+                            <li class="fragment" data-fragment-index="6"><b>The browser renders the HTML content</b></li>
+                            <li class="fragment" data-fragment-index="7"><b>The browser sends additional requests for objects embedded in the html(CSS files, images, javascript etc.)</b></li>
+                        </ol>
+                    </section>
+                    <section>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="800" height="503" viewBox="0 0 800 503">
+                            <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
+                              <g transform="translate(0 11)">
+                                <g class="fragment" data-fragment-index="7" fill="#4253EC" transform="translate(0 259)">
+                                  <text font-family="LucidaGrande, Lucida Grande" font-size="18">
+                                    <tspan x="68" y="51">Server</tspan>
+                                  </text>
+                                  <circle cx="95" cy="95" r="95" fill-opacity=".099" stroke="#4253EC" stroke-width="3"/>
+                                </g>
+                                <text class="fragment" data-fragment-index="6" fill="#1CB08F" font-family="LucidaGrande, Lucida Grande" font-size="20">
+                                  <tspan x="458" y="57"> IP</tspan>
+                                </text>
+                                <path class="fragment" data-fragment-index="6" fill="#1CB08F" fill-rule="nonzero" d="M495.173388,50.8199297 C511.764882,32.0661518 527.32288,19.6618943 541.884816,13.6222586 C558.092404,6.90008049 575.337982,2.40994661 592.95473,1.20088287 C615.170273,-0.323803116 636.618472,3.49071617 656.678774,13.6701778 L658.016408,14.3489513 L656.658861,17.0242207 L655.321226,16.3454472 C635.768231,6.42341409 614.858464,2.70465394 593.160141,4.19384231 C575.895181,5.37876229 558.959736,9.78814868 543.034147,16.3933664 C528.970892,22.2261714 513.775862,34.3344176 497.486325,52.7331399 L503.611761,57.7999629 L484.18131,66.3852745 L488.971331,45.6897267 L495.173388,50.8199297 Z"/>
+                                <text class="fragment" data-fragment-index="13" fill="#D420AB" font-family="LucidaGrande, Lucida Grande" font-size="18">
+                                  <tspan x="543.193" y="382">CSS, IMG, JS…</tspan>
+                                </text>
+                                <circle class="fragment" data-fragment-index="2" cx="602" cy="346" r="97" fill="#4A90E2" fill-opacity=".1" stroke="#4A90E2" stroke-width="3"/>
+                                <text class="fragment" data-fragment-index="2" fill="#2263AE" font-family="LucidaGrande, Lucida Grande" font-size="18">
+                                  <tspan x="569" y="277">Cache</tspan>
+                                </text>
+                              </g>
+                              <g class="browser" transform="translate(285 89)">
+                                <rect width="245" height="262" x="1.5" y="1.5" fill="#FFF" stroke="#4A90E2" stroke-width="3" rx="10"/>
+                                <rect width="230" height="26" x="9" y="9" stroke="#4A90E2" stroke-width="2" rx="5"/>
+                                <text class="fragment" data-fragment-index="0" fill="#4A4A4A" font-family="Geomanist" font-size="18">
+                                  <tspan x="16" y="28">http://google.com</tspan>
+                                </text>
+                              </g>
+                              <text class="fragment" data-fragment-index="1" fill="#1CB08F" font-family="LucidaGrande, Lucida Grande" font-size="18" transform="translate(536 186)">
+                                <tspan x="0" y="17">Find the IP</tspan>
+                              </text>
+                              <text class="fragment" data-fragment-index="2" fill="#1CB08F" font-family="LucidaGrande, Lucida Grande" font-size="18">
+                                <tspan x="553" y="344">DNS record</tspan>
+                              </text>
+                              <g class="fragment" data-fragment-index="3" fill="#1CB08F" transform="translate(490 140)">
+                                <text font-family="LucidaGrande, Lucida Grande" font-size="20">
+                                  <tspan x="6" y="19"> IP</tspan>
+                                </text>
+                                <path fill-rule="nonzero" d="M13.1804578,42.9207826 C3.27071424,73.7530147 1.37495819,99.3034353 7.43708795,119.570142 C14.6121933,143.55771 31.2320204,164.620461 57.3557882,182.76808 L58.5877081,183.623868 L56.8761317,186.087708 L55.6442118,185.23192 C28.9932636,166.71808 11.946424,145.114165 4.56291205,120.429858 C-1.70195441,99.4853695 0.2481342,73.3099495 10.356879,41.9016888 L2.78367767,39.1683483 L18.1697439,24.5218823 L20.655277,45.6186148 L13.1804578,42.9207826 Z"/>
+                              </g>
+                              <g class="fragment" data-fragment-index="4" class="dns" transform="translate(601)">
+                                <text fill="#1D00FF" font-family="LucidaGrande, Lucida Grande" font-size="18">
+                                  <tspan x="76" y="32">DNS</tspan>
+                                </text>
+                                <text fill="#1D00FF" font-family="LucidaGrande, Lucida Grande" font-size="18">
+                                  <tspan x="55" y="76">URL</tspan>
+                                </text>
+                                <text fill="#1D00FF" font-family="LucidaGrande, Lucida Grande" font-size="18">
+                                  <tspan x="103" y="137">IP</tspan>
+                                </text>
+                                <circle cx="95" cy="95" r="95" fill="#1D00FF" fill-opacity=".1" stroke="#4253EC" stroke-width="3"/>
+                                <text fill="#4A4A4A" font-family="Geomanist" font-size="18">
+                                  <tspan x="6" y="95">http://google.com</tspan>
+                                </text>
+                                <text fill="#4A4A4A" font-family="Geomanist" font-size="18">
+                                  <tspan x="66" y="160">74.125.29.101</tspan>
+                                </text>
+                              </g>
+                              <path class="fragment" data-fragment-index="5" fill="#1CB08F" fill-rule="nonzero" d="M777.505957,126.921281 C798.839549,172.764731 803.162709,215.904666 790.43055,256.277914 C776.122014,301.649799 738.306519,329.386729 677.24407,339.456607 L675.76406,339.700677 L675.27592,336.740657 L676.75593,336.496587 C736.781701,326.597669 773.632873,299.568051 787.56945,255.375634 C800.054891,215.784723 795.823753,173.441919 774.831248,128.284194 L767.750923,131.892012 L767.589159,110.649982 L784.679841,123.265789 L777.505957,126.921281 Z"/>
+                              <g class="fragment" data-fragment-index="8" fill="#1D00FF" transform="translate(82 121)">
+                                <path fill-rule="nonzero" d="M4.81198415,158.012226 C20.4959435,117.412408 46.3187056,85.3113954 82.2540022,61.7456592 C123.171989,34.9123624 168.765987,21.4921875 219,21.4921875 L220.5,21.4921875 L220.5,24.4921875 L219,24.4921875 C169.346453,24.4921875 124.324835,37.7438876 83.8991516,64.2543408 C48.5258112,87.4515559 23.1204987,119.012247 7.65702597,158.972773 L15.174745,161.510917 L0.0961425478,176.473729 L-2.82694568,155.433159 L4.81198415,158.012226 Z"/>
+                                <text font-family="LucidaGrande, Lucida Grande" font-size="18">
+                                  <tspan x="60.607" y="17">TCP</tspan> <tspan x="29.485" y="38">connection</tspan>
+                                </text>
+                              </g>
+                              <g class="fragment" data-fragment-index="9" fill="#1D00FF" transform="translate(135 170)">
+                                <path fill-rule="nonzero" d="M5.64910328,123.056727 C23.2172095,78.4828263 42.5545849,48.720994 63.7499597,33.7741506 C87.4898874,17.0329047 121.50147,5.48651149 165.785779,-0.903421161 L167.270403,-1.11764262 L167.698846,1.85160589 L166.214221,2.06582734 C122.360058,8.39369287 88.7812552,19.7931643 65.4788821,36.2258494 C44.8638586,50.7634328 25.8285018,80.0547798 8.46141873,124.102806 L15.9321025,126.881628 L0.404202832,141.377639 L-1.87586615,120.257713 L5.64910328,123.056727 Z"/>
+                                <text font-family="LucidaGrande, Lucida Grande" font-size="18">
+                                  <tspan x="83.03" y="58">HTTP</tspan> <tspan x="73.085" y="79">request</tspan>
+                                </text>
+                              </g>
+                              <g class="fragment" data-fragment-index="10" fill="#1D00FF" transform="translate(170 285)">
+                                <path fill-rule="nonzero" d="M10.4536864,52.9736528 C21.1951155,36.1436859 31.8115215,24.2102166 42.3376844,17.1774272 C64.5988706,2.30417906 87.2604027,-0.963257897 135.691724,5.60288763 L137.178126,5.80440863 L136.775084,8.77721154 L135.288682,8.57569054 C87.5189861,2.09924583 65.5688131,5.264116 44.0043021,19.6718982 C33.8902107,26.4293724 23.5582864,38.0349548 13.0430934,54.4928019 L19.8971662,58.5139681 L2.08877372,70.0946053 L3.50929939,48.899509 L10.4536864,52.9736528 Z" transform="rotate(-178 69.633 36.236)"/>
+                                <text font-family="LucidaGrande, Lucida Grande" font-size="18">
+                                  <tspan x="41.145" y="35">HTML </tspan> <tspan x="52.583" y="56">file</tspan>
+                                </text>
+                              </g>
+                              <g  fill="#D420AB" transform="translate(19 332)">
+                                <path class="fragment" data-fragment-index="15" fill-rule="nonzero" d="M370.519351,17.7299977 C352.732959,59.3832914 331.743169,87.9406229 307.497039,103.370269 C286.294939,116.862769 256.304368,122.970742 224.849689,119.752663 C190.26433,116.21429 156.188734,101.843365 127.350761,77.1175753 L126.212023,76.1412169 L128.16474,73.8637408 L129.303478,74.8400992 C157.672135,99.1634957 191.17162,113.291454 225.15502,116.768242 C255.968012,119.92067 285.284168,113.950051 305.886391,100.839299 C329.53612,85.789187 350.168626,57.7267985 367.731063,16.6204683 L360.333202,13.6766748 L376.184864,-0.464570019 L377.986863,20.7015066 L370.519351,17.7299977 Z"/>
+                                <text class="fragment" data-fragment-index="14" font-family="LucidaGrande, Lucida Grande" font-size="18">
+                                  <tspan x=".345" y="77"> CSS, IMG, JS…</tspan>
+                                </text>
+                              </g>
+                              <path class="fragment" data-fragment-index="11" fill="#1C62B4" d="M347.961426,178 L347.961426,164.992188 L351.503418,164.992188 C353.073738,164.992188 354.201657,165.257322 354.887207,165.787598 C355.572757,166.317874 355.915527,167.189447 355.915527,168.402344 C355.915527,169.785163 355.446782,170.869137 354.509277,171.654297 C353.571773,172.439457 352.271004,172.832031 350.606934,172.832031 L349.789551,172.832031 L349.789551,178 L347.961426,178 Z M349.789551,171.43457 L350.536621,171.43457 C351.63233,171.43457 352.479001,171.18262 353.07666,170.678711 C353.674319,170.174802 353.973145,169.462895 353.973145,168.542969 C353.973145,167.763668 353.738772,167.207033 353.27002,166.873047 C352.801267,166.539061 352.019048,166.37207 350.92334,166.37207 L349.789551,166.37207 L349.789551,171.43457 Z M362.885254,176.787109 C361.848139,177.742192 360.849126,178.219727 359.888184,178.219727 C359.097164,178.219727 358.440921,177.97217 357.919434,177.477051 C357.397947,176.981931 357.137207,176.356449 357.137207,175.600586 C357.137207,174.557612 357.575191,173.75635 358.451172,173.196777 C359.327153,172.637204 360.582511,172.357422 362.217285,172.357422 L362.630371,172.357422 L362.630371,171.206055 C362.630371,170.098627 362.062017,169.544922 360.925293,169.544922 C360.011226,169.544922 359.023931,169.826169 357.963379,170.388672 L357.963379,168.956055 C359.1294,168.481443 360.222163,168.244141 361.241699,168.244141 C362.308111,168.244141 363.094724,168.484373 363.601562,168.964844 C364.108401,169.445315 364.361816,170.192378 364.361816,171.206055 L364.361816,175.530273 C364.361816,176.520513 364.666501,177.015625 365.275879,177.015625 C365.352051,177.015625 365.463378,177.003906 365.609863,176.980469 L365.73291,177.938477 C365.34033,178.125978 364.906741,178.219727 364.432129,178.219727 C363.623531,178.219727 363.107911,177.742192 362.885254,176.787109 Z M362.630371,175.84668 L362.630371,173.376953 L362.050293,173.359375 C361.101069,173.359375 360.333499,173.539549 359.747559,173.899902 C359.161618,174.260256 358.868652,174.733396 358.868652,175.319336 C358.868652,175.735354 359.015135,176.086913 359.308105,176.374023 C359.601076,176.661134 359.958494,176.804688 360.380371,176.804688 C361.101078,176.804688 361.85107,176.485355 362.630371,175.84668 Z M367.903809,178 L367.903809,168.455078 L369.635254,168.455078 L369.635254,170.248047 C370.320804,168.912103 371.316888,168.244141 372.623535,168.244141 C372.799317,168.244141 372.983886,168.258789 373.177246,168.288086 L373.177246,169.905273 C372.878416,169.805664 372.614747,169.755859 372.38623,169.755859 C371.290522,169.755859 370.373539,170.406243 369.635254,171.707031 L369.635254,178 L367.903809,178 Z M377.800293,178.219727 C377.009273,178.219727 376.048345,178.035158 374.91748,177.666016 L374.91748,176.075195 C376.048345,176.637698 377.032711,176.918945 377.870605,176.918945 C378.368655,176.918945 378.781737,176.784181 379.109863,176.514648 C379.43799,176.245116 379.602051,175.908205 379.602051,175.503906 C379.602051,174.912106 379.142094,174.422853 378.222168,174.036133 L377.211426,173.605469 C375.717278,172.984372 374.970215,172.090826 374.970215,170.924805 C374.970215,170.092769 375.264645,169.437991 375.853516,168.960449 C376.442386,168.482908 377.249507,168.244141 378.274902,168.244141 C378.808108,168.244141 379.467281,168.317382 380.252441,168.463867 L380.612793,168.53418 L380.612793,169.975586 C379.645991,169.688475 378.878421,169.544922 378.310059,169.544922 C377.196772,169.544922 376.640137,169.949215 376.640137,170.757812 C376.640137,171.279299 377.062007,171.718748 377.905762,172.076172 L378.740723,172.427734 C379.684087,172.826174 380.352049,173.24658 380.744629,173.688965 C381.137209,174.13135 381.333496,174.68359 381.333496,175.345703 C381.333496,176.183598 381.002445,176.872068 380.340332,177.411133 C379.678219,177.950198 378.831548,178.219727 377.800293,178.219727 Z M384.444824,178 L384.444824,168.455078 L386.17627,168.455078 L386.17627,178 L384.444824,178 Z M384.444824,166.723633 L384.444824,164.992188 L386.17627,164.992188 L386.17627,166.723633 L384.444824,166.723633 Z M389.647949,178 L389.647949,168.455078 L391.379395,168.455078 L391.379395,170.248047 C392.293462,168.912103 393.412591,168.244141 394.736816,168.244141 C395.562992,168.244141 396.222166,168.506345 396.714355,169.030762 C397.206545,169.555178 397.452637,170.259761 397.452637,171.144531 L397.452637,178 L395.721191,178 L395.721191,171.707031 C395.721191,170.998043 395.617189,170.492677 395.40918,170.190918 C395.201171,169.889159 394.856936,169.738281 394.376465,169.738281 C393.315913,169.738281 392.316899,170.43261 391.379395,171.821289 L391.379395,178 L389.647949,178 Z M400.854004,181.172852 L401.056152,179.669922 C402.05811,180.144534 403.045405,180.381836 404.018066,180.381836 C405.969248,180.381836 406.944824,179.347667 406.944824,177.279297 L406.944824,175.776367 C406.306149,177.112311 405.257332,177.780273 403.79834,177.780273 C402.655756,177.780273 401.747562,177.364262 401.07373,176.532227 C400.399899,175.700191 400.062988,174.578132 400.062988,173.166016 C400.062988,171.712883 400.446774,170.529301 401.214355,169.615234 C401.981937,168.701167 402.975092,168.244141 404.193848,168.244141 C405.260259,168.244141 406.177242,168.67773 406.944824,169.544922 L406.944824,168.455078 L408.685059,168.455078 L408.685059,175.398438 C408.685059,176.892586 408.607423,177.998532 408.452148,178.716309 C408.296874,179.434086 408.005373,180.021482 407.577637,180.478516 C406.821774,181.281254 405.646981,181.682617 404.053223,181.682617 C402.939936,181.682617 401.87354,181.512697 400.854004,181.172852 Z M406.944824,174.695312 L406.944824,170.731445 C406.183102,169.940426 405.354008,169.544922 404.45752,169.544922 C403.660641,169.544922 403.036623,169.864255 402.585449,170.50293 C402.134275,171.141605 401.908691,172.017573 401.908691,173.130859 C401.908691,175.222667 402.644036,176.268555 404.114746,176.268555 C405.116704,176.268555 406.060054,175.744146 406.944824,174.695312 Z M417.685059,178 L417.685059,164.992188 L419.530762,164.992188 L419.530762,170.476562 L425.718262,170.476562 L425.718262,164.992188 L427.563965,164.992188 L427.563965,178 L425.718262,178 L425.718262,171.856445 L419.530762,171.856445 L419.530762,178 L417.685059,178 Z M434.006348,178 L434.006348,166.37207 L429.39209,166.37207 L429.39209,164.992188 L440.466309,164.992188 L440.466309,166.37207 L435.852051,166.37207 L435.852051,178 L434.006348,178 Z M442.294434,178 L442.294434,164.992188 L444.852051,164.992188 L448.455566,175.055664 L452.164551,164.992188 L454.449707,164.992188 L454.449707,178 L452.727051,178 L452.727051,167.417969 L449.141113,177.129883 L447.356934,177.129883 L443.876465,167.391602 L443.876465,178 L442.294434,178 Z M457.79834,178 L457.79834,164.992188 L459.644043,164.992188 L459.644043,176.620117 L465.497559,176.620117 L465.497559,178 L457.79834,178 Z"/>
+                              <path class="fragment" data-fragment-index="13" fill="#D420AB" fill-rule="nonzero" d="M517.454479 379.712659C505.434937 377.180802 495.892286 371.941427 488.87547 363.992689 478.709406 352.476445 471.926326 339.24944 468.537275 324.332319L468.204956 322.869595 471.130405 322.204956 471.462725 323.667681C474.74034 338.09431 481.290594 350.867305 491.12453 362.007311 497.625749 369.371973 506.47391 374.270475 517.716386 376.701032L518.392598 368.925146 536.49812 380.035505 516.74652 387.853707 517.454487 379.712661zM505.430587 318.800415C516.716636 324.414909 524.915495 329.694618 530.044784 334.673697 537.5054 341.915833 542.963406 352.917126 546.459491 367.653754L546.805737 369.113244 543.886756 369.805737 543.540509 368.346246C540.165999 354.122077 534.957338 343.62337 527.955216 336.826303 523.100234 332.113496 515.174144 327.005526 504.194392 321.536205L500.923449 328.775037 487.52087 312.294113 508.747157 311.460604 505.430587 318.800415z"/>
+                              <path class="fragment" data-fragment-index="1" fill="#1CB08F" fill-rule="nonzero" d="M651.802228,273.918227 C643.619415,223.741532 631.136959,187.054354 614.409027,163.877869 C595.772666,138.057262 565.891001,120.746563 524.687403,111.967066 L523.220337,111.65447 L523.84553,108.720337 L525.312597,109.032934 C567.197551,117.957611 597.73276,135.646913 616.841595,162.122131 C633.894773,185.749244 646.519736,222.862109 654.770706,273.481921 L662.708795,272.315182 L656.072709,292.494685 L643.910758,275.078114 L651.802228,273.918227 Z"/>
+                              <g  transform="translate(336 142)">
+                                <text class="fragment" data-fragment-index="12" fill="#1C62B4" font-family="LucidaGrande, Lucida Grande" font-size="18">
+                                  <tspan x="12.145" y="70">Render HTML</tspan>
+                                </text>
+                                <rect class="fragment" data-fragment-index="12" width="143" height="87" x="1.5" y="1.5" stroke="#979797" stroke-width="3"/>
+                                <rect class="fragment" data-fragment-index="16" width="69" height="87" x="1.5" y="93.5" stroke="#979797" stroke-width="3"/>
+                                <rect class="fragment" data-fragment-index="16" width="69" height="87" x="75.5" y="93.5" stroke="#979797" stroke-width="3"/>
+                              </g>
+                              <path class="fragment" data-fragment-index="14" fill="#D420AB" fill-rule="nonzero" d="M138.115886,430.564629 C187.074579,463.231914 229.144112,483.028599 264.290619,489.969609 C338.715433,504.66761 406.941919,498.620381 469.295134,465.42679 C492.052153,453.312143 512.861696,430.272722 531.687742,396.273379 L532.414363,394.961121 L535.038879,396.414363 L534.312258,397.726621 C515.227692,432.192847 494.037235,455.653999 470.704866,468.074932 C407.678994,501.62661 338.763025,507.734952 263.709381,492.912765 C228.110861,485.882488 185.692027,465.919554 136.418991,433.038897 L131.883688,439.651891 L121.587655,421.07121 L142.62982,423.982793 L138.115886,430.564629 Z"/>
+                            </g>
+                          </svg>
+                    </section>
+                    <!-- /SECTION 2 -->
+                    <!-- SECTION 3 -->
+                    <section>
+                        <h3>Critical Rendering Path</h3>
+                        <p> <small>is the minimum number of steps required by the browser from the moment of getting the first byte of HTML to the moment of the first pixel rendering on the screen</small></p>
+                        <img class="plain" src="img/img07.png" alt="building page" width="814" height="407">
+                        <img class="plain" src="img/img08.png" alt="building page">
+                    </section>
+
+                    <section>
+                        <h3>Building the DOM</h3>
+                        <img class="plain" src="img/img16.png" alt="building page">
+                        <img class="plain" src="img/img09.png" alt="building page">
+                    </section>
+
+                    <section>
+                        <h3>Building the CSSOM</h3>
+                        <img class="plain" src="img/img19.png" alt="building page">
+                        <img class="plain" src="img/img10.png" alt="building page">
+                    </section>
+
+                    <section>
+                        <h3>Run JavaScript</h3>
+                        <img class="plain" src="img/img11.png" alt="building page">
+                        <img class="plain" src="img/img28.png" alt="building page" width="874" height="280">
+                    </section>
+
+                    <section>
+                        <h3>Building the render tree</h3>
+                        <img class="plain" src="img/img17.jpg" alt="building page">
+                        <img class="plain" src="img/img12.png" alt="building page">
+                    </section>
+
+                    <section>
+                        <h3>Layout / Reflow </h3>
+                        <img class="plain" src="img/img18.png" alt="building page" width="735" height="387">
+                        <img class="plain" src="img/img13.png" alt="building page">
+                    </section>
+
+                    <section>
+                        <video width="80%" controls autoplay poster="img/img73.jpg">
+                            <source src="img/reflow.mp4" type="video/mp4">
+                        </video>
+                    </section>
+
+                    <section>
+                        <h3>Paint / Repaint</h3>
+                        <img class="plain" src="img/img65.jpg" alt="building page" width="417" height="417">
+                        <img class="plain" src="img/img14.png" alt="building page">
+                    </section>
+
+                    <section>
+                        <h3>Composite Layers</h3>
+                        <img class="plain" src="img/img15.png" alt="building page">
+                        <img class="plain" src="img/img47.jpg" alt="building page" width="444" height="383">
+                    </section>
+
+                    <section>
+                        <h4>Web page is not a static picture, but an interactive interface with <b>reflow</b> and/or <b>repaint</b></h4>
+                        <img class="plain" src="img/img71.gif" alt="building page">
+                    </section>
+
+                    <section>
+                        <img class="plain" src="img/img20.png" alt="building page">
+                        <p>If reflow forces, repaint will be forced after it as well.</p>
+                        <img class="plain" src="img/img21.png" alt="building page">
+                        <p>But the opposite is not true: repaint can be forced independently of the reflow</p>
+                        <p><b><a href="https://csstriggers.com/" target="_blank">https://csstriggers.com/</a></b></p>
+                    </section>
+
+                    <!-- /SECTION 3 -->
+                    <!-- PART 2 -->
+
+                    <section>
+                        <img class="plain" width="30%" src="img/shopping-3613689_1280.png" alt="">
+                        <img class="plain" width="30%" src="img/delivery-1417310_1280.png" alt="">
+                        <img class="plain" width="30%" src="img/woman-1455991_1280.png" alt="">
+                    </section>
+
+                    <!-- START DELIVERY -->
+                    <section
+                        class="has-dark-background-custom"
+                        data-background="img/brett-jordan-1329359-unsplash.jpg"
+                        data-background-image="img/brett-jordan-1329359-unsplash.jpg">
+                        <h4>Parsing, DOM, CSSOM</h4>
+                        <h1><del>Delivery</del></h1>
+                    </section>
+
+                    <section>
+                        <h3>Reduce HTTP Requests</h3>
+                        <h3>Send less stuff and fewer bytes</h3>
+                    </section>
+
+                    <section>
+                        <h2>Remember about <b>DOCTYPE</b></h2>
+                        <img class="plain" src="img/doctype.png" alt="">
+                    </section>
+
+                    <section>
+                        <h4>Check your HTML and CSS with Validators to find loopholes in your markup </h4>
+                        <ul>
+                            <li>• <a href="https://validator.w3.org/" target="_blank">HTML Validator</a></li>
+                            <li>• <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
+                            <li>• <a href="https://developers.google.com/speed/pagespeed/insights/">Google PageSpeed Insights</a></li>
+                            <li>• Linter</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>Non-Render Blocking CSS</h4>
+                        <p>Set CSS in the HEAD section to avoid <b>FOUC</b> </p>
+                        <img class="plain" src="img/img27.png" alt="building page">
+                    </section>
+
+                    <section>
+                        <h4>Minify and concatenate</h4>
+                        <pre><code class="xml" data-trim="" contenteditable="">
+<!-- Bad -->
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/site.css" rel="stylesheet">
+
+<!-- Good -->
+<link href="css/styles.css" rel="stylesheet">
+                        </code></pre>
+                        <img class="plain" src="img/img36.png" alt="building page" width="449" height="240">
+                    </section>
+
+                    <section>
+                        <h4>Avoid @import in CSS Files</h4>
+                        <img class="plain" src="img/img37.png" alt="building page">
+                    </section>
+
+                    <section>
+                        <h4>Remove unused code from the critical path</h4>
+
+                        <ul>
+                            <br>
+                            <li>Link CSS file
+                                <pre><code class="xml" data-trim="" contenteditable="">
+<link href="css/styles.css" rel="stylesheet">
+                            </code></pre>
+                            </li>
+                            <li>
+                                <p>Critical CSS <br> <small>between <b>style</b> tags and load it inline in the head, and then load the full CSS after rendering, before body. (Make sure to set a cookie to prevent inline styles from loading with every page load.)</small></p>
+                                <pre><code class="xml" data-trim="" contenteditable="">
+&lt;style>
+... critical styles here
+&lt;/style>
+                            </code></pre>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <div style="display: flex; align-items: center;">
+                            <h3 style="flex: 1 1 50%">Minimize</h3>
+                            <img class="plain" src="img/minify.jpg" style="height: 100vh;" alt="">
+                        </div>
+                    </section>
+
+                    <section>
+                        <h1>IMAGES</h1>
+                    </section>
+
+                    <section>
+                        <h4>Special HTML symbols </h4>
+                        <img class="plain" src="img/img43.jpg" alt="building page">
+                    </section>
+
+                    <section>
+                        <h4>Sprites </h4>
+                        <img class="plain" src="img/img72.png" alt="building page" width="687" height="573">
+                    </section>
+
+                    <section>
+                        <h3>Optimize the size of images on your website</h3>
+                        <img class="plain" src="img/img38.jpg" alt="building page">
+                    </section>
+
+                    <section>
+                        <h4>Eliminate unnecessary image resources</h4>
+                        <h4>Choose the Right Image Format</h4>
+                        <p><b>GIF</b>, <b>JPEG</b>, <b>PNG</b>, <b>SVG</b>, <b>WebP</b>, <b>HEIF</b>, <b>Progressive JPEG</b></p>
+                        <img class="plain" src="img/img45.jpg" alt="building page" width="638" height="406">
+                    </section>
+
+                    <section>
+                        <div><i>JPG (optimized size: 81.4 KB)</i></div>
+                        <img class="plain" src="img/img39.jpg" alt="building page" width="297" height="118">
+                        <div><i>PNG (optimized size: 85.1 KB)</i></div>
+                        <img class="plain" src="img/img40.png" alt="building page" width="297" height="118">
+                        <div><i>SVG (optimized size: 6.1 KB)</i></div>
+                        <img class="plain" src="img/img41.png" alt="building page" width="297" height="118">
+                    </section>
+
+                    <section>
+                            <h4>Retina (CSS Path)</h4>
+                            <pre><code class="css" data-trim="" contenteditable="">
+/* Normal Resolution CSS */
+.logo {
+    background: url(logo.png) no-repeat;
+}
+
+/* HD/Retina CSS */
+@media only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi),
+only screen and ( min-resolution: 1.25dppx){
+    .logo {
+        background: url(logo@2x.png) no-repeat;
+    }
+}
+                        </code></pre>
+                    </section>
+
+                    <section>
+                            <h4>Retina (SRCSET)</h4>
+                            <pre><code class="html" data-trim="" contenteditable="">
+&lt;picture&gt;
+    &lt;source
+        media="(min-width: 1024px)"
+        srcset="fullshot-1x.jpg 1x,
+            fullshot-2x.jpg 2x,
+            fullshot-3x.jpg 3x"&gt;
+    &lt;img
+        src="closeup-1x.jpg" alt="The Oslo Opera House"
+        srcset="closeup-2x.jpg 2x,
+            closeup-3x.jpg 3x"&gt;
+&lt;/picture&gt;
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h1>@FONTS</h1>
+                    </section>
+
+                    <section>
+                        <h3>Fonts optimization</h3>
+                        <p>Be aware of the <b>text rendering delay</b></p>
+                        <img class="plain" src="img/img56.jpg" alt="building page">
+                        <img class="plain" src="img/img57.jpg" alt="building page">
+                    </section>
+
+                    <section>
+                        <ul>
+                            <li>Check font usage</li>
+                            <li>Use porgressive font format: <b>WOFF2.0</b>, <b>WOFF</b>, <b>EOT</b></li>
+                            <li>Use optimized font formats for each browser: <i>Latin</i>, <i>Cyrillique</i></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>Preload your Webfont resources (the text rendering delay)</h4>
+                        <pre><code class="xml"  data-trim="" contenteditable="">
+<!-- Other tags... -->
+<link rel="preload" href="/fonts/awesome-l.woff2" as="font">
+                        </code></pre>
+                        <pre><code class="hljs css"  data-trim="" contenteditable="">
+@font-face {
+font-family: 'Awesome Font';
+font-style: normal;
+font-weight: 400;
+src: local('Awesome Font'),
+   url('/fonts/awesome-l.woff2') format('woff2'), /* will be preloaded */
+   url('/fonts/awesome-l.woff') format('woff'),
+   url('/fonts/awesome-l.ttf') format('truetype'),
+   url('/fonts/awesome-l.eot') format('embedded-opentype');
+    unicode-range: U+000-5FF; /* Latin glyphs */
+}
+                        </code></pre>
+                        <h4>Font Loading API</h4>
+                    </section>
+
+                    <section>
+                        <h4>Resource Hints</h4>
+                        <img class="plain" src="img/img68.webp" width="640" height="320" alt="building page">
+                    </section>
+
+                    <section>
+                        <h1>JavaScript</h1>
+                    </section>
+
+                    <section>
+                        <h4>Non-Render Blocking JavaScript</h4>
+                        <ul>
+                            <li>• Move non-critical scripts to the bottom of the page right before your <b>body</b> tag.</li>
+                            <li>• Deferring JavaScript</li>
+                            <li>
+                                • Loading JavaScript Asynchronously
+                                <pre><code class="js" data-trim="" contenteditable="">
+<script src="first.js" defer></script>
+<script src="second.js" defer></script>
+<script src="large.js" async></script>
+<script src="small.js" async></script>
+                                </code></pre>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <img class="plain" src="img/img62.png" width="559" height="414" alt="building page">
+                    </section>
+                    <section>
+                        <h4>Extra topics:</h4>
+                        <ul>
+                            <li>CDN (Content Delivery Network) and Subdomain to Parallelize Downloads</li>
+                            <li>GZIP-compressing</li>
+                            <li>Cache-Control</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>ANALYSIS TOOLS</h2>
+                        <img class="plain" src="img/img44.jpg" alt="">
+                    </section>
+
+                    <section>
+                        <h3>CHROME DEVTOOLS Coverage TAB </h3>
+                        <img class="plain" src="img/coverage.png" alt="">
+                    </section>
+
+                    <section>
+                        <h3>CHROME DEVTOOLS Network TAB</h3>
+                        <img class="plain" src="img/network.png" alt="">
+                    </section>
+                    <!-- /DELIVERY -->
+
+                    <!-- BUILD -->
+                    <section
+                        class="has-dark-background-custom"
+                        data-background="img/child-1864718_1920.jpg"
+                        data-background-image="img/child-1864718_1920.jpg">
+                        <h4>Render, Reflow, Paint, Composite</h4>
+                        <h1><del>Build</del></h1>
+                    </section>
+
+                    <section>
+                        <h4>More to less efficient CSS selectors</h4>
+                        <ol>
+                            <li>ID, e.g. <b>#header</b></li>
+                            <li>Class, e.g. <b>.promo</b></li>
+                            <li>Type, e.g. <b>div</b></li>
+                            <li>Adjacent sibling, e.g. <b>h2 + p</b></li>
+                            <li>Child, e.g. <b>li > ul</b></li>
+                            <li>Descendant, e.g. <b>>ul a</b></li>
+                            <li>Universal, i.e. <b>*</b></li>
+                            <li>Pseudo-classes/-elements, e.g. <b>a:hover</b></li>
+                        </ol>
+                    </section>
+
+                    <section>
+                        <h4>Consider naming methodologies such as BEM to aid the development of discrete components</h4>
+                        <p><small><a href="http://benfrain.com/selector-test" target="_blank">http://benfrain.com/selector-test</a> </small></p>
+                        <img class="plain" src="img/img55.jpg" alt="building page" >
+                    </section>
+
+                    <section>
+                        <h4>Use Best-Practice Layout Techniques</h4>
+                        <img class="plain" src="img/img32.png" alt="building page">
+                    </section>
+
+                    <section>
+                        <h4>Be Wary of Expensive Properties</h4>
+                        <img class="plain pull-right" src="img/img31.jpg" alt="building page">
+                        <ul>
+                            <li>border-radius</li>
+                            <li>box-shadow</li>
+                            <li>transform</li>
+                            <li>filter</li>
+                            <li>:nth-child</li>
+                            <li>position: fixed;</li>
+                            <li>etc.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>What forces reflow </h3>
+                        <ul>
+                            <li class="fragment" data-fragment-index="0">• Script manipulating the DOM(element addition, deletion, altering, or changing element order) </li>
+                            <li class="fragment" data-fragment-index="1">• Changing the <b>".class"</b> attribute</li>
+                            <li class="fragment" data-fragment-index="2">• Adding, deleting and updating CSS styles</li>
+                            <li class="fragment" data-fragment-index="3">• CSS3 animation and  transition property</li>
+                            <li class="fragment" data-fragment-index="4">• Content changes, such as a user typing text in an input box</li>
+                            <li class="fragment" data-fragment-index="5">• Changing the font </li>
+                            <li class="fragment" data-fragment-index="6">• Scrolling, resize window</li>
+                            <li class="fragment" data-fragment-index="7">• CSS pseudo classes activation <code>:hover</code> etc.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>What forces repaint </h3>
+                        <ul>
+                            <li>Changing:</li>
+                            <li class="fragment" data-fragment-index="0">• color</li>
+                            <li class="fragment" data-fragment-index="1">• background</li>
+                            <li class="fragment" data-fragment-index="2">• border-color</li>
+                            <li class="fragment" data-fragment-index="3">• opacity</li>
+                            <li class="fragment" data-fragment-index="4">• visibility</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>WHAT create layers</h4>
+                        <ul>
+                            <li>Elements <b>video</b>, <b>canvas</b>, <b>iframe</b></li>
+                            <li>3D-transformation: <b>translate3d</b>, <b>translateZ</b></li>
+                            <li>CSS filters</li>
+                            <li><b>position: fixed</b></li>
+                            <li>sibling with a lower <b>z-index</b></li>
+                            <li>etc.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Reflow, Repaint, Composite</h2>
+                    </section>
+
+                    <section>
+                        <h3>Avoid reflow/repaint</h3>
+                        <h4>Avoid changing DOM elements whenever possible</h4>
+                        <p>Use static CSS instead of dynamic CSS: <b>.Class</b> instead of change styles directly</p>
+                        <h4>Minimize DOM depths</h4>
+                        <img class="plain" src="img/img29.jpg" width="325" height="194" alt="building page">
+                        <img class="plain" src="img/img30.jpg" width="325" height="194" alt="building page">
+                    </section>
+
+                    <section>
+                        <h3>Prevent reflow by specifying width and height</h3>
+                        <ul>
+                            <li>Resize images on the server and ensure that the "display" size is as close as possible to the "natural" size of the image. </li>
+                            <li>
+                                <pre><code class="xml" data-trim="" contenteditable="">
+<img src="image.jpg"  width="100" height="100" alt="This is my image">
+                                </code></pre>
+                                <pre><code class="xml" data-trim="" contenteditable="">
+<!-- results in  reflow -->
+<img class="img-fluid" src="img_chania.jpg" alt="Chania">
+                                </code></pre>
+                                <pre><code class="hljs css" data-trim="" contenteditable="">
+.img-fluid {
+/* The browser allocates no space for the image and
+   can only do that after it starts downloading it */
+max-width: 100%;
+}
+                                </code></pre>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>Be aware of scrolling performance issue</h4>
+                        <img class="plain" src="img/img63.gif" alt="building page">
+                    </section>
+
+                    <section>
+                        <h4>Airbnb Investigation </h4>
+                        <p><b>10px box-shadow blur-radius = 3 reflow of element for every 40px scroll</b></p>
+                        <img class="plain" src="img/img59.png" alt="building page">
+                        <img class="plain" src="img/img60.png" alt="building page">
+                        <p><small>Before: <b>box-shadow: 0 0 10px 0 rgba(0,0,0,0.15)</b><br>After: <b>0 3px 3px 0 rgba(0,0,0,0.15)</b></small></p>
+                    </section>
+
+                    <section>
+                        <h3>Animation performance</h3>
+                        <p>Animating the dimensions or position of an element can cause the whole page to re-layout on every frame</p>
+                        <h4>Use GPU accelaration</h4>
+                        <img class="plain" src="img/img53.gif" alt="building page">
+                    </section>
+                    <section>
+                        <pre><code class="css" data-trim="" contenteditable="">
+#a, #b {
+    position: absolute;
+}
+
+#a {
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+    animation: move 1s linear;
+}
+
+#b {
+    left: 50px;
+    top: 50px;
+    z-index: 1;
+}
+
+                    </code></pre>
+                    <pre><code class="css" data-trim="" contenteditable="">
+// bad
+@keyframes move {
+    from { left: 30px; }
+    to { left: 100px; }
+}
+                    </code></pre>
+                    <pre><code class="css" data-trim="" contenteditable="">
+// good
+@keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(70px); }
+}
+                    </code></pre>
+                    </section>
+                    <section>
+                        <img class="plain" src="img/img70.jpg" alt="building page">
+                    </section>
+                    <section>
+                        <div class="animated-container">
+                            <img class="plain animated-block" src="img/img34.png" width="630" height="630" alt="building page">
+                        </div>
+                    </section>
+                    <section>
+                        <video width="80%" controls autoplay>
+                            <source src="img/videoplayback.mp4" type="video/mp4">
+                        </video>
+                    </section>
+                    <section>
+                        <img class="plain" src="img/img33.png" alt="building page">
+                        <div><i>left use transform, right use left, width</i></div>
+                    </section>
+                    <section>
+                        <p>Keep the objects being animated as high as possible at z-index. Ideally, right inside <b>body</b><br>
+                        Remove complicated animation from static layer: <b>position: absolute</b>, <b><b>position: fixed</b></b></p>
+                    </section>
+                    <section>
+                        <h4>Promote elements that you plan to animate </h4>
+                        <h5>will-change</h5>
+                        <pre><code class="css" data-trim="" contenteditable="">
+.element {
+    // browsers that don't support will-change
+    transform: translate3d(0, 0, 0);
+    transform: translateY(0);
+}
+                        </code></pre>
+                        <pre><code class="css" data-trim="" contenteditable="">
+.element {
+    /* ... */
+    transition: transform 1s ease-out;
+}
+.element:hover {
+    will-change: transform;
+}
+.element:active {
+    transform: rotateY(180deg);
+}
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h4>Don't create lots of extra layers!!!!</h4>
+                        <pre><code class="css"  data-trim="" contenteditable="">
+// don't do it!!!!!!!!!!
+* {
+will-change: all;
+}                            </code></pre>
+                        <h4>Don't forget to remove will-change</h4>
+                        <pre><code class="js matlab"  data-trim="" contenteditable="">
+var el = document.getElementById('element');
+el.addEventListener('mouseenter', hintBrowser);
+el.addEventListener('animationEnd', removeHint);
+function hintBrowser() {
+this.style.willChange = 'transform, opacity';
+}
+function removeHint() {
+this.style.willChange = 'auto';
+}
+                        </code></pre>
+                    </section>
+                    <!-- /BUILD -->
+
+                    <!-- TOOLS 2 -->
+                    <section>
+                        <h2>Analysis Tools</h2>
+                        <img class="plain" src="img/img44.jpg" alt="building page">
+                    </section>
+
+                    <section>
+                        <h3>Chrome DevTools Performance tab</h3>
+                        <img class="plain" src="img/img23.png" alt="building page">
+                    </section>
+
+                    <section>
+                        <h3>Safari Browser DevTools</h3>
+                        <img class="plain" src="img/img24.jpg" alt="building page"  width="868" height="590">
+                    </section>
+
+                    <section>
+                        <h3>Chrome DevTools Layers tab</h3>
+                        <img class="plain" src="img/img54.png" alt="building page" width="582" height="519">
+                    </section>
+
+                    <section>
+                        <h3>Chrome DevTools Rendering tab</h3>
+                        <img class="plain" src="img/img64.JPG" alt="building page">
+                    </section>
+
+                    <section>
+                        <h3>Chrome DevTools Audits tab</h3>
+                        <img class="plain" src="img/audit.png" alt="building page">
+                    </section>
+
+                    <section>
+                        <h3>Chrome DevTools Animations tab</h3>
+                        <img class="plain" src="img/animations.png" alt="building page">
+                    </section>
+
+                    <section>
+                        <h3>Online Tools </h3>
+                        <ul>
+                            <li><a href="https://tools.pingdom.com/" target="_blank">Pingdom Website Speed Test</a></li>
+                            <li><a href="https://gtmetrix.com/" target="_blank">GTmetrix</a></li>
+                            <li><a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">Google PageSpeed Insights</a></li>
+                            <li><a href="https://www.webpagetest.org/" target="_blank">WebPageTest</a></li>
+                        </ul>
+                    </section>
+                    <!-- /TOOLS 2 -->
+
+                    <section>
+                        <h2>Summarize</h2>
+                        <ul class="agenda">
+                            <li class="fragment" data-fragment-index="1">Minimize render blocking</li>
+                            <li class="fragment" data-fragment-index="2">HTTP requests reduction</li>
+                            <li class="fragment" data-fragment-index="3">Code minification</li>
+                            <li class="fragment" data-fragment-index="4">File compression</li>
+                            <li class="fragment" data-fragment-index="5">Image Optimization</li>
+                            <li class="fragment" data-fragment-index="6">Web Font Optimization</li>
+                            <li class="fragment" data-fragment-index="7">Avoid reflow/repaint</li>
+                            <li class="fragment" data-fragment-index="8">GPU acceleration</li>
+                        </ul>
+                    </section>
+
+                    <section class="end present">
+                        <h1>La fin</h1>
+                        <h2>Merci beaucoup!!!</h2>
+                        <h4>des questions <span>☺</span></h4>
+                    </section>
+                </div>
+            <!-- /SLIDES -->
+        </div>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                slideNumber: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+                transitionSpeed: 'fast',
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+        <script>
+            Reveal.configure({backgroundTransition: 'fade'});
+        </script>
+    </body>
+</html>

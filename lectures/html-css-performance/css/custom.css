@@ -1,0 +1,22 @@
+.pull-right {
+	float: right;
+	margin: 0 0 0 10px;
+}
+
+
+.title h1 span{
+	font-size: 0.8em;
+	white-space: nowrap;
+}
+
+.animated-container {
+	position: relative;
+}
+
+.animated-block {
+	transition: transform 2s ease-in-out;
+}
+
+.animated-block:hover {
+	transform: rotate(180deg) scale(0.5) translate(-100px,0px);
+}

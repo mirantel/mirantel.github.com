@@ -1,0 +1,2985 @@
+@keyframes translated {
+  from {
+      transform: none;
+  }
+  to {
+      transform: translate(150%, 200px);
+  }
+}
+
+@keyframes scaled {
+  from {
+      transform: scale(0, 0);
+  }
+  to {
+      transform: scale(2, 1.5);
+  }
+}
+
+@keyframes skewedX {
+  from {
+      transform: none;
+  }
+  to {
+      transform: skewX(15deg);
+  }
+}
+
+@keyframes skewedY {
+  from {
+      transform: none;
+  }
+  to {
+      transform: skewY(20deg);
+  }
+}
+
+@keyframes rotated {
+  from {
+      transform: none;
+  }
+  to {
+      transform: rotate(180deg);
+  }
+}
+
+@keyframes rotatedX {
+  from {
+      transform: none;
+  }
+  to {
+      transform: rotateX(180deg);
+  }
+}
+
+@keyframes rotatedY {
+  from {
+      transform: none;
+  }
+  to {
+      transform: rotateY(180deg);
+  }
+}
+
+@keyframes matrixed {
+  from {
+      transform: none;
+  }
+  to {
+      transform: matrix(2, 10, 10, 2, 300, -150);
+  }
+}
+
+@keyframes fulcrum {
+  from {
+      transform: none;
+  }
+  to {
+      transform: rotate(-45deg);
+  }
+}
+
+@keyframes transform-style-parent {
+  from {
+      transform: none;
+  }
+  to {
+      transform: rotateY(60deg);
+  }
+}
+
+@keyframes transform-style-child {
+  from {
+      transform: none;
+  }
+  to {
+      transform: rotateY(-60deg);
+  }
+}
+
+@keyframes perspective {
+  from {
+      perspective: 300px;
+  }
+  to {
+      perspective: 1300px;
+  }
+}
+
+@keyframes move-origin {
+  from {
+      perspective-origin: 100% 100%;
+  }
+  25% {
+      perspective-origin: 0% 100%;
+  }
+  50% {
+      perspective-origin: 0% 0%;
+  }
+  75% {
+      perspective-origin: 100% 0%;
+  }
+  to {
+      perspective-origin: 100% 100%;
+  }
+}
+
+@keyframes perspective-parent {
+  from {
+      perspective: 200px;
+  }
+  to {
+      perspective: 600px;
+  }
+}
+
+@keyframes perspective-child {
+  from {
+      transform: perspective(200px) rotateY(60deg);
+  }
+  to {
+      transform: perspective(600px) rotateY(60deg);
+  }
+}
+
+@keyframes translated3D {
+  from {
+      transform: none;
+  }
+  33% {
+      transform: translate3D(75%, 100px, 0);
+  }
+  66% {
+      transform: translate3D(75%, 100px, 200px);
+  }
+  to {
+      transform: translate3D(75%, 100px, -200px);
+  }
+}
+
+@keyframes scaled3D {
+  from {
+      transform: scale3D(1, 1, 1) rotateY(60deg);
+  }
+  50% {
+      transform: scale3D(2, 0.5, 1) rotateY(60deg);
+  }
+  to {
+      transform: scale3D(2, 0.5, 3) rotateY(60deg);
+  }
+}
+
+@keyframes rotated3D {
+  from {
+      transform: translateZ(3px);
+  }
+  to {
+      transform: rotate3D(3.5, 2, -1.5, 135deg) translateZ(3px);
+  }
+}
+
+@keyframes rotated3DnZ {
+  from {
+      transform: none;
+  }
+  to {
+      transform: rotate3D(0, 0, -1, 180deg);
+  }
+}
+
+@keyframes rotated3DpZ {
+  from {
+      transform: none;
+  }
+  to {
+      transform: rotate3D(0, 0, 1, 180deg);
+  }
+}
+
+@keyframes matrixed3D {
+  from {
+      transform: none;
+  }
+  50% {
+      transform: matrix3D(2, 0.5, -0.9, 0, 0.5, 1.5, -0.5, 0, -0.9, -0.5, 2, 0, 300, -150, 200, 1);
+  }
+  to {
+      transform: matrix3D(2, -0.5, 0.9, 0, -0.5, 1.5, 0.5, 0, 0.9, 0.5, 2, 0, 300, -150, -200, 1);
+  }
+}
+
+@keyframes animation-direction {
+  from {
+      left: 0;
+  }
+  to {
+      left: 60%;
+  }
+}
+
+@keyframes colorChange {
+  from {
+      background: #a3c644;
+      color: #464547;
+  }
+  25% {
+      background: #7f993a;
+  }
+  50% {
+      color: #7f993a;
+  }
+  75% {
+      background: #464547;
+      color: #a3c644;
+  }
+  to {
+      background: #464547;
+      color: #a3c644;
+  }
+}
+
+@keyframes animation-fill-mode {
+  from {
+      left: 0;
+  }
+  to {
+      left: 60%;
+  }
+}
+
+@keyframes animation-play-state-scale {
+  from {
+      transform: scale(1.2, 1.2);
+  }
+  25% {
+      transform: scale(1.25, 1.25);
+  }
+  50% {
+      transform: scale(1.3, 1.3);
+  }
+  75% {
+      transform: scale(1.25, 1.25);
+  }
+  to {
+      transform: scale(1.2, 1.2);
+  }
+}
+
+@keyframes animation-play-state-color {
+  from {
+      background-color: #a3c644;
+  }
+  17% {
+      background-color: #1a9cb0;
+  }
+  34% {
+      background-color: #b22746;
+  }
+  50% {
+      background-color: #7f993a;
+  }
+  66% {
+      background-color: #39c2d7;
+  }
+  83% {
+      background-color: #8e244d;
+  }
+  to {
+      background-color: #a3c644;
+  }
+}
+
+@keyframes animation-play-state-shake {
+  from {
+      top: 0;
+      left: 0;
+  }
+  7% {
+      top: 0;
+      left: 24px;
+  }
+  14% {
+      top: 0;
+      left: -24px;
+  }
+  21% {
+      top: -8px;
+      left: 16px;
+  }
+  28% {
+      top: 8px;
+      left: -16px;
+  }
+  35% {
+      top: -16px;
+      left: 8px;
+  }
+  42% {
+      top: 16px;
+      left: -8px;
+  }
+  50% {
+      top: -24px;
+      left: 0;
+  }
+  57% {
+      top: 24px;
+      left: 0;
+  }
+  64% {
+      top: -16px;
+      left: -8px;
+  }
+  71% {
+      top: 16px;
+      left: 8px;
+  }
+  78% {
+      top: -8px;
+      left: -16px;
+  }
+  85% {
+      top: 8px;
+      left: 16px;
+  }
+  92% {
+      top: 0;
+      left: -24px;
+  }
+  to {
+      top: 0;
+      left: 0;
+  }
+}
+
+@keyframes animation-play-state-rotate {
+  from {
+      transform: rotate(0);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes animation-play-state-run {
+  from {
+      left: -20%;
+      transform: rotateY(180deg);
+  }
+  49% {
+      transform: rotateY(180deg);
+  }
+  50% {
+      left: 100%;
+  }
+  51% {
+      transform: rotateY(0);
+  }
+  99% {
+      transform: rotateY(0);
+  }
+  to {
+      left: -20%;
+      transform: rotateY(180deg);
+  }
+}
+
+.title-page .slides:after {
+  content: '18 March, 2019';
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  color: #fff;
+}
+
+.slides .info ul {
+  text-align: center;
+}
+
+.slides .info ul p {
+  margin-bottom: 0;
+  font-size: 0.5em;
+}
+
+.slides .info ul a {
+  display: block;
+}
+
+.title h1 {
+  font-size: 4em;
+  text-shadow: 0 0 5px #464547;
+}
+
+.title div {
+  max-width: 210px;
+  margin: 0 auto -118px;
+}
+
+.title div img {
+  width: 100%;
+}
+
+.agenda div ul {
+  padding-left: 20%;
+}
+
+.end h2 {
+  color: #999;
+  font-size: 1.65em;
+}
+
+.end h4 {
+  color: #7f993a;
+  font-size: 0.8em;
+}
+
+.end h4 span {
+  font-size: 2em;
+}
+
+.variables .root {
+  --color: #39c2d7;
+}
+
+.variables .root div {
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  border: 2px solid #464547;
+  background-color: var(--color);
+}
+
+.variables .scope > div:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.variables .scope > div:nth-of-type(1) pre {
+  width: 45%;
+}
+
+.variables .scope > div:nth-of-type(2), .variables .scope div div {
+  padding: 20px;
+  border: 2px solid #464547;
+}
+
+.variables .scope .one {
+  background-color: var(--color);
+}
+
+.variables .scope .two {
+  --color: #a3c644;
+  display: flex;
+  justify-content: space-between;
+}
+
+.variables .scope .two div {
+  width: 40%;
+  height: 120px;
+  background-color: var(--color);
+  line-height: 120px;
+}
+
+.variables .scope .three {
+  --color: #b22746;
+}
+
+.units .example .vh-vmin span:nth-child(1) {
+  font-size: 10vh;
+}
+
+.units .example .vh-vmin span:nth-child(2) {
+  font-size: 10vmin;
+}
+
+.units .example .px-in span:nth-child(1) {
+  font-size: 96px;
+}
+
+.units .example .px-in span:nth-child(2) {
+  font-size: 1in;
+}
+
+.units .example .em-rem-per span:nth-child(1) {
+  font-size: 2em;
+}
+
+.units .example .em-rem-per span:nth-child(2) {
+  font-size: 4.75rem;
+}
+
+.units .example .em-rem-per span:nth-child(4) {
+  font-size: 200%;
+}
+
+.units .example .pc-pt span:nth-child(1) {
+  font-size: 4pc;
+}
+
+.units .example .pc-pt span:nth-child(2) {
+  font-size: 48pt;
+}
+
+.border-radius .rule div {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 50%;
+  height: 200px;
+  background-color: #39c2d7;
+}
+
+.border-radius .rule div span:nth-of-type(1) {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.border-radius .rule div span:nth-of-type(2) {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.border-radius .rule div span:nth-of-type(3) {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.border-radius .rule div span:nth-of-type(4) {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.border-radius .rule div span:nth-of-type(5) {
+  line-height: 200px;
+}
+
+.border-radius .example .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.border-radius .example .row:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.border-radius .example .row .element {
+  width: 45%;
+}
+
+.border-radius .example .row .element div {
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #39c2d7;
+}
+
+.border-radius .example .row:nth-of-type(1) .element:nth-of-type(1) div {
+  border-radius: 50%;
+}
+
+.border-radius .example .row:nth-of-type(1) .element:nth-of-type(2) div {
+  border-radius: 100% 0;
+}
+
+.border-radius .example .row:nth-of-type(2) .element:nth-of-type(1) div {
+  border-radius: 30% 20px 100%;
+}
+
+.border-radius .example .row:nth-of-type(2) .element:nth-of-type(2) div {
+  border-radius: 10% 20% 30% 40%;
+}
+
+.border-radius .single div {
+  position: relative;
+  width: 50%;
+  height: 200px;
+  margin: 0 auto;
+  border-top-left-radius: 70% 40%;
+  background-color: #39c2d7;
+}
+
+.border-radius .single div span {
+  line-height: 200px;
+  font-size: 0.8em;
+}
+
+.background .attachment .wrapper {
+  width: 90%;
+  height: 500px;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+
+.background .attachment .wrapper span {
+  display: inline-block;
+  width: 0.5em;
+  text-align: center;
+  font-size: 5em;
+  color: #39c2d7;
+}
+
+.background .attachment.local .wrapper {
+  overflow: hidden;
+}
+
+.background .attachment.local .wrapper div {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  height: 500px;
+  overflow-y: scroll;
+  background: repeating-linear-gradient(15deg, transparent 0, transparent 20px, #464547 20px, #464547 40px);
+}
+
+.background .attachment.local .wrapper div:nth-of-type(1) {
+  margin-right: 4%;
+  background-attachment: fixed;
+}
+
+.background .attachment.local .wrapper div:nth-of-type(2) {
+  margin-right: 4%;
+  background-attachment: scroll;
+}
+
+.background .attachment.local .wrapper div:nth-of-type(3) {
+  background-attachment: local;
+}
+
+.background .attachment:not(.local) .wrapper > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.background .attachment:not(.local) .wrapper > div div {
+  width: 30%;
+  background: repeating-linear-gradient(15deg, transparent 0, transparent 20px, #464547 20px, #464547 40px);
+}
+
+.background .attachment:not(.local) .wrapper > div div:nth-of-type(1) {
+  background-attachment: fixed;
+}
+
+.background .attachment:not(.local) .wrapper > div div:nth-of-type(2) {
+  background-attachment: scroll;
+}
+
+.background .attachment:not(.local) .wrapper > div div:nth-of-type(3) {
+  background-attachment: local;
+}
+
+.background .clip > div {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.background .clip > div div {
+  width: 17%;
+  height: 200px;
+  padding: 5%;
+  border: 10px dashed #464547;
+  text-align: center;
+  font-size: 0.6em;
+  line-height: 200px;
+  background: #39c2d7;
+}
+
+.background .clip > div div:nth-of-type(1) {
+  background-clip: padding-box;
+}
+
+.background .clip > div div:nth-of-type(2) {
+  background-clip: border-box;
+}
+
+.background .clip > div div:nth-of-type(3) {
+  background-clip: content-box;
+}
+
+.background .origin > div {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.background .origin > div div {
+  width: 17%;
+  height: 200px;
+  padding: 5%;
+  border: 10px dashed #464547;
+  text-align: center;
+  font-size: 0.6em;
+  line-height: 200px;
+  background: url("../img/epam_logo_gray.png") no-repeat;
+  background-size: 200px;
+}
+
+.background .origin > div div:nth-of-type(1) {
+  background-origin: padding-box;
+}
+
+.background .origin > div div:nth-of-type(2) {
+  background-origin: border-box;
+}
+
+.background .origin > div div:nth-of-type(3) {
+  background-origin: content-box;
+}
+
+.background .size > div {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.background .size > div > div {
+  width: 30%;
+}
+
+.background .size > div > div div {
+  height: 200px;
+  background: #39c2d7 url("../img/epam_logo_gray.png") 50% no-repeat;
+}
+
+.background .size > div > div pre {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 0.45em;
+}
+
+.background .size > div > div:nth-of-type(1) div {
+  background-size: 3em 10px;
+}
+
+.background .size > div > div:nth-of-type(2) div {
+  background-size: contain;
+}
+
+.background .size > div > div:nth-of-type(3) div {
+  background-size: cover;
+}
+
+.shadows .box-shadow > div {
+  position: relative;
+}
+
+.shadows .box-shadow > div div:nth-of-type(1), .shadows .box-shadow > div div:nth-of-type(2) {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  height: 300px;
+  border: 10px solid #464547;
+  background-color: #39c2d7;
+  border-radius: 60px 0;
+  line-height: 300px;
+}
+
+.shadows .box-shadow > div div:nth-of-type(1) {
+  margin: 0 10% 0 -5%;
+  box-shadow: 10px 10px 0px 8px #999 inset;
+}
+
+.shadows .box-shadow > div div:nth-of-type(2) {
+  box-shadow: 64px 64px 12px 40px #999;
+}
+
+.shadows .box-shadow > div div:nth-of-type(3) {
+  position: absolute;
+  top: 0;
+  bottom: -115px;
+  left: 10%;
+  right: 4%;
+  background: url(../img/box_shadow.png) 0% 0% no-repeat;
+  background-size: contain;
+  font-size: 0.5em;
+}
+
+.shadows .box-shadow > div div:nth-of-type(3) span {
+  position: absolute;
+}
+
+.shadows .box-shadow > div div:nth-of-type(3) span.alt {
+  color: #fff;
+}
+
+.shadows .box-shadow > div div:nth-of-type(3) span:nth-of-type(1) {
+  top: 18px;
+  left: 24px;
+  transform: rotate(-40deg);
+  font-size: 0.5em;
+}
+
+.shadows .box-shadow > div div:nth-of-type(3) span:nth-of-type(2) {
+  top: 21px;
+  left: 103px;
+}
+
+.shadows .box-shadow > div div:nth-of-type(3) span:nth-of-type(3) {
+  top: 254px;
+  left: 24px;
+}
+
+.shadows .box-shadow > div div:nth-of-type(3) span:nth-of-type(4) {
+  top: 344px;
+  left: 560px;
+}
+
+.shadows .box-shadow > div div:nth-of-type(3) span:nth-of-type(5) {
+  top: 385px;
+  left: 550px;
+}
+
+.shadows .box-shadow > div div:nth-of-type(3) span:nth-of-type(6) {
+  top: 410px;
+  left: 661px;
+}
+
+.shadows .box-example div {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto 0;
+  border: 10px solid #464547;
+  border-radius: 50%;
+  background-color: #39c2d7;
+  box-shadow: 0 -50px 5px 0 rgba(255, 0, 0, 0.5), 25px -40px 5px 0 rgba(255, 127, 0, 0.5), 40px -25px 5px 0 rgba(255, 255, 0, 0.5), 50px 0 5px 0 rgba(125, 255, 0, 0.5), 40px 25px 5px 0 rgba(0, 255, 0, 0.5), 25px 40px 5px 0 rgba(0, 255, 127, 0.5), 0 50px 5px 0 rgba(0, 255, 255, 0.5), -25px 40px 5px 0 rgba(0, 127, 255, 0.5), -40px 25px 5px 0 rgba(0, 0, 255, 0.5), -50px 0 5px 0 rgba(127, 0, 255, 0.5), -40px -25px 5px 0 rgba(255, 0, 255, 0.5), -25px -40px 5px 0 rgba(255, 0, 127, 0.5);
+}
+
+.shadows .text-shadow div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.shadows .text-shadow div h1 {
+  color: #39c2d7;
+  text-shadow: 0 0 1px #464547, 5px 5px 10px #39c2d7;
+}
+
+.shadows .text-hover pre {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.shadows .text-hover h1 {
+  display: inline-block;
+  color: #39c2d7;
+  transition: text-shadow 0.2s linear,
+  color 0.2s linear;
+}
+
+.shadows .text-hover h1:hover {
+  color: transparent;
+  text-shadow: 0 0 20px #39c2d7;
+}
+
+.gradients .linear div {
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  background: linear-gradient(#39c2d7, #464547);
+}
+
+.gradients .direction .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gradients .direction .row:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.gradients .direction .row div {
+  width: 45%;
+  height: 200px;
+}
+
+.gradients .direction .row div span {
+  line-height: 200px;
+  color: #fff;
+}
+
+.gradients .direction .row:nth-of-type(1) div:nth-of-type(1) {
+  background: linear-gradient(to left, #39c2d7, #464547);
+}
+
+.gradients .direction .row:nth-of-type(1) div:nth-of-type(2) {
+  background: linear-gradient(to bottom right, #39c2d7, #464547);
+}
+
+.gradients .direction .row:nth-of-type(2) div:nth-of-type(1) {
+  background: linear-gradient(60deg, #39c2d7, #464547);
+}
+
+.gradients .direction .row:nth-of-type(2) div:nth-of-type(2) {
+  background: linear-gradient(-135deg, #39c2d7, #464547);
+}
+
+.gradients .colors div {
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.gradients .colors div span {
+  line-height: 200px;
+}
+
+.gradients .colors .multi {
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #b22746, #ff7f00, yellow, #7dff00, #a3c644, springgreen, cyan, #007fff, #39c2d7, #7f00ff, magenta, #ff007f);
+}
+
+.gradients .colors .transparent {
+  background: linear-gradient(to right, transparent, #b22746);
+}
+
+.gradients .position pre {
+  font-size: 0.47em;
+}
+
+.gradients .position div {
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  background: linear-gradient(to right, #39c2d7 10%, transparent 40%, transparent 60%, #b22746 90%);
+}
+
+.gradients .radial div {
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  background: radial-gradient(#464547, #1a9cb0, #39c2d7, transparent);
+}
+
+.gradients .shape > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gradients .shape > div div {
+  width: 45%;
+  height: 200px;
+}
+
+.gradients .shape > div div span {
+  line-height: 200px;
+  color: #fff;
+}
+
+.gradients .shape > div div:nth-of-type(1) {
+  background: radial-gradient(ellipse, #39c2d7, #464547 70%);
+}
+
+.gradients .shape > div div:nth-of-type(2) {
+  background: radial-gradient(circle, #39c2d7, #464547 70%);
+}
+
+.gradients .size .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gradients .size .row:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.gradients .size .row div {
+  width: 45%;
+  height: 200px;
+}
+
+.gradients .size .row div span {
+  line-height: 200px;
+  color: #fff;
+}
+
+.gradients .size .row:nth-of-type(1) div:nth-of-type(1) {
+  background: radial-gradient(circle closest-side at 60% 60%, #39c2d7, #464547);
+}
+
+.gradients .size .row:nth-of-type(1) div:nth-of-type(2) {
+  background: radial-gradient(circle farthest-side at 60% 60%, #39c2d7, #464547);
+}
+
+.gradients .size .row:nth-of-type(2) div:nth-of-type(1) {
+  background: radial-gradient(circle closest-corner at 60% 60%, #39c2d7, #464547);
+}
+
+.gradients .size .row:nth-of-type(2) div:nth-of-type(2) {
+  background: radial-gradient(circle farthest-corner at 60% 60%, #39c2d7, #464547);
+}
+
+.gradients .repeat pre {
+  font-size: 0.47em;
+}
+
+.gradients .repeat div {
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.gradients .repeat div:nth-of-type(1) {
+  margin-bottom: 50px;
+  background: repeating-linear-gradient(to right, #464547, #464547 5%, #1a9cb0 15%, #39c2d7 20%);
+}
+
+.gradients .repeat div:nth-of-type(2) {
+  background: repeating-radial-gradient(#464547, #464547 5%, #1a9cb0 15%, #39c2d7 20%);
+}
+
+.gradients .pattern pre {
+  font-size: 0.47em;
+}
+
+.gradients .pattern div {
+  width: 80%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.gradients .pattern div:nth-of-type(1) {
+  margin-bottom: 50px;
+  background: #464547 linear-gradient(to right, transparent 50%, #39c2d7 50%) no-repeat;
+  background-size: 5% 100%;
+}
+
+.gradients .pattern div:nth-of-type(2) {
+  background: #464547 linear-gradient(to right, transparent 50%, #39c2d7 50%);
+  background-size: 5% 100%;
+}
+
+.filters section > div {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.filters section > div > div {
+  width: 45%;
+}
+
+.filters section > div > div pre {
+  width: 100%;
+}
+
+.filters section > div > div div {
+  height: 250px;
+  background: url(../img/cat.jpg) no-repeat;
+  background-size: cover;
+}
+
+.filters section > div > div div.blur {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.filters section > div > div div.brightness {
+  -webkit-filter: brightness(0.3);
+  filter: brightness(0.3);
+}
+
+.filters section > div > div div.grayscale {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.filters section > div > div div.contrast {
+  -webkit-filter: contrast(2.3);
+  filter: contrast(2.3);
+}
+
+.filters section > div > div div.hue-rotate {
+  -webkit-filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg);
+}
+
+.filters section > div > div div.invert {
+  -webkit-filter: invert(0.7);
+  filter: invert(0.7);
+}
+
+.filters section > div > div div.saturate {
+  -webkit-filter: saturate(0.3);
+  filter: saturate(0.3);
+}
+
+.filters section > div > div div.sepia {
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
+}
+
+.blend-mode .rule pre {
+  width: 50%;
+}
+
+.blend-mode .example > div {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blend-mode .example > div > div {
+  width: 45%;
+}
+
+.blend-mode .example > div > div pre {
+  width: 100%;
+}
+
+.blend-mode .example > div > div div {
+  height: 120px;
+  padding: 40px 0;
+  background: url(../img/fishes.jpg) no-repeat;
+  background-size: cover;
+}
+
+.blend-mode .example > div > div div span {
+  display: block;
+  height: 100px;
+  background: #b22746;
+  border: 10px solid #a3c644;
+  border-left: none;
+  border-right: none;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: 20px;
+}
+
+.blend-mode .example > div > div div span.mix-normal {
+  mix-blend-mode: normal;
+}
+
+.blend-mode .example > div > div div span.mix-multiply {
+  mix-blend-mode: multiply;
+}
+
+.blend-mode .example > div > div div span.mix-screen {
+  mix-blend-mode: screen;
+}
+
+.blend-mode .example > div > div div span.mix-overlay {
+  mix-blend-mode: overlay;
+}
+
+.blend-mode .example > div > div div span.mix-darken {
+  mix-blend-mode: darken;
+}
+
+.blend-mode .example > div > div div span.mix-lighten {
+  mix-blend-mode: lighten;
+}
+
+.blend-mode .example > div > div div span.mix-color-dodge {
+  mix-blend-mode: color-dodge;
+}
+
+.blend-mode .example > div > div div span.mix-color-burn {
+  mix-blend-mode: color-burn;
+}
+
+.blend-mode .example > div > div div span.mix-hard-light {
+  mix-blend-mode: hard-light;
+}
+
+.blend-mode .example > div > div div span.mix-soft-light {
+  mix-blend-mode: soft-light;
+}
+
+.blend-mode .example > div > div div span.mix-difference {
+  mix-blend-mode: difference;
+}
+
+.blend-mode .example > div > div div span.mix-exclusion {
+  mix-blend-mode: exclusion;
+}
+
+.blend-mode .example > div > div div span.mix-hue {
+  mix-blend-mode: hue;
+}
+
+.blend-mode .example > div > div div span.mix-saturation {
+  mix-blend-mode: saturation;
+}
+
+.blend-mode .example > div > div div span.mix-color {
+  mix-blend-mode: color;
+}
+
+.blend-mode .example > div > div div span.mix-luminosity {
+  mix-blend-mode: luminosity;
+}
+
+.transforms .translate > div {
+  position: relative;
+  height: 400px;
+}
+
+.transforms .translate > div div {
+  width: 40%;
+  line-height: 200px;
+}
+
+.transforms .translate > div div:nth-of-type(1) {
+  background: #999;
+}
+
+.transforms .translate > div div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a3c644;
+  opacity: 0.7;
+  animation: translated 2s ease-in-out infinite alternate;
+}
+
+.transforms .scale > div {
+  position: relative;
+  height: 300px;
+  margin-top: 100px;
+}
+
+.transforms .scale > div div {
+  width: 40%;
+  margin: 0 auto;
+  line-height: 200px;
+}
+
+.transforms .scale > div div:nth-of-type(1) {
+  background: #999;
+}
+
+.transforms .scale > div div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a3c644;
+  opacity: 0.7;
+  animation: scaled 2s ease-in-out infinite alternate;
+}
+
+.transforms .skew > div {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  margin-top: 100px;
+}
+
+.transforms .skew > div > div {
+  position: relative;
+  width: 45%;
+}
+
+.transforms .skew > div > div div {
+  line-height: 200px;
+}
+
+.transforms .skew > div > div div:nth-of-type(1) {
+  background: #999;
+}
+
+.transforms .skew > div > div div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a3c644;
+  opacity: 0.7;
+}
+
+.transforms .skew > div > div:nth-of-type(1) div:nth-of-type(2) {
+  animation: skewedX 2s ease-in-out infinite alternate;
+}
+
+.transforms .skew > div > div:nth-of-type(2) div:nth-of-type(2) {
+  animation: skewedY 2s ease-in-out infinite alternate;
+}
+
+.transforms .rotate > div {
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+  margin-top: 100px;
+}
+
+.transforms .rotate > div > div {
+  position: relative;
+  width: 20%;
+}
+
+.transforms .rotate > div > div div {
+  line-height: 200px;
+}
+
+.transforms .rotate > div > div div:nth-of-type(1) {
+  background: #999;
+}
+
+.transforms .rotate > div > div div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a3c644;
+  opacity: 0.7;
+}
+
+.transforms .rotate > div > div:nth-of-type(1) div:nth-of-type(2) {
+  animation: rotated 2s ease-in-out infinite alternate;
+}
+
+.transforms .rotate > div > div:nth-of-type(2) div:nth-of-type(2) {
+  animation: rotatedX 2s ease-in-out infinite alternate;
+}
+
+.transforms .rotate > div > div:nth-of-type(3) div:nth-of-type(2) {
+  animation: rotatedY 2s ease-in-out infinite alternate;
+}
+
+.transforms .matrix > div {
+  position: relative;
+  margin: 50px auto 0;
+}
+
+.transforms .matrix > div div {
+  width: 20%;
+  line-height: 100px;
+}
+
+.transforms .matrix > div div:nth-of-type(1) {
+  background: #999;
+}
+
+.transforms .matrix > div div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a3c644;
+  opacity: 0.7;
+  animation: matrixed 2s ease-in-out infinite alternate;
+}
+
+.transforms .fulcrum > div {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  margin-top: 100px;
+}
+
+.transforms .fulcrum > div > div {
+  position: relative;
+  width: 45%;
+}
+
+.transforms .fulcrum > div > div div {
+  line-height: 200px;
+}
+
+.transforms .fulcrum > div > div div:nth-of-type(1) {
+  background: #999;
+}
+
+.transforms .fulcrum > div > div div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a3c644;
+  opacity: 0.7;
+  animation: fulcrum 2s ease-in-out infinite alternate;
+}
+
+.transforms .fulcrum > div > div:nth-of-type(2) div:nth-of-type(2) {
+  transform-origin: left top;
+}
+
+.transforms .plane > div {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  margin-top: 100px;
+}
+
+.transforms .plane > div > div {
+  position: relative;
+  width: 45%;
+}
+
+.transforms .plane > div > div div {
+  line-height: 200px;
+}
+
+.transforms .plane > div > div div:nth-of-type(1) {
+  background: #999;
+}
+
+.transforms .plane > div > div div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a3c644;
+  opacity: 0.7;
+  animation: transform-style-parent 1s ease-in-out infinite alternate;
+}
+
+.transforms .plane > div > div div:nth-of-type(2) div {
+  width: 80%;
+  margin: 0 auto;
+  background: #7f993a;
+  animation: transform-style-child 1s ease-in-out infinite alternate;
+  line-height: 200px;
+}
+
+.transforms .plane > div > div:nth-of-type(2) div:nth-of-type(2) {
+  transform-style: preserve-3d;
+}
+
+.transforms .perspective .cube {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto 0;
+  transform-style: preserve-3d;
+  perspective-origin: 55% 80%;
+  perspective: 600px;
+  animation: perspective 1s cubic-bezier(0.9, 0.1, 0.75, 0.25) infinite alternate;
+}
+
+.transforms .perspective .cube div {
+  position: absolute;
+  width: 200px;
+  opacity: 0.7;
+  font-size: 2.87em;
+  background: #a3c644;
+  border: 10px solid #7f993a;
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+}
+
+.transforms .perspective .cube div.front {
+  transform: translateZ(2em);
+}
+
+.transforms .perspective .cube div.top {
+  transform: rotateX(90deg) translateY(1em) translateZ(1em);
+}
+
+.transforms .perspective .cube div.right {
+  transform: rotateY(90deg) translateX(-1em) translateZ(1em);
+}
+
+.transforms .perspective .cube div.left {
+  transform: rotateY(-90deg) translateX(1em) translateZ(1em);
+}
+
+.transforms .perspective .cube div.bottom {
+  transform: rotateX(-90deg) translateY(-1em) translateZ(1em);
+}
+
+.transforms .perspective .cube div.back {
+  transform: translateZ(0em);
+}
+
+.transforms .perspective.origin .cube {
+  animation: move-origin 2s linear infinite;
+}
+
+.transforms .parent-child {
+  perspective: none;
+}
+
+.transforms .parent-child > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.transforms .parent-child > div pre {
+  width: 45%;
+}
+
+.transforms .parent-child > div > div {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  padding: 25px;
+}
+
+.transforms .parent-child > div > div div {
+  width: 45%;
+  height: 100px;
+  background: #a3c644;
+  transform: rotateY(60deg);
+}
+
+.transforms .parent-child > div > div:nth-of-type(1) {
+  animation: perspective-parent 1s linear infinite alternate;
+}
+
+.transforms .parent-child > div > div:nth-of-type(2) div {
+  animation: perspective-child 1s linear infinite alternate;
+}
+
+.transforms .backface > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.transforms .backface > div pre {
+  width: 100%;
+}
+
+.transforms .backface > div > div {
+  width: 45%;
+  line-height: 200px;
+  background: #a3c644;
+  animation: rotatedY 1s linear infinite alternate;
+}
+
+.transforms .backface > div > div:nth-of-type(2) {
+  backface-visibility: hidden;
+}
+
+.transforms .translate-3d > div {
+  position: relative;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.transforms .translate-3d > div div {
+  width: 40%;
+  line-height: 200px;
+}
+
+.transforms .translate-3d > div div:nth-of-type(1) {
+  background: #999;
+}
+
+.transforms .translate-3d > div div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a3c644;
+  opacity: 0.7;
+  animation: translated3D 3s ease-in-out infinite alternate;
+}
+
+.transforms .scale-3d > div {
+  position: relative;
+  height: 300px;
+  margin-top: 100px;
+  transform-style: preserve-3d;
+}
+
+.transforms .scale-3d > div div {
+  width: 40%;
+  margin: 0 auto;
+  line-height: 200px;
+}
+
+.transforms .scale-3d > div div:nth-of-type(1) {
+  background: #999;
+}
+
+.transforms .scale-3d > div div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a3c644;
+  opacity: 0.7;
+  animation: scaled3D 2s ease-in-out infinite alternate;
+}
+
+.transforms .rotate-3d > div {
+  position: relative;
+  height: 300px;
+  margin-top: 100px;
+  transform-style: preserve-3d;
+}
+
+.transforms .rotate-3d > div div {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 300px;
+}
+
+.transforms .rotate-3d > div div:nth-of-type(1) {
+  background: #999;
+}
+
+.transforms .rotate-3d > div div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a3c644;
+  opacity: 0.7;
+  animation: rotated3D 2s ease-in-out infinite alternate;
+}
+
+.transforms .rotate-3d-negative > div {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  transform-style: preserve-3d;
+}
+
+.transforms .rotate-3d-negative > div > div {
+  width: 45%;
+  position: relative;
+}
+
+.transforms .rotate-3d-negative > div > div div {
+  line-height: 300px;
+}
+
+.transforms .rotate-3d-negative > div > div div:nth-of-type(1) {
+  background: #999;
+}
+
+.transforms .rotate-3d-negative > div > div div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a3c644;
+  opacity: 0.7;
+}
+
+.transforms .rotate-3d-negative > div > div:nth-of-type(1) div:nth-of-type(2) {
+  animation: rotated3DnZ 2s ease-in-out infinite alternate;
+}
+
+.transforms .rotate-3d-negative > div > div:nth-of-type(2) div:nth-of-type(2) {
+  animation: rotated3DpZ 2s ease-in-out infinite alternate;
+}
+
+.transforms .matrix-3d > div {
+  position: relative;
+  margin: 50px auto 0;
+  transform-style: preserve-3d;
+}
+
+.transforms .matrix-3d > div div {
+  width: 20%;
+  line-height: 100px;
+}
+
+.transforms .matrix-3d > div div:nth-of-type(1) {
+  background: #999;
+}
+
+.transforms .matrix-3d > div div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a3c644;
+  opacity: 0.7;
+  animation: matrixed3D 2s ease-in-out infinite alternate;
+}
+
+.transitions .timing-functions .wrapper {
+  border: 2px solid #464547;
+}
+
+.transitions .timing-functions .wrapper div {
+  width: 50%;
+  height: 50px;
+  background: #a3c644;
+  border-bottom: 1px solid #464547;
+  font-size: 0.75em;
+  line-height: 50px;
+  transition-property: width;
+  transition-duration: 5s;
+}
+
+.transitions .timing-functions .wrapper div:nth-of-type(1) {
+  transition-timing-function: linear;
+}
+
+.transitions .timing-functions .wrapper div:nth-of-type(2) {
+  transition-timing-function: ease;
+}
+
+.transitions .timing-functions .wrapper div:nth-of-type(3) {
+  transition-timing-function: ease-in;
+}
+
+.transitions .timing-functions .wrapper div:nth-of-type(4) {
+  transition-timing-function: ease-out;
+}
+
+.transitions .timing-functions .wrapper div:nth-of-type(5) {
+  transition-timing-function: ease-in-out;
+}
+
+.transitions .timing-functions .wrapper div:nth-of-type(6) {
+  transition-timing-function: steps(4, start);
+}
+
+.transitions .timing-functions .wrapper div:nth-of-type(7) {
+  transition-timing-function: steps(4, end);
+}
+
+.transitions .timing-functions .wrapper div:nth-of-type(8) {
+  transition-timing-function: step-start;
+}
+
+.transitions .timing-functions .wrapper div:nth-of-type(9) {
+  transition-timing-function: step-end;
+}
+
+.transitions .timing-functions .wrapper div:nth-of-type(10) {
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+.transitions .timing-functions .wrapper div:last-child {
+  border: none;
+  transition-timing-function: cubic-bezier(1, -1, 0.3, 2);
+}
+
+.transitions .timing-functions .wrapper:hover div {
+  width: 100%;
+}
+
+.transitions .example > div {
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.transitions .example > div > div {
+  width: 45%;
+  height: 200px;
+  background-color: #a3c644;
+}
+
+.transitions .example > div > div span {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 99%;
+}
+
+.transitions .example > div > div:nth-of-type(1) {
+  transition: background-color 3s ease-in-out;
+}
+
+.transitions .example > div > div:nth-of-type(2) {
+  transition-property: color, background-color;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.transitions .example > div > div:nth-of-type(3) {
+  transition-property: color, background-color;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.3, -5, 0.7, 5);
+}
+
+.transitions .example > div > div:nth-of-type(4) {
+  transition-property: color, background-color;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.transitions .example > div > div:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 0;
+}
+
+.transitions .example > div > div:hover {
+  background-color: #464547;
+  color: #a3c644;
+}
+
+.transitions .ui-elements div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.transitions .ui-elements div ul {
+  padding: 0;
+  text-align: center;
+}
+
+.transitions .ui-elements div ul li {
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.transitions .ui-elements div ul li span {
+  display: block;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.transitions .ui-elements div ul li span.link {
+  display: inline-block;
+  vertical-align: bottom;
+  color: #464547;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+.transitions .ui-elements div ul li span.link:hover {
+  color: #999;
+}
+
+.transitions .ui-elements div ul li span.link:active {
+  color: #464547;
+  transition-duration: 0s;
+}
+
+.transitions .ui-elements div ul li span.btn {
+  color: #fff;
+  padding: 12px 60px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.transitions .ui-elements div ul li span.btn.blue {
+  background: #39c2d7;
+}
+
+.transitions .ui-elements div ul li span.btn.blue:hover {
+  background: #1a9cb0;
+}
+
+.transitions .ui-elements div ul li span.btn.blue:active {
+  background: #464547;
+}
+
+.transitions .ui-elements div ul li span.btn.green {
+  background: #a3c644;
+}
+
+.transitions .ui-elements div ul li span.btn.green:hover {
+  background: #7f993a;
+}
+
+.transitions .ui-elements div ul li span.btn.green:active {
+  background: #464547;
+}
+
+.transitions .ui-elements div ul li span.btn.red {
+  background: #b22746;
+}
+
+.transitions .ui-elements div ul li span.btn.red:hover {
+  background: #8e244d;
+}
+
+.transitions .ui-elements div ul li span.btn.red:active {
+  background: #464547;
+}
+
+.transitions .ui-elements div ul li span.btn.border {
+  padding: 10px 58px;
+  color: #464547;
+  background-color: transparent;
+  border: 2px solid #464547;
+}
+
+.transitions .ui-elements div ul li span.btn.border:hover {
+  border-color: #999;
+}
+
+.transitions .ui-elements div ul li span.btn.border:active {
+  color: #fff;
+  border-color: transparent;
+  background: #464547;
+  padding: 11px 58px 9px;
+}
+
+.transitions .ui-elements div ul li span.btn:active {
+  padding: 13px 60px 11px;
+  transition-duration: 0s;
+}
+
+.transitions .ui-elements div ul li input {
+  background: transparent;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border: 2px solid #999;
+  outline: none;
+}
+
+.transitions .ui-elements div ul li input:focus {
+  border: 2px solid #464547;
+}
+
+.transitions .ui-elements div ul.transition li * {
+  transition-property: background, border, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.transitions .ui-elements div ul:last-child {
+  margin-bottom: 0;
+}
+
+.transitions .jump ul {
+  display: flex;
+  padding: 0;
+  height: 500px;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-flow: row wrap;
+}
+
+.transitions .jump ul li {
+  position: relative;
+  top: 0;
+  display: block;
+  width: 30%;
+  background-size: cover;
+  transition: top 0.3s ease-in-out;
+}
+
+.transitions .jump ul li div {
+  position: relative;
+  height: 200px;
+  z-index: 3;
+}
+
+.transitions .jump ul li:nth-child(even) div {
+  background: url(../img/cat.jpg) 50% 50% no-repeat;
+}
+
+.transitions .jump ul li:nth-child(even):after {
+  background: #a3c644;
+}
+
+.transitions .jump ul li:nth-child(even):before {
+  background: #7f993a;
+}
+
+.transitions .jump ul li:nth-child(odd) div {
+  background: url(../img/fishes.jpg) 50% 50% no-repeat;
+}
+
+.transitions .jump ul li:nth-child(odd):after {
+  background: #39c2d7;
+}
+
+.transitions .jump ul li:nth-child(odd):before {
+  background: #1a9cb0;
+}
+
+.transitions .jump ul li:before, .transitions .jump ul li:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 8px;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.transitions .jump ul li:before {
+  left: 8px;
+  right: 8px;
+  bottom: -4px;
+  z-index: 2;
+}
+
+.transitions .jump ul li:after {
+  left: 16px;
+  right: 16px;
+  bottom: -8px;
+  z-index: 1;
+}
+
+.transitions .jump ul li:hover {
+  top: -8px;
+}
+
+.transitions .jump ul li:hover:before {
+  bottom: -8px;
+}
+
+.transitions .jump ul li:hover:after {
+  bottom: -16px;
+}
+
+.animations .rule div {
+  width: 90%;
+  margin: 0 auto;
+  height: 100px;
+  margin-bottom: 20px;
+  animation-name: colorChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  line-height: 100px;
+}
+
+.animations .rule div:nth-of-type(1) {
+  animation-timing-function: linear;
+}
+
+.animations .rule div:nth-of-type(2) {
+  animation-timing-function: step-end;
+}
+
+.animations .direction .wrapper {
+  margin-top: 100px;
+  padding: 50px;
+  border: 2px solid #464547;
+}
+
+.animations .direction .wrapper div {
+  position: relative;
+  width: 40%;
+  height: 50px;
+  margin-bottom: 20px;
+  background: #a3c644;
+  border: 1px solid #464547;
+  line-height: 50px;
+  animation: animation-direction 3s ease-in-out infinite;
+}
+
+.animations .direction .wrapper div:nth-of-type(2) {
+  animation-direction: reverse;
+}
+
+.animations .direction .wrapper div:nth-of-type(3) {
+  animation-direction: alternate;
+}
+
+.animations .direction .wrapper div:nth-of-type(4) {
+  margin-bottom: 0;
+  animation-direction: alternate-reverse;
+}
+
+.animations .fill-mode .wrapper {
+  margin-top: 100px;
+  padding: 50px;
+  border: 2px solid #464547;
+}
+
+.animations .fill-mode .wrapper div {
+  position: relative;
+  left: 20%;
+  width: 40%;
+  height: 50px;
+  margin-bottom: 20px;
+  background: #a3c644;
+  border: 1px solid #464547;
+  line-height: 50px;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.animations .fill-mode .wrapper div:nth-of-type(2) {
+  animation-fill-mode: forwards;
+}
+
+.animations .fill-mode .wrapper div:nth-of-type(3) {
+  animation-fill-mode: backwards;
+}
+
+.animations .fill-mode .wrapper div:nth-of-type(4) {
+  margin-bottom: 0;
+  animation-fill-mode: both;
+}
+
+.animations .fill-mode .wrapper:hover div {
+  animation-name: animation-fill-mode;
+}
+
+.animations .play-state > div {
+  position: relative;
+}
+
+.animations .play-state > div .circle {
+  position: relative;
+  display: inline-block;
+  margin-top: 100px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  box-shadow: 0 -50px 5px 0 rgba(255, 0, 0, 0.5), 25px -40px 5px 0 rgba(255, 127, 0, 0.5), 40px -25px 5px 0 rgba(255, 255, 0, 0.5), 50px 0 5px 0 rgba(125, 255, 0, 0.5), 40px 25px 5px 0 rgba(0, 255, 0, 0.5), 25px 40px 5px 0 rgba(0, 255, 127, 0.5), 0 50px 5px 0 rgba(0, 255, 255, 0.5), -25px 40px 5px 0 rgba(0, 127, 255, 0.5), -40px 25px 5px 0 rgba(0, 0, 255, 0.5), -50px 0 5px 0 rgba(127, 0, 255, 0.5), -40px -25px 5px 0 rgba(255, 0, 255, 0.5), -25px -40px 5px 0 rgba(255, 0, 127, 0.5);
+  animation: animation-play-state-rotate 2s linear infinite paused;
+}
+
+.animations .play-state > div .circle-text {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto 0;
+  border: 10px solid #464547;
+  border-radius: 50%;
+  background: #a3c644 url(../img/animation-play-state-paused.png) 20px 120% no-repeat;
+  background-size: contain;
+  animation-name: animation-play-state-scale, animation-play-state-shake, animation-play-state-color;
+  animation-duration: 0.5s, 0.3s, 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.animations .play-state > div .circle-text:before {
+  content: 'hover me!';
+  display: block;
+  margin-top: 50px;
+  mix-blend-mode: color-dodge;
+  text-transform: uppercase;
+}
+
+.animations .play-state > div .circle-text:hover, .animations .play-state > div .circle-text:hover + .circle {
+  animation-play-state: running;
+  background-image: none;
+}
+
+.animations .play-state > div .circle-text:hover ~ .running-guy {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.animations .play-state > div .circle-text:hover:before {
+  content: 'please stop!';
+  mix-blend-mode: color-burn;
+  margin-top: 60px;
+}
+
+.animations .play-state > div .running-guy {
+  opacity: 0;
+  position: fixed;
+  z-index: 20;
+  bottom: -35%;
+  left: 0;
+  right: 0;
+  width: 20%;
+  height: 100px;
+  background: transparent url(../img/animation-play-state-running.png) 50% 100% no-repeat;
+  background-size: contain;
+  animation: animation-play-state-run 2s linear infinite paused;
+}
+
+.flex .box {
+  display: flex;
+  margin-bottom: 50px;
+  padding: 10px 0;
+  border: 2px solid #464547;
+  background: #b22746;
+}
+
+.flex .box div {
+  background: white;
+  margin: 5px 10px;
+  padding: 5px 10px;
+  border: 1px solid #464547;
+}
+
+.flex .box div:first-child {
+  background: #a3c644;
+}
+
+.flex .box div:last-child {
+  background: #39c2d7;
+}
+
+.flex .box:last-of-type {
+  margin-bottom: 0;
+}
+
+.flex .rule pre {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: none;
+}
+
+.flex .rule pre p {
+  margin: 0;
+  font-size: 0;
+}
+
+.flex .rule pre p code {
+  box-sizing: border-box;
+  display: inline-block !important;
+  width: 50%;
+  font-size: 19px;
+}
+
+.flex .rule pre p code:last-child {
+  font-size: 0;
+  line-height: 24px;
+}
+
+.flex .rule pre p.visible:not(.current-fragment) code.lined {
+  text-decoration: line-through;
+}
+
+.flex .rule pre p.visible:not(.current-fragment) code:last-child, .flex .rule pre p.last code:last-child {
+  font-size: 19px;
+}
+
+.flex .inline-flex .box:last-of-type {
+  display: inline-flex;
+}
+
+.flex .axis > div {
+  position: relative;
+  height: 400px;
+}
+
+.flex .axis > div .arrow {
+  position: absolute;
+}
+
+.flex .axis > div .arrow span {
+  display: block;
+  position: absolute;
+}
+
+.flex .axis > div .arrow.main {
+  text-align: left;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 5px;
+  background: #b22746;
+}
+
+.flex .axis > div .arrow.main span {
+  top: -40px;
+  left: 0;
+}
+
+.flex .axis > div .arrow.main:after {
+  top: -7px;
+  right: -50px;
+  border-width: 10px 30px;
+  border-left-color: #b22746;
+}
+
+.flex .axis > div .arrow.cross {
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 400px;
+  margin: 0 auto;
+  background: #39c2d7;
+}
+
+.flex .axis > div .arrow.cross span {
+  top: 0;
+  left: 45px;
+  white-space: nowrap;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+}
+
+.flex .axis > div .arrow.cross:after {
+  bottom: -50px;
+  left: -7px;
+  border-width: 30px 10px;
+  border-top-color: #39c2d7;
+}
+
+.flex .axis > div .arrow:after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.flex .direction > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex .direction > div > div {
+  width: 45%;
+}
+
+.flex .direction > div > div .box {
+  margin-bottom: 48px;
+  justify-content: space-between;
+}
+
+.flex .direction > div > div:nth-of-type(1) .box:nth-of-type(1) {
+  flex-direction: row;
+}
+
+.flex .direction > div > div:nth-of-type(1) .box:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+
+.flex .direction > div > div:nth-of-type(2) > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex .direction > div > div:nth-of-type(2) > div .box {
+  margin-bottom: 0;
+}
+
+.flex .direction > div > div:nth-of-type(2) > div .box:nth-of-type(1) {
+  flex-direction: column;
+}
+
+.flex .direction > div > div:nth-of-type(2) > div .box:nth-of-type(2) {
+  flex-direction: column-reverse;
+}
+
+.flex .wrap > div:nth-of-type(1) {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.flex .wrap > div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex .wrap > div:nth-of-type(2) > div {
+  width: 45%;
+}
+
+.flex .wrap > div:nth-of-type(2) > div:nth-of-type(1) .box {
+  flex-wrap: wrap;
+}
+
+.flex .wrap > div:nth-of-type(2) > div:nth-of-type(2) .box {
+  flex-wrap: wrap-reverse;
+}
+
+.flex .flow > div {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.flex .flow > div .box {
+  flex-flow: row-reverse wrap-reverse;
+}
+
+.flex .justify-content > div:nth-of-type(2) {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.flex .justify-content > div:nth-of-type(2) .box {
+  justify-content: center;
+}
+
+.flex .justify-content > div:not(:nth-of-type(2)) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex .justify-content > div:not(:nth-of-type(2)) > div {
+  width: 45%;
+}
+
+.flex .justify-content > div:not(:nth-of-type(2)):nth-of-type(1) > div:nth-of-type(2) .box {
+  justify-content: flex-end;
+}
+
+.flex .justify-content > div:not(:nth-of-type(2)):nth-of-type(3) > div:nth-of-type(1) .box {
+  justify-content: space-between;
+}
+
+.flex .justify-content > div:not(:nth-of-type(2)):nth-of-type(3) > div:nth-of-type(2) .box {
+  justify-content: space-around;
+}
+
+.flex .align-items > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex .align-items > div > div .box {
+  height: 200px;
+  justify-content: center;
+}
+
+.flex .align-items > div > div .box div:last-child {
+  line-height: 3;
+}
+
+.flex .align-items > div > div:nth-of-type(1) .box {
+  align-items: flex-start;
+}
+
+.flex .align-items > div > div:nth-of-type(2) .box {
+  align-items: flex-end;
+}
+
+.flex .align-items > div > div:nth-of-type(3) .box {
+  align-items: center;
+}
+
+.flex .align-items > div > div:nth-of-type(4) .box {
+  align-items: baseline;
+}
+
+.flex .align-items > div > div:nth-of-type(5) .box {
+  align-items: stretch;
+}
+
+.flex .align-content > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex .align-content > div > div {
+  width: 26%;
+}
+
+.flex .align-content > div > div .box {
+  height: 200px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex .align-content > div > div:nth-of-type(1) .box {
+  align-content: flex-start;
+}
+
+.flex .align-content > div > div:nth-of-type(2) .box {
+  align-content: flex-end;
+}
+
+.flex .align-content > div > div:nth-of-type(3) .box {
+  align-content: center;
+}
+
+.flex .align-content > div > div:nth-of-type(4) .box {
+  align-content: stretch;
+}
+
+.flex .align-content > div > div:nth-of-type(5) .box {
+  align-content: space-between;
+}
+
+.flex .align-content > div > div:nth-of-type(6) .box {
+  align-content: space-around;
+}
+
+.flex .order pre {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.flex .order > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex .order > div > div {
+  width: 45%;
+}
+
+.flex .order > div > div .box {
+  justify-content: space-between;
+}
+
+.flex .order > div > div:nth-of-type(2) .box div:nth-of-type(1) {
+  order: 3;
+}
+
+.flex .order > div > div:nth-of-type(2) .box div:nth-of-type(2) {
+  order: -1;
+}
+
+.flex .order > div > div:nth-of-type(2) .box div:nth-of-type(3) {
+  order: -1;
+}
+
+.flex .order > div > div:nth-of-type(2) .box div:nth-of-type(4) {
+  order: 3;
+}
+
+.flex .order > div > div:nth-of-type(2) .box div:nth-of-type(5) {
+  order: -2;
+}
+
+.flex .order > div > div:nth-of-type(2) .box div:nth-of-type(6) {
+  order: 2;
+}
+
+.flex .align-self > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex .align-self > div > div .box {
+  height: 200px;
+  justify-content: center;
+}
+
+.flex .align-self > div > div .box div:last-child {
+  line-height: 3;
+  align-self: flex-start;
+}
+
+.flex .align-self > div > div:nth-of-type(1) .box div:nth-of-type(1) {
+  align-self: flex-start;
+}
+
+.flex .align-self > div > div:nth-of-type(2) .box div:nth-of-type(1) {
+  align-self: flex-end;
+}
+
+.flex .align-self > div > div:nth-of-type(3) .box div:nth-of-type(1) {
+  align-self: center;
+}
+
+.flex .align-self > div > div:nth-of-type(4) .box div:nth-of-type(1) {
+  align-self: baseline;
+}
+
+.flex .align-self > div > div:nth-of-type(5) .box div:nth-of-type(1) {
+  align-self: stretch;
+}
+
+.flex .basis-grow-shrink .flex-basis .box div:nth-of-type(1) {
+  flex-basis: 200px;
+}
+
+.flex .basis-grow-shrink .flex-basis .box div:nth-of-type(2) {
+  flex-basis: 20px;
+}
+
+.flex .basis-grow-shrink .flex-basis .box div:nth-of-type(3) {
+  flex-basis: 150px;
+}
+
+.flex .basis-grow-shrink .flex-grow .box div:nth-of-type(1) {
+  flex-grow: 2;
+}
+
+.flex .basis-grow-shrink .flex-grow .box div:nth-of-type(2) {
+  flex-grow: 1;
+}
+
+.flex .basis-grow-shrink .flex-grow .box div:nth-of-type(3) {
+  flex-grow: 3;
+}
+
+.flex .basis-grow-shrink .flex-shrink .box div {
+  flex-basis: 1000px;
+}
+
+.flex .basis-grow-shrink .flex-shrink .box div:nth-of-type(1) {
+  flex-shrink: 2;
+}
+
+.flex .basis-grow-shrink .flex-shrink .box div:nth-of-type(2) {
+  flex-shrink: 1;
+}
+
+.flex .basis-grow-shrink .flex-shrink .box div:nth-of-type(3) {
+  flex-shrink: 3;
+}
+
+.flex .basis-grow-shrink-short .box:nth-of-type(1) div:nth-of-type(1) {
+  flex: 2 1 100px;
+}
+
+.flex .basis-grow-shrink-short .box:nth-of-type(1) div:nth-of-type(2) {
+  flex: 1 2 300px;
+}
+
+.flex .basis-grow-shrink-short .box:nth-of-type(1) div:nth-of-type(3) {
+  flex: 2 1 100px;
+}
+
+.flex .basis-grow-shrink-short .box:nth-of-type(2) {
+  margin-bottom: 0;
+}
+
+.flex .basis-grow-shrink-short .box:nth-of-type(2) div:nth-of-type(1) {
+  flex: 2 1 500px;
+}
+
+.flex .basis-grow-shrink-short .box:nth-of-type(2) div:nth-of-type(2) {
+  flex: 1 2 400px;
+}
+
+.flex .basis-grow-shrink-short .box:nth-of-type(2) div:nth-of-type(3) {
+  flex: 2 1 300px;
+}
+
+.flex .basis-grow-shrink-short > div:not(.box) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex .basis-grow-shrink-short > div:not(.box) > div {
+  width: 45%;
+}
+
+.flex .basis-grow-shrink-short > div:not(.box) > div > p {
+  margin: 20px 0 10px;
+}
+
+.flex .basis-grow-shrink-short > div:not(.box) > div > div {
+  margin: 0 0 20px;
+  font-size: 0.6em;
+  text-align: left;
+}
+
+.flex .basis-grow-shrink-short > div:not(.box) > div > div div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.flex .basis-grow-shrink-short > div:not(.box) > div > div div span {
+  display: block;
+  text-align: center;
+}
+
+.flex .basis-grow-shrink-short > div:not(.box) > div > div div span:first-child {
+  border-bottom: 2px solid #464547;
+}
+
+.flex .basis-grow-shrink-short > div:not(.box) > div > div:last-child {
+  margin: 0;
+}
+
+.flex .basis-grow-shrink-short > div:not(.box) > div > div:last-child span {
+  text-decoration: underline;
+}
+
+.flex .demo #button-set {
+  margin-bottom: 20px;
+}
+
+.flex .demo #button-set p {
+  margin: 0;
+}
+
+.flex .demo #button-set span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px 10px;
+  background: #b22746;
+  color: #fff;
+  font-size: 0.5em;
+  cursor: pointer;
+}
+
+.flex .demo #button-set span.current {
+  background-color: #464547;
+  cursor: default;
+}
+
+.flex .demo .wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  transition: width 0.3s linear;
+}
+
+.flex .demo .wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.flex .demo .wrapper .header {
+  background: #8e244d;
+  order: 1;
+}
+
+.flex .demo .wrapper .main {
+  text-align: left;
+  background: #39c2d7;
+}
+
+.flex .demo .wrapper .main p {
+  margin: 0;
+}
+
+.flex .demo .wrapper .aside {
+  font-size: 0.7em;
+}
+
+.flex .demo .wrapper .aside.aside-1 {
+  background: #7f993a;
+}
+
+.flex .demo .wrapper .aside.aside-2 {
+  background: #a3c644;
+}
+
+.flex .demo .wrapper .footer {
+  color: white;
+  background: #464547;
+  order: 1;
+  font-size: 0.7em;
+}
+
+.flex .demo .wrapper .navigation {
+  display: flex;
+  flex-flow: column wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 0;
+}
+
+.flex .demo .wrapper .navigation span {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.5em;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.flex .demo .wrapper .navigation span:hover {
+  background: #b22746;
+}
+
+.flex .demo .wrapper .navigation li:before {
+  display: none;
+}
+
+.flex .demo .wrapper.middle .aside, .flex .demo .wrapper.large .aside {
+  flex: 1 auto;
+}
+
+.flex .demo .wrapper.middle .navigation, .flex .demo .wrapper.large .navigation {
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex .demo .wrapper.middle .navigation span, .flex .demo .wrapper.large .navigation span {
+  border: none;
+}
+
+.flex .demo .wrapper.middle .header, .flex .demo .wrapper.large .header {
+  order: -1;
+}
+
+.flex .demo .wrapper.large .main {
+  flex: 3 0px;
+}
+
+.flex .demo .wrapper.large .aside-1 {
+  order: 1;
+}
+
+.flex .demo .wrapper.large .main {
+  order: 2;
+}
+
+.flex .demo .wrapper.large .aside-2 {
+  order: 3;
+}
+
+.flex .demo .wrapper.large .footer {
+  order: 4;
+}
+
+.flex .demo .wrapper.large .navigation {
+  justify-content: flex-end;
+}
+
+.columns .rule > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columns .rule > div > div {
+  width: 45%;
+}
+
+.columns .rule > div > div small {
+  text-align: left;
+}
+
+.columns .rule > div > div:nth-of-type(1) small {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+
+.columns .rule > div > div:nth-of-type(2) small {
+  -webkit-column-width: 100px;
+  -moz-column-width: 100px;
+  column-width: 100px;
+}
+
+.columns .gap > div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.columns .gap > div pre {
+  width: 40%;
+  margin: 0 auto 20px;
+}
+
+.columns .gap > div small {
+  text-align: left;
+  -webkit-columns: 2 auto;
+  -moz-columns: 2 auto;
+  columns: 2 auto;
+  -webkit-column-gap: 200px;
+  -moz-column-gap: 200px;
+  column-gap: 200px;
+}
+
+.columns .separator > div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.columns .separator > div pre {
+  width: 50%;
+  margin: 0 auto 20px;
+}
+
+.columns .separator > div small {
+  text-align: left;
+  -webkit-columns: 2 auto;
+  -moz-columns: 2 auto;
+  columns: 2 auto;
+  -webkit-column-gap: 100px;
+  -moz-column-gap: 100px;
+  column-gap: 100px;
+  -webkit-column-rule: 4px solid #464547;
+  -moz-column-rule: 4px solid #464547;
+  column-rule: 4px solid #464547;
+}
+
+.columns .span > div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.columns .span > div pre {
+  width: 40%;
+  margin: 0 auto 20px;
+}
+
+.columns .span > div > div {
+  font-size: 0.5em;
+  text-align: left;
+  -webkit-columns: 2 auto;
+  -moz-columns: 2 auto;
+  columns: 2 auto;
+  -webkit-column-gap: 100px;
+  -moz-column-gap: 100px;
+  column-gap: 100px;
+  -webkit-column-rule: 4px solid #464547;
+  -moz-column-rule: 4px solid #464547;
+  column-rule: 4px solid #464547;
+}
+
+.columns .span > div > div h4 {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+}
+
+.columns .break > pre {
+  margin-bottom: 30px;
+}
+
+.columns .break .fragment > div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.columns .break .fragment > div ul {
+  padding: 10px;
+  margin-bottom: 20px;
+  -webkit-columns: 150px;
+  -moz-columns: 150px;
+  columns: 150px;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+  font-size: 0.3em;
+  background: #999;
+}
+
+.columns .break .fragment > div ul li {
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.columns .break .fragment > div ul:nth-of-type(2) li {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.columns .fill > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columns .fill > div > div {
+  width: 45%;
+}
+
+.columns .fill > div > div div {
+  text-align: left;
+  -webkit-columns: 3 auto;
+  -moz-columns: 3 auto;
+  columns: 3 auto;
+  font-size: 0.7em;
+}
+
+.columns .fill > div > div:nth-of-type(1) div {
+  -webkit-column-fill: balance;
+  -moz-column-fill: balance;
+  column-fill: balance;
+}
+
+.columns .fill > div > div:nth-of-type(2) div {
+  -webkit-column-fill: auto;
+  -moz-column-fill: auto;
+  column-fill: auto;
+}
+
+.d-flex {
+  display: flex;
+}
